@@ -1,1481 +1,1418 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>قصر الخطيب للتسويق العقاري | الإسكندرية</title>
-<meta name="description" content="قصر الخطيب للتسويق العقاري - بيع وشراء وتسويق الشقق الفاخرة في الإسكندرية. عمولة 1% عند إتمام الصفقة." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>قصر الخطيب للتسويق العقاري | تسويق الشقق في الإسكندرية</title>
+<meta name="description" content="قصر الخطيب للتسويق العقاري - تسويق وبيع الشقق في الإسكندرية واستقبال بيانات ملاك الشقق الراغبين في البيع.">
+<meta name="keywords" content="تسويق عقاري, الإسكندرية, بيع شقق, قصر الخطيب, تسويق شقق">
+<meta property="og:title" content="قصر الخطيب للتسويق العقاري | تسويق الشقق في الإسكندرية">
+<meta property="og:description" content="سجّل بيانات شقتك وسنتواصل معك لتسويقها في الإسكندرية">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A1A33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Amiri:wght@400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
 <style>
-/* =========================================================
+/* ============================================================
    قصر الخطيب للتسويق العقاري
-   Premium Luxury Real Estate — Alexandria
-   ========================================================= */
+   Single File: index.html
+   Palette: Deep Navy / Royal Navy / Gold / White
+   ============================================================ */
 
 :root{
-  --gold: #C9A961;
-  --gold-bright: #E4C77E;
-  --gold-deep: #A8894A;
-  --ink: #0B141C;
-  --ink-2: #12202C;
-  --ink-3: #1B2C3A;
-  --cream: #F7F3EC;
-  --cream-2: #EFE9DF;
-  --line: rgba(201,169,97,.28);
-  --blue: #1B4F9C;
-  --blue-2: #2E6FCB;
-  --green: #1D5B4A;
-  --green-2: #2A7A64;
-  --text-dark: #14212C;
-  --text-muted: #5A6B78;
-  --shadow-soft: 0 20px 60px -20px rgba(11,20,28,.35);
-  --shadow-gold: 0 20px 50px -18px rgba(201,169,97,.55);
-  --radius: 18px;
-  --radius-lg: 26px;
+  --navy-0:#05101F;
+  --navy-1:#0A1A33;
+  --navy-2:#102B4E;
+  --navy-3:#173A66;
+  --navy-soft:#E8ECF3;
+  --gold:#D4AF37;
+  --gold-2:#E8C766;
+  --gold-3:#B8912B;
+  --gold-soft:#FBF5E2;
+  --white:#FFFFFF;
+  --text-on-dark:#EAF0F8;
+  --text-muted-dark:#9FB0C8;
+  --text:#0A1A33;
+  --text-2:#3E4F69;
+  --text-3:#7186A3;
+  --border:#E1E6EF;
+  --border-dark:rgba(255,255,255,.08);
+  --wa:#25D366;
+  --wa-dark:#1EA855;
+  --red:#C62828;
+  --shadow-sm:0 4px 14px rgba(0,0,0,.08);
+  --shadow:0 12px 32px rgba(10,26,51,.14);
+  --shadow-lg:0 22px 60px rgba(10,26,51,.22);
+  --shadow-gold:0 10px 28px rgba(212,175,55,.4);
+  --shadow-gold-lg:0 16px 44px rgba(212,175,55,.5);
+  --radius:14px;
+  --radius-lg:20px;
 }
 
-*{box-sizing:border-box; margin:0; padding:0;}
-
-html{scroll-behavior:smooth;}
-
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
 body{
-  font-family:'Tajawal', system-ui, -apple-system, sans-serif;
-  background: var(--cream);
-  color: var(--text-dark);
-  line-height: 1.7;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
+  font-family:'Cairo',sans-serif;
+  background:var(--navy-1);
+  color:var(--text-on-dark);
+  overflow-x:hidden;
+  line-height:1.75;
+  font-size:16px;
 }
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,select,textarea{font-family:inherit}
+ul{list-style:none}
 
-h1,h2,h3,h4{
-  font-family:'Cairo','Tajawal', sans-serif;
-  font-weight: 900;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
-}
+.container{max-width:1240px;margin:0 auto;padding:0 22px}
+.section{padding:90px 0;position:relative}
 
-a{ text-decoration: none; color: inherit; }
-button{ font-family: inherit; cursor: pointer; border: none; background: none; }
-img{ max-width:100%; display:block; }
-
-.container{
-  width: min(1240px, 92%);
-  margin: 0 auto;
+/* ============================================================
+   HEADER
+   ============================================================ */
+.header{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(5,16,31,.92);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border-dark);
+  transition:all .3s;
 }
-
-/* ================= HEADER ================= */
-.site-header{
-  position: fixed; top:0; left:0; right:0; z-index: 900;
-  padding: 18px 0;
-  transition: .35s ease;
-  background: linear-gradient(to bottom, rgba(11,20,28,.72), rgba(11,20,28,0));
-}
-.site-header.scrolled{
-  background: rgba(11,20,28,.94);
-  backdrop-filter: blur(14px);
-  padding: 10px 0;
-  border-bottom: 1px solid var(--line);
-  box-shadow: 0 10px 40px -20px rgba(0,0,0,.6);
-}
-.nav-wrap{
-  display:flex; align-items:center; justify-content:space-between; gap: 22px;
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:12px 22px;
+  max-width:1400px;margin:0 auto;
 }
 .brand{
-  display:flex; align-items:center; gap: 12px; color:#fff;
+  display:flex;align-items:center;gap:14px;
+  flex-shrink:0;
 }
-.brand-mark{
-  width: 46px; height: 46px; border-radius: 12px;
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
-  display:grid; place-items:center;
-  color:#0B141C; font-weight:900; font-size: 22px;
-  font-family:'Cairo',sans-serif;
-  box-shadow: 0 6px 18px -6px rgba(201,169,97,.9), inset 0 -3px 0 rgba(0,0,0,.15);
+.brand-logo{
+  width:64px;height:64px;flex-shrink:0;
+  filter:drop-shadow(0 4px 12px rgba(212,175,55,.35));
+  transition:transform .4s;
 }
-.brand-text{ display:flex; flex-direction:column; line-height:1.15; }
-.brand-text .name{ font-family:'Cairo'; font-weight:900; font-size: 20px; letter-spacing:.2px;}
-.brand-text .sub{ font-size: 12px; color: var(--gold-bright); font-weight: 500; letter-spacing: 3px;}
+.brand:hover .brand-logo{transform:scale(1.05)}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{
+  font-family:'Amiri',serif;
+  font-size:1.55rem;
+  font-weight:700;
+  color:var(--gold);
+  letter-spacing:.5px;
+  line-height:1.1;
+}
+.brand-tag{
+  font-size:.72rem;
+  color:var(--text-muted-dark);
+  font-weight:600;
+  letter-spacing:2px;
+  margin-top:3px;
+}
 
-.nav-links{ display:flex; gap: 26px; align-items:center; }
-.nav-links a{
-  color: #E7E2D6; font-size: 15px; font-weight: 500; position: relative;
-  transition:.25s;
+.header-contacts{
+  display:flex;align-items:center;gap:10px;
+  flex-wrap:wrap;
 }
-.nav-links a:hover{ color: var(--gold-bright); }
-.nav-links a::after{
-  content:''; position:absolute; bottom:-6px; right:0; width:0; height:2px;
-  background: var(--gold); transition:.3s;
+.header-phone{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 16px;
+  background:rgba(212,175,55,.12);
+  border:1px solid rgba(212,175,55,.4);
+  border-radius:50px;
+  color:var(--gold-2);
+  font-weight:800;
+  font-size:.88rem;
+  transition:all .3s;
+  direction:ltr;
+  white-space:nowrap;
 }
-.nav-links a:hover::after{ width:100%; }
-
-.nav-cta{
-  display:flex; align-items:center; gap: 8px;
-  padding: 10px 20px; border-radius: 100px;
-  background: linear-gradient(180deg, var(--gold-bright), var(--gold-deep));
-  color: #0B141C; font-weight: 800; font-size: 14px;
-  box-shadow: 0 8px 20px -8px rgba(201,169,97,.8), inset 0 -2px 0 rgba(0,0,0,.18);
-  transition:.25s;
+.header-phone:hover{
+  background:var(--gold);
+  color:var(--navy-1);
+  border-color:var(--gold);
+  box-shadow:var(--shadow-gold);
+  transform:translateY(-2px);
 }
-.nav-cta:hover{ transform: translateY(-2px); box-shadow: 0 14px 28px -10px rgba(201,169,97,.9), inset 0 -2px 0 rgba(0,0,0,.18);}
+.header-phone svg{width:15px;height:15px}
+.header-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;
+  background:linear-gradient(180deg,var(--gold-2),var(--gold));
+  color:var(--navy-1);
+  border-radius:50px;
+  font-weight:900;
+  font-size:.9rem;
+  box-shadow:var(--shadow-gold);
+  transition:all .3s;
+  white-space:nowrap;
+}
+.header-cta:hover{transform:translateY(-2px);box-shadow:var(--shadow-gold-lg)}
 
-.menu-toggle{ display:none; color:#fff; font-size: 26px; background:none;}
+.burger{
+  display:none;
+  width:46px;height:46px;
+  flex-direction:column;align-items:center;justify-content:center;gap:5px;
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--border-dark);
+  border-radius:10px;
+}
+.burger span{width:22px;height:2px;background:var(--gold);border-radius:2px;transition:all .3s}
+.burger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
 
-/* ================= HERO ================= */
+/* MOBILE MENU */
+.mobile-menu{
+  position:fixed;inset:0;
+  background:rgba(5,16,31,.99);
+  backdrop-filter:blur(20px);
+  z-index:999;
+  padding:100px 26px 40px;
+  display:flex;flex-direction:column;gap:10px;
+  transform:translateX(100%);
+  transition:transform .4s cubic-bezier(.4,0,.2,1);
+  overflow-y:auto;
+}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{
+  padding:16px 20px;
+  font-size:1.05rem;
+  font-weight:700;
+  color:var(--white);
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--border-dark);
+  border-radius:12px;
+  transition:all .3s;
+}
+.mobile-menu a:hover{background:rgba(212,175,55,.15);border-color:var(--gold);color:var(--gold-2)}
+
+/* ============================================================
+   HERO
+   ============================================================ */
 .hero{
-  position: relative;
-  min-height: 100vh;
-  display:flex; align-items:center;
-  padding: 140px 0 80px;
-  color:#fff;
+  position:relative;
+  padding:70px 0 60px;
   overflow:hidden;
-  isolation: isolate;
-}
-.hero-bg{
-  position:absolute; inset:0; z-index:-2;
-  background-image: url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=2400&q=80');
-  background-size: cover;
-  background-position: center right;
-  transform: scale(1.04);
-  animation: heroZoom 22s ease-in-out infinite alternate;
-}
-@keyframes heroZoom{ to{ transform: scale(1.12);} }
-.hero::before{
-  content:''; position:absolute; inset:0; z-index:-1;
   background:
-    linear-gradient(90deg, rgba(11,20,28,.94) 0%, rgba(11,20,28,.82) 38%, rgba(11,20,28,.35) 62%, rgba(11,20,28,.15) 100%),
-    linear-gradient(0deg, rgba(11,20,28,.85) 0%, rgba(11,20,28,.05) 45%);
+    radial-gradient(ellipse at 20% 0%,rgba(212,175,55,.14),transparent 55%),
+    radial-gradient(ellipse at 85% 90%,rgba(23,58,102,.9),transparent 55%),
+    linear-gradient(180deg,var(--navy-0) 0%,var(--navy-1) 45%,var(--navy-2) 100%);
 }
-.hero::after{
-  content:''; position:absolute; inset:0; z-index:-1; pointer-events:none;
-  background: radial-gradient(80% 60% at 15% 45%, rgba(201,169,97,.12), transparent 60%);
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(212,175,55,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(212,175,55,.05) 1px,transparent 1px);
+  background-size:70px 70px;
+  mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%);
+  pointer-events:none;
 }
-
-.hero-inner{
-  display:grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, .8fr);
-  gap: 40px;
-  align-items:center;
-  width:100%;
-}
-
-.hero-content{ max-width: 660px; }
+.hero-inner{position:relative;z-index:2;text-align:center;max-width:900px;margin:0 auto}
 
 .hero-eyebrow{
-  display:inline-flex; align-items:center; gap:10px;
-  padding: 8px 18px 8px 12px;
-  border-radius: 100px;
-  background: rgba(201,169,97,.14);
-  border: 1px solid rgba(201,169,97,.4);
-  color: var(--gold-bright);
-  font-size: 13px; font-weight: 700; letter-spacing: 2px;
-  margin-bottom: 24px;
-  backdrop-filter: blur(8px);
+  display:inline-flex;align-items:center;gap:10px;
+  padding:8px 20px;
+  background:rgba(212,175,55,.1);
+  border:1px solid rgba(212,175,55,.35);
+  border-radius:50px;
+  color:var(--gold-2);
+  font-weight:800;
+  font-size:.85rem;
+  margin-bottom:26px;
+  letter-spacing:.5px;
 }
 .hero-eyebrow .dot{
-  width:7px; height:7px; border-radius:50%;
-  background: var(--gold-bright);
-  box-shadow: 0 0 0 4px rgba(201,169,97,.25);
-  animation: pulse 2s infinite;
+  width:7px;height:7px;border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 12px var(--gold);
+  animation:pulse 2s infinite;
 }
 @keyframes pulse{
-  0%,100%{ box-shadow: 0 0 0 4px rgba(201,169,97,.25);}
-  50%{ box-shadow: 0 0 0 9px rgba(201,169,97,0);}
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.6;transform:scale(1.3)}
 }
 
 .hero-title{
-  font-size: clamp(48px, 6.6vw, 92px);
-  line-height: 1;
-  margin-bottom: 6px;
-  letter-spacing: -0.02em;
+  font-family:'Cairo',sans-serif;
+  font-size:clamp(1.9rem,5.2vw,3.4rem);
+  font-weight:900;
+  color:var(--white);
+  line-height:1.25;
+  margin-bottom:14px;
+  letter-spacing:-.5px;
 }
-.hero-title .gold{
-  background: linear-gradient(135deg, var(--gold-bright) 0%, #F5E4B8 45%, var(--gold-deep) 100%);
-  -webkit-background-clip: text; background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hero-title .city{
   display:inline-block;
-  text-shadow: 0 20px 60px rgba(201,169,97,.25);
-}
-.hero-sub{
-  font-family:'Cairo'; font-weight: 700;
-  font-size: clamp(20px, 2.4vw, 30px);
-  color: #EFE9DF;
-  letter-spacing: 6px;
-  margin-bottom: 26px;
-  padding-right: 4px;
-}
-
-.hero-city{
-  display:flex; align-items:center; gap: 18px;
-  margin: 6px 0 30px;
-}
-.hero-city .line{
-  flex: 0 0 60px; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold));
-}
-.hero-city .city-name{
-  font-family:'Cairo'; font-weight:900;
-  font-size: clamp(30px, 3.8vw, 52px);
-  letter-spacing: 2px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #E7DFCB 100%);
-  -webkit-background-clip:text; background-clip:text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 10px 40px rgba(0,0,0,.5);
-}
-.hero-city .pin{ color: var(--gold-bright); font-size: 22px; }
-
-.hero-desc{
-  font-size: 17px; color: #D5CEC0; max-width: 520px;
-  margin-bottom: 34px; font-weight: 400;
-}
-
-/* Phone chips */
-.phone-row{
-  display:flex; flex-wrap: wrap; gap: 14px;
-  margin-bottom: 34px;
-}
-.phone-chip{
-  display:inline-flex; align-items:center; gap: 12px;
-  padding: 14px 22px;
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(201,169,97,.5);
-  border-radius: 100px;
-  backdrop-filter: blur(10px);
-  color: #fff;
-  transition:.3s;
-  min-width: 210px;
-}
-.phone-chip:hover{
-  background: rgba(201,169,97,.16);
-  border-color: var(--gold-bright);
-  transform: translateY(-2px);
-  box-shadow: 0 16px 34px -14px rgba(201,169,97,.6);
-}
-.phone-chip .ico{
-  width: 38px; height: 38px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
-  display:grid; place-items:center; color:#0B141C; flex-shrink:0;
-  box-shadow: inset 0 -2px 0 rgba(0,0,0,.15);
-}
-.phone-chip .num{
-  font-family:'Cairo'; font-weight: 900;
-  font-size: 22px; letter-spacing: 1px; direction: ltr;
-  color: #FFF7E3;
-}
-.phone-chip .lbl{ font-size: 11px; color: var(--gold-bright); letter-spacing: 2px;}
-
-/* Hero stats mini */
-.hero-mini{
-  display:flex; gap: 34px; flex-wrap: wrap;
-  padding-top: 26px;
-  border-top: 1px solid rgba(255,255,255,.12);
-}
-.hero-mini .item .n{
-  font-family:'Cairo'; font-weight:900; font-size: 30px; color: var(--gold-bright);
-  line-height:1;
-}
-.hero-mini .item .t{ font-size: 12.5px; color: #B9B2A5; letter-spacing: 1.5px; margin-top: 6px;}
-
-/* ================= MARQUEE ================= */
-.marquee{
-  background: linear-gradient(90deg, var(--ink) 0%, var(--ink-2) 100%);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  padding: 18px 0;
-  overflow: hidden;
-  position: relative;
-}
-.marquee::before, .marquee::after{
-  content:''; position:absolute; top:0; bottom:0; width: 120px; z-index:2; pointer-events:none;
-}
-.marquee::before{ right:0; background: linear-gradient(90deg, transparent, var(--ink));}
-.marquee::after{ left:0; background: linear-gradient(-90deg, transparent, var(--ink));}
-.marquee-track{
-  display:flex; gap: 40px; white-space: nowrap;
-  animation: scroll 38s linear infinite;
-  width: max-content;
-}
-@keyframes scroll{
-  from{ transform: translateX(0);}
-  to{ transform: translateX(50%);}
-}
-.marquee-item{
-  display:inline-flex; align-items:center; gap: 14px;
-  color: #E7DFCB; font-weight: 600; font-size: 15px;
-  letter-spacing: .5px;
-}
-.marquee-item .sep{ color: var(--gold); font-size: 18px; }
-.marquee-item .hl{ color: var(--gold-bright); font-weight: 700;}
-
-/* ================= SECTION BASE ================= */
-section{ position: relative; }
-.sec{ padding: 100px 0; }
-.sec-head{ text-align:center; max-width: 780px; margin: 0 auto 60px; }
-.sec-tag{
-  display:inline-block;
-  color: var(--gold-deep); font-weight: 800; font-size: 13px;
-  letter-spacing: 5px; margin-bottom: 16px;
-  position: relative; padding: 0 30px;
-}
-.sec-tag::before, .sec-tag::after{
-  content:''; position:absolute; top:50%; width: 18px; height:1px; background: var(--gold);
-}
-.sec-tag::before{ right:0;}
-.sec-tag::after{ left:0;}
-.sec-title{
-  font-size: clamp(30px, 3.6vw, 46px);
-  color: var(--ink);
-  margin-bottom: 16px;
-}
-.sec-title .gold{ color: var(--gold-deep); }
-.sec-desc{ color: var(--text-muted); font-size: 17px; max-width: 640px; margin: 0 auto;}
-
-/* ================= ACTION SECTION ================= */
-.action-sec{
-  background:
-    radial-gradient(80% 120% at 50% 0%, #FFFDF7 0%, var(--cream) 55%),
-    var(--cream);
-  padding: 110px 0 90px;
-  position: relative;
-}
-.action-sec::before{
-  content:''; position:absolute; top:0; left:50%; transform: translateX(-50%);
-  width: 70%; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-}
-
-.entry-head{ text-align:center; margin-bottom: 55px;}
-.entry-head .kicker{
-  display:inline-flex; align-items:center; gap: 10px;
-  padding: 8px 22px;
-  border-radius: 100px;
-  background: #fff;
-  border: 1px solid var(--line);
-  color: var(--gold-deep);
-  font-weight: 800; letter-spacing: 2px; font-size: 13px;
-  margin-bottom: 20px;
-  box-shadow: 0 12px 30px -18px rgba(201,169,97,.7);
-}
-.entry-head h2{
-  font-size: clamp(36px, 5vw, 62px);
-  color: var(--ink);
-  line-height: 1.05;
-  margin-bottom: 16px;
-}
-.entry-head h2 .u{
-  position:relative; display:inline-block;
-  background: linear-gradient(180deg, transparent 62%, rgba(201,169,97,.45) 62%);
-  padding: 0 6px;
-}
-.entry-head p{ color: var(--text-muted); font-size: 18px; max-width: 560px; margin: 0 auto;}
-
-/* Cards grid */
-.action-grid{
-  display:grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 40px;
-  align-items: stretch;
-  max-width: 1120px;
-  margin: 0 auto;
-}
-
-.action-card{
-  background: #fff;
-  border-radius: var(--radius-lg);
-  padding: 40px 34px;
-  border: 1px solid #EAE2D3;
-  box-shadow: 0 26px 60px -34px rgba(11,20,28,.4);
-  display:flex; flex-direction: column;
+  color:var(--gold);
+  font-size:1.15em;
   position:relative;
-  transition: .35s ease;
-  overflow: hidden;
+  padding:0 6px;
 }
-.action-card::before{
-  content:''; position:absolute; top:0; right:0; left:0; height: 5px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+.hero-title .city::after{
+  content:'';position:absolute;left:0;right:0;bottom:.05em;
+  height:.12em;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  border-radius:2px;
+  opacity:.5;
+}
+
+.hero-sub{
+  font-size:clamp(1.05rem,2.4vw,1.35rem);
+  color:var(--text-on-dark);
+  font-weight:500;
+  margin-bottom:36px;
+  max-width:720px;
+  margin-left:auto;margin-right:auto;
+}
+
+/* CTA Block */
+.cta-block{
+  margin-top:20px;
+  padding:32px 24px;
+  background:linear-gradient(180deg,rgba(212,175,55,.08),rgba(212,175,55,.02));
+  border:1px solid rgba(212,175,55,.28);
+  border-radius:var(--radius-lg);
+  position:relative;
+}
+.cta-block::before{
+  content:'';position:absolute;
+  top:0;left:20%;right:20%;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  border-radius:2px;
+}
+.cta-block h2{
+  font-size:clamp(1.35rem,3.2vw,1.9rem);
+  font-weight:900;
+  color:var(--white);
+  margin-bottom:14px;
+}
+.cta-block p{
+  color:var(--text-muted-dark);
+  font-size:1rem;
+  margin-bottom:26px;
+  max-width:560px;
+  margin-left:auto;margin-right:auto;
+}
+
+/* Animated Arrow */
+.arrow-down{
+  display:block;
+  width:52px;height:70px;
+  margin:26px auto 18px;
+  color:var(--gold);
+  animation:bounceArrow 1.8s ease-in-out infinite;
+}
+@keyframes bounceArrow{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(14px)}
+}
+.arrow-down svg{width:100%;height:100%;filter:drop-shadow(0 4px 12px rgba(212,175,55,.6))}
+
+.arrow-label{
+  display:block;
+  color:var(--gold-2);
+  font-weight:800;
+  font-size:1rem;
+  margin-bottom:24px;
+}
+
+/* 3D Gold Button */
+.btn-gold-3d{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  padding:20px 44px;
+  background:linear-gradient(180deg,#F1D87B 0%,var(--gold-2) 45%,var(--gold) 60%,var(--gold-3) 100%);
+  color:var(--navy-0);
+  border-radius:60px;
+  font-family:'Cairo',sans-serif;
+  font-weight:900;
+  font-size:1.1rem;
+  letter-spacing:.3px;
+  border:1px solid #A07E1E;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.8),
+    inset 0 -3px 0 rgba(0,0,0,.15),
+    0 10px 24px rgba(212,175,55,.4),
+    0 18px 44px rgba(212,175,55,.25);
+  transition:all .18s cubic-bezier(.4,0,.2,1);
+  cursor:pointer;
+  position:relative;
+  overflow:hidden;
+  text-shadow:0 1px 0 rgba(255,255,255,.4);
+}
+.btn-gold-3d::before{
+  content:'';position:absolute;top:0;left:-100%;
+  width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);
+  transition:left .6s;
+}
+.btn-gold-3d:hover::before{left:100%}
+.btn-gold-3d:hover{
+  transform:translateY(-3px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.9),
+    inset 0 -3px 0 rgba(0,0,0,.18),
+    0 14px 30px rgba(212,175,55,.5),
+    0 24px 56px rgba(212,175,55,.3);
+}
+.btn-gold-3d:active{
+  transform:translateY(1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.7),
+    inset 0 -1px 0 rgba(0,0,0,.15),
+    0 6px 14px rgba(212,175,55,.35);
+}
+.btn-gold-3d svg{width:24px;height:24px;flex-shrink:0}
+
+/* Counter */
+.counter-box{
+  margin-top:28px;
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 26px;
+  background:rgba(5,16,31,.7);
+  border:1px solid rgba(212,175,55,.35);
+  border-radius:60px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+.counter-box .icon{
+  width:38px;height:38px;
+  border-radius:50%;
+  background:linear-gradient(180deg,var(--gold-2),var(--gold));
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-gold);
+}
+.counter-box .icon svg{width:20px;height:20px;color:var(--navy-0)}
+.counter-label{
+  font-size:.85rem;
+  color:var(--text-muted-dark);
+  font-weight:600;
+  display:block;
+}
+.counter-value{
+  font-family:'Cairo',sans-serif;
+  font-size:1.6rem;
+  font-weight:900;
+  color:var(--gold);
+  line-height:1;
+  letter-spacing:1px;
+}
+.counter-value.flash{animation:counterFlash .6s ease}
+@keyframes counterFlash{
+  0%,100%{transform:scale(1);color:var(--gold)}
+  50%{transform:scale(1.15);color:var(--gold-2)}
+}
+
+/* ============================================================
+   SECTIONS — LIGHT BACKGROUNDS
+   ============================================================ */
+.light-bg{
+  background:linear-gradient(180deg,#FFFFFF 0%,#F7F9FC 100%);
+  color:var(--text);
+}
+.light-bg .section-title{color:var(--navy-1)}
+.light-bg .section-sub{color:var(--text-2)}
+
+.section-title{
+  font-family:'Cairo',sans-serif;
+  font-size:clamp(1.6rem,3.6vw,2.4rem);
+  font-weight:900;
+  text-align:center;
+  margin-bottom:14px;
+  line-height:1.3;
+  letter-spacing:-.5px;
+}
+.section-title .accent{color:var(--gold)}
+.section-sub{
+  text-align:center;
+  font-size:1rem;
+  max-width:680px;
+  margin:0 auto 46px;
+  font-weight:500;
+}
+.divider{
+  width:80px;height:4px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-3));
+  margin:0 auto 22px;
+  border-radius:2px;
+}
+
+/* ============================================================
+   "SELL YOUR APARTMENT?" CTA BANNER
+   ============================================================ */
+.sell-banner{
+  background:linear-gradient(135deg,var(--navy-1) 0%,var(--navy-2) 50%,var(--navy-3) 100%);
+  position:relative;
+  overflow:hidden;
+  padding:80px 0;
+}
+.sell-banner::before{
+  content:'';position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(212,175,55,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(212,175,55,.04) 1px,transparent 1px);
+  background-size:50px 50px;
+}
+.sell-inner{
+  position:relative;z-index:2;
+  text-align:center;max-width:820px;margin:0 auto;
+}
+.sell-inner h2{
+  font-size:clamp(1.6rem,3.8vw,2.4rem);
+  font-weight:900;
+  color:var(--white);
+  margin-bottom:14px;
+  line-height:1.3;
+}
+.sell-inner h2 .gold{color:var(--gold)}
+.sell-inner p{
+  color:var(--text-on-dark);
+  font-size:1.05rem;
+  margin-bottom:30px;
   opacity:.9;
 }
-.action-card.buy{ --accent: var(--blue-2);}
-.action-card.sell{ --accent: var(--green-2);}
-
-.action-card:hover{
-  transform: translateY(-6px);
-  box-shadow: 0 40px 80px -40px rgba(11,20,28,.5);
-  border-color: var(--accent);
+.sell-arrow{
+  display:block;
+  width:44px;height:60px;
+  margin:22px auto 18px;
+  color:var(--gold);
+  animation:bounceArrow 1.8s ease-in-out infinite;
 }
-.action-card .card-ico{
-  width: 62px; height: 62px; border-radius: 16px;
-  display:grid; place-items:center; margin-bottom: 22px;
-  color:#fff;
-  box-shadow: inset 0 -3px 0 rgba(0,0,0,.22), 0 14px 28px -14px var(--accent);
-}
-.buy .card-ico{ background: linear-gradient(135deg, var(--blue-2), var(--blue));}
-.sell .card-ico{ background: linear-gradient(135deg, var(--green-2), var(--green));}
-
-.action-card h3{
-  font-size: 26px; color: var(--ink); margin-bottom: 10px;
-}
-.action-card .lead{
-  color: var(--text-muted); font-size: 15.5px; line-height: 1.9; flex-grow: 1;
-  margin-bottom: 26px;
+.sell-arrow svg{width:100%;height:100%;filter:drop-shadow(0 4px 12px rgba(212,175,55,.5))}
+.sell-arrow-label{
+  display:block;
+  color:var(--gold-2);
+  font-weight:800;
+  font-size:.95rem;
+  margin-bottom:22px;
 }
 
-/* 3D BUTTON */
-.btn-3d{
-  position: relative;
-  display:flex; align-items:center; justify-content: center; gap: 12px;
-  width: 100%;
-  padding: 20px 24px;
-  border-radius: 16px;
-  font-family:'Cairo'; font-weight: 900;
-  font-size: 20px;
-  letter-spacing: .3px;
-  color:#fff;
-  transition: transform .12s ease, box-shadow .18s ease, filter .2s;
-  transform-style: preserve-3d;
-  border: 1px solid rgba(255,255,255,.18);
-  cursor: pointer;
-  user-select: none;
-}
-.btn-3d .b-ico{
-  width: 34px; height: 34px; border-radius: 10px;
-  background: rgba(255,255,255,.18);
-  display:grid; place-items:center;
-  border: 1px solid rgba(255,255,255,.28);
-}
-.btn-3d.buy-btn{
-  background: linear-gradient(180deg, #3A7DD1 0%, var(--blue) 55%, #123A75 100%);
-  box-shadow:
-    0 10px 0 0 #0D2C59,
-    0 22px 34px -14px rgba(27,79,156,.75),
-    inset 0 2px 0 rgba(255,255,255,.35),
-    inset 0 -3px 0 rgba(0,0,0,.28);
-}
-.btn-3d.sell-btn{
-  background: linear-gradient(180deg, #2E8A73 0%, var(--green) 55%, #103D31 100%);
-  box-shadow:
-    0 10px 0 0 #0B2C23,
-    0 22px 34px -14px rgba(29,91,74,.75),
-    inset 0 2px 0 rgba(255,255,255,.32),
-    inset 0 -3px 0 rgba(0,0,0,.28);
-}
-.btn-3d:hover{ filter: brightness(1.06); transform: translateY(-3px);
-  box-shadow:
-    0 13px 0 0 #0D2C59,
-    0 30px 46px -18px rgba(27,79,156,.85),
-    inset 0 2px 0 rgba(255,255,255,.35),
-    inset 0 -3px 0 rgba(0,0,0,.28);
-}
-.btn-3d.sell-btn:hover{
-  box-shadow:
-    0 13px 0 0 #0B2C23,
-    0 30px 46px -18px rgba(29,91,74,.85),
-    inset 0 2px 0 rgba(255,255,255,.32),
-    inset 0 -3px 0 rgba(0,0,0,.28);
-}
-.btn-3d:active{
-  transform: translateY(6px);
-  box-shadow:
-    0 4px 0 0 #0D2C59,
-    0 8px 16px -8px rgba(27,79,156,.7),
-    inset 0 2px 0 rgba(255,255,255,.35),
-    inset 0 -2px 0 rgba(0,0,0,.3);
-}
-.btn-3d.sell-btn:active{
-  box-shadow:
-    0 4px 0 0 #0B2C23,
-    0 8px 16px -8px rgba(29,91,74,.7),
-    inset 0 2px 0 rgba(255,255,255,.32),
-    inset 0 -2px 0 rgba(0,0,0,.3);
-}
+/* ============================================================
+   PROPERTY IMAGES SHOWCASE
+   ============================================================ */
+.showcase{padding:80px 0;background:var(--navy-0)}
+.showcase .section-title{color:var(--white)}
+.showcase .section-sub{color:var(--text-muted-dark)}
 
-/* Commission card */
-.commission{
-  align-self: center;
-  text-align: center;
-  padding: 34px 30px;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(160deg, var(--ink) 0%, var(--ink-2) 100%);
-  border: 1px solid var(--line);
-  box-shadow: 0 30px 60px -30px rgba(11,20,28,.8), inset 0 1px 0 rgba(255,255,255,.06);
-  min-width: 220px;
-  position: relative;
-  overflow: hidden;
-}
-.commission::before{
-  content:''; position:absolute; inset:-40%;
-  background: conic-gradient(from 0deg, transparent 0 70%, rgba(201,169,97,.35) 85%, transparent 100%);
-  animation: spin 6s linear infinite;
-  z-index:0;
-}
-@keyframes spin{ to{ transform: rotate(360deg);} }
-.commission-inner{
-  position: relative; z-index:1;
-  background: linear-gradient(160deg, var(--ink) 0%, var(--ink-2) 100%);
-  border-radius: calc(var(--radius-lg) - 6px);
-  padding: 24px 18px;
-}
-.commission .big{
-  font-family:'Cairo'; font-weight: 900;
-  font-size: 76px; line-height: 1;
-  background: linear-gradient(180deg, #F5E4B8, var(--gold) 60%, var(--gold-deep));
-  -webkit-background-clip:text; background-clip:text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 6px 18px rgba(201,169,97,.55));
-}
-.commission .lbl-big{
-  font-family:'Cairo'; font-weight:900; font-size: 22px; color: #fff;
-  letter-spacing: 4px; margin-top: 4px;
-}
-.commission .sep{
-  width: 40px; height:2px; background: var(--gold); margin: 14px auto;
-}
-.commission .note{
-  font-size: 13px; color: #B9B2A5; line-height: 1.7; max-width: 180px; margin: 0 auto;
-}
-
-/* ================= COUNTERS ================= */
-.counters{
-  padding: 90px 0;
-  background: linear-gradient(180deg, var(--cream) 0%, #FFFDF7 100%);
-}
-.counter-grid{
+.showcase-grid{
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
 }
-.counter-card{
-  background: #fff;
-  border-radius: var(--radius-lg);
-  padding: 40px 36px;
-  border: 1px solid #EAE2D3;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 24px 55px -34px rgba(11,20,28,.35);
-  transition: .35s;
+.showcase-grid .tile{
+  aspect-ratio:1;
+  border-radius:16px;
+  overflow:hidden;
+  position:relative;
+  background:var(--navy-2);
+  border:1px solid var(--border-dark);
+  transition:all .5s;
+  cursor:pointer;
 }
-.counter-card:hover{ transform: translateY(-4px); border-color: var(--gold); }
-.counter-card::after{
-  content:''; position:absolute; left:-30px; bottom:-30px;
-  width: 160px; height: 160px; border-radius:50%;
-  background: radial-gradient(circle, var(--gold) 0%, transparent 65%);
-  opacity:.08;
+.showcase-grid .tile:hover{
+  transform:translateY(-6px);
+  border-color:rgba(212,175,55,.5);
+  box-shadow:0 24px 50px rgba(0,0,0,.5);
 }
-.counter-card .head{
-  display:flex; align-items:center; gap: 14px; margin-bottom: 18px;
+.showcase-grid .tile img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .7s;
 }
-.counter-card .head .ci{
-  width: 48px; height: 48px; border-radius: 12px; display:grid; place-items:center;
-  color:#fff; flex-shrink:0;
+.showcase-grid .tile:hover img{transform:scale(1.08)}
+.showcase-grid .tile.tall{grid-row:span 2;aspect-ratio:auto}
+.showcase-grid .tile.wide{grid-column:span 2;aspect-ratio:2/1}
+.showcase-grid .tile-label{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:16px;
+  background:linear-gradient(to top,rgba(5,16,31,.95) 20%,transparent);
+  color:var(--white);
+  font-weight:700;
+  font-size:.88rem;
+  display:flex;align-items:center;gap:8px;
 }
-.counter-card.sell-c .head .ci{ background: linear-gradient(135deg, var(--green-2), var(--green)); box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);}
-.counter-card.buy-c  .head .ci{ background: linear-gradient(135deg, var(--blue-2), var(--blue)); box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);}
-.counter-card .head .t{ font-family:'Cairo'; font-weight: 700; font-size: 18px; color: var(--ink);}
-.counter-card .head .st{ font-size: 12px; color: var(--text-muted); letter-spacing: 1px;}
-
-.counter-num{
-  font-family:'Cairo'; font-weight: 900;
-  font-size: clamp(64px, 9vw, 96px);
-  line-height: 1;
-  color: var(--ink);
-  letter-spacing: -0.02em;
-  display:flex; align-items: baseline; gap: 6px;
-  transition: color .3s;
-}
-.counter-num .unit{
-  font-size: 16px; font-weight: 700; color: var(--gold-deep); letter-spacing: 3px;
-}
-.counter-num.bump{ animation: bump .7s cubic-bezier(.34,1.56,.64,1);}
-@keyframes bump{
-  0%{ transform: scale(1); color: var(--gold-deep);}
-  40%{ transform: scale(1.18); color: var(--gold);}
-  100%{ transform: scale(1); color: var(--ink);}
+.showcase-grid .tile-label .gold-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 10px var(--gold);
 }
 
-/* ================= EXPERIENCE ================= */
-.experience{
-  padding: 110px 0;
-  background: linear-gradient(160deg, var(--ink) 0%, var(--ink-2) 60%, #16293a 100%);
-  color: #E7DFCB;
-  position: relative;
-  overflow: hidden;
-}
-.experience::before{
-  content:''; position:absolute; inset:0;
-  background:
-    radial-gradient(60% 80% at 100% 0%, rgba(201,169,97,.14), transparent 60%),
-    radial-gradient(50% 70% at 0% 100%, rgba(201,169,97,.08), transparent 60%);
-}
-.experience .container{ position: relative; z-index:1;}
-.exp-grid{
+/* ============================================================
+   EXPERIENCE / ABOUT
+   ============================================================ */
+.about-grid{
   display:grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 70px;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
   align-items:center;
 }
-.exp-media{
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: 0 40px 80px -30px rgba(0,0,0,.7);
-  border: 1px solid var(--line);
-  aspect-ratio: 4/5;
+.about-text h3{
+  font-size:clamp(1.4rem,3vw,2rem);
+  font-weight:900;
+  color:var(--navy-1);
+  margin-bottom:16px;
+  line-height:1.3;
 }
-.exp-media img{ width:100%; height:100%; object-fit: cover; transition: 1s;}
-.exp-media:hover img{ transform: scale(1.06);}
-.exp-media::after{
-  content:''; position:absolute; inset:0;
-  background: linear-gradient(0deg, rgba(11,20,28,.7) 0%, transparent 55%);
+.about-text p{
+  color:var(--text-2);
+  font-size:1rem;
+  line-height:1.9;
+  margin-bottom:16px;
 }
-.exp-media .badge{
-  position:absolute; bottom: 22px; right: 22px; left: 22px;
-  display:flex; align-items:center; gap: 14px;
-  padding: 16px 20px;
-  background: rgba(11,20,28,.75);
-  backdrop-filter: blur(14px);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  z-index: 2;
-}
-.exp-media .badge .ico{
-  width: 44px; height: 44px; border-radius: 10px;
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
-  display:grid; place-items:center; color: var(--ink); flex-shrink:0;
-}
-.exp-media .badge .txt b{ color:#fff; display:block; font-family:'Cairo'; font-size: 15px;}
-.exp-media .badge .txt span{ font-size: 12.5px; color: var(--gold-bright); letter-spacing: 1px;}
-
-.exp-content .sec-tag{ text-align: right; padding:0;}
-.exp-content .sec-tag::before, .exp-content .sec-tag::after{ display:none;}
-.exp-content h2{
-  font-size: clamp(30px, 3.8vw, 48px);
-  color: #fff;
-  margin-bottom: 22px;
-}
-.exp-content h2 .gold{ color: var(--gold-bright);}
-.exp-content p{
-  color: #B9C2CB; font-size: 17px; line-height: 2; margin-bottom: 26px;
-}
-.exp-points{
-  display:grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px;
-}
-.exp-point{
-  display:flex; align-items:flex-start; gap: 12px;
-  padding: 18px; border-radius: 14px;
-  background: rgba(255,255,255,.03);
-  border: 1px solid rgba(201,169,97,.18);
-  transition:.3s;
-}
-.exp-point:hover{ background: rgba(201,169,97,.08); border-color: var(--gold);}
-.exp-point .pic{
-  width: 34px; height: 34px; border-radius: 9px; flex-shrink:0;
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
-  display:grid; place-items:center; color: var(--ink);
-}
-.exp-point b{ display:block; color:#fff; font-family:'Cairo'; font-size: 15px; margin-bottom: 2px;}
-.exp-point span{ font-size: 13px; color: #97A3AE;}
-
-/* ================= GALLERY ================= */
-.gallery-sec{
-  padding: 110px 0;
-  background: var(--cream);
-}
-.gallery-grid{
+.about-features{
   display:grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-rows: 210px;
-  gap: 18px;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:22px;
 }
-.g-card{
-  position: relative; border-radius: var(--radius); overflow: hidden;
-  box-shadow: 0 20px 45px -25px rgba(11,20,28,.45);
-  cursor: pointer;
-  border: 1px solid #EAE2D3;
-  transition: .4s;
+.about-features .feat{
+  display:flex;align-items:center;gap:10px;
+  padding:14px;
+  background:#FFFFFF;
+  border:1px solid var(--border);
+  border-radius:12px;
+  box-shadow:var(--shadow-sm);
 }
-.g-card img{
-  width:100%; height:100%; object-fit: cover; transition: 1s ease;
-}
-.g-card:hover img{ transform: scale(1.08);}
-.g-card::after{
-  content:''; position:absolute; inset:0;
-  background: linear-gradient(0deg, rgba(11,20,28,.85) 0%, rgba(11,20,28,.05) 55%);
-  opacity: .85; transition:.3s;
-}
-.g-card:hover::after{ opacity: 1;}
-.g-card .info{
-  position:absolute; bottom:0; right:0; left:0; padding: 20px;
-  color:#fff; z-index:2;
-  transform: translateY(6px); transition:.35s;
-}
-.g-card:hover .info{ transform: translateY(0);}
-.g-card .info .tag{
-  display:inline-block; padding: 4px 12px; border-radius: 100px;
-  background: rgba(201,169,97,.22); border: 1px solid rgba(201,169,97,.5);
-  color: var(--gold-bright); font-size: 11px; font-weight: 700;
-  letter-spacing: 1px; margin-bottom: 8px;
-}
-.g-card .info h4{ font-size: 18px; margin-bottom: 4px;}
-.g-card .info .loc{ font-size: 13px; color:#C9C2B4; display:flex; align-items:center; gap: 5px;}
+.about-features .feat svg{width:22px;height:22px;color:var(--gold);flex-shrink:0}
+.about-features .feat span{font-weight:700;color:var(--navy-1);font-size:.92rem}
 
-.g-1{ grid-column: span 3; grid-row: span 2;}
-.g-2{ grid-column: span 3;}
-.g-3{ grid-column: span 3;}
-.g-4{ grid-column: span 2;}
-.g-5{ grid-column: span 2;}
-.g-6{ grid-column: span 2;}
+.about-image{
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:var(--shadow-lg);
+  aspect-ratio:4/5;
+  position:relative;
+}
+.about-image img{width:100%;height:100%;object-fit:cover}
+.about-image::after{
+  content:'';position:absolute;inset:0;
+  box-shadow:inset 0 0 0 1px rgba(212,175,55,.3);
+  border-radius:20px;
+}
 
-/* ================= HELP BANNER ================= */
-.help-banner{
-  padding: 80px 0;
-  background: linear-gradient(135deg, #FFFDF7 0%, var(--cream-2) 100%);
-  border-top: 1px solid #EAE2D3;
-  border-bottom: 1px solid #EAE2D3;
+/* ============================================================
+   FORM SECTION
+   ============================================================ */
+.form-section{
+  background:
+    radial-gradient(ellipse at 20% 0%,rgba(212,175,55,.08),transparent 55%),
+    linear-gradient(180deg,var(--navy-2) 0%,var(--navy-1) 100%);
+  padding:90px 0;
 }
-.help-inner{
-  display:flex; align-items:center; justify-content: space-between; gap: 40px;
-  padding: 44px 50px;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--ink) 0%, var(--ink-3) 100%);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-  position: relative; overflow: hidden;
+.form-wrapper{
+  max-width:880px;
+  margin:0 auto;
+  background:var(--white);
+  border-radius:24px;
+  padding:0;
+  overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.35);
+  color:var(--text);
 }
-.help-inner::before{
-  content:''; position:absolute; top:-50%; left:-10%; width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(201,169,97,.2), transparent 70%);
+.form-header{
+  background:linear-gradient(135deg,var(--navy-1),var(--navy-3));
+  padding:36px 40px 30px;
+  position:relative;
+  overflow:hidden;
 }
-.help-inner .txt{ position:relative; z-index:1; max-width: 640px;}
-.help-inner h3{
-  color:#fff; font-size: clamp(24px, 2.6vw, 34px); margin-bottom: 10px;
+.form-header::before{
+  content:'';position:absolute;
+  top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,var(--gold-3),var(--gold),var(--gold-2),var(--gold));
 }
-.help-inner h3 .gold{ color: var(--gold-bright);}
-.help-inner p{ color: #B9C2CB; font-size: 16px;}
-.help-inner .btns{ position:relative; z-index:1; display:flex; gap: 14px; flex-shrink:0;}
-.btn-solid{
-  display:inline-flex; align-items:center; gap: 10px;
-  padding: 16px 28px; border-radius: 100px;
-  font-family:'Cairo'; font-weight: 800; font-size: 15px;
-  transition: .28s; white-space: nowrap;
+.form-header::after{
+  content:'';position:absolute;
+  top:-60px;left:-60px;
+  width:220px;height:220px;
+  background:radial-gradient(circle,rgba(212,175,55,.15),transparent 70%);
+  border-radius:50%;
 }
-.btn-gold{
-  background: linear-gradient(180deg, var(--gold-bright), var(--gold-deep));
-  color: var(--ink);
-  box-shadow: 0 12px 28px -12px rgba(201,169,97,.9), inset 0 -2px 0 rgba(0,0,0,.2);
+.form-header h2{
+  color:var(--white);
+  font-size:1.7rem;
+  font-weight:900;
+  margin-bottom:8px;
+  position:relative;z-index:2;
 }
-.btn-gold:hover{ transform: translateY(-2px); box-shadow: 0 20px 36px -14px rgba(201,169,97,1), inset 0 -2px 0 rgba(0,0,0,.2);}
-.btn-outline{
-  background: transparent; color:#E7DFCB; border: 1px solid rgba(201,169,97,.5);
+.form-header p{
+  color:var(--text-on-dark);
+  font-size:.98rem;
+  opacity:.85;
+  position:relative;z-index:2;
 }
-.btn-outline:hover{ background: rgba(201,169,97,.12); border-color: var(--gold-bright); color: var(--gold-bright);}
 
-/* ================= FOOTER ================= */
-.site-footer{
-  background: linear-gradient(180deg, var(--ink) 0%, #060d13 100%);
-  color: #B9C2CB;
-  padding: 70px 0 26px;
-  border-top: 1px solid var(--line);
+.form-body{padding:36px 40px 40px}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.form-group{display:flex;flex-direction:column;gap:8px}
+.form-group.full{grid-column:span 2}
+.form-group label{
+  font-size:.9rem;
+  font-weight:800;
+  color:var(--navy-1);
+}
+.form-group label .req{color:var(--red);margin-right:3px}
+.form-group input,
+.form-group select,
+.form-group textarea{
+  padding:14px 16px;
+  background:#F8FAFC;
+  border:1.5px solid var(--border);
+  border-radius:12px;
+  color:var(--text);
+  font-size:.95rem;
+  font-weight:600;
+  transition:all .3s;
+  width:100%;
+  font-family:'Cairo',sans-serif;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+  color:var(--text-3);
+  font-weight:500;
+  font-size:.9rem;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  outline:none;
+  border-color:var(--gold);
+  background:#FFFFFF;
+  box-shadow:0 0 0 3px rgba(212,175,55,.15);
+}
+.form-group select{
+  cursor:pointer;
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23D4AF37' stroke-width='3'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:left 16px center;
+  padding-left:42px;
+}
+.form-group textarea{resize:vertical;min-height:100px;line-height:1.7}
+
+/* Utilities Checkboxes */
+.util-section{
+  grid-column:span 2;
+  padding:22px;
+  background:#F8FAFC;
+  border:1.5px solid var(--border);
+  border-radius:14px;
+}
+.util-title{
+  font-size:.95rem;
+  font-weight:900;
+  color:var(--navy-1);
+  margin-bottom:16px;
+  display:flex;align-items:center;gap:8px;
+}
+.util-title svg{width:20px;height:20px;color:var(--gold)}
+.util-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.util-item{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 14px;
+  background:#FFFFFF;
+  border:1.5px solid var(--border);
+  border-radius:10px;
+  cursor:pointer;
+  transition:all .25s;
+  font-weight:700;
+  font-size:.88rem;
+  color:var(--text);
+  user-select:none;
+}
+.util-item:hover{border-color:var(--gold-3)}
+.util-item input{
+  width:18px;height:18px;
+  accent-color:var(--gold);
+  cursor:pointer;
+  margin:0;
+  flex-shrink:0;
+}
+.util-item.checked{
+  background:var(--gold-soft);
+  border-color:var(--gold);
+  color:var(--navy-1);
+}
+.util-divider{
+  height:1px;
+  background:var(--border);
+  margin:16px 0;
+  grid-column:span 3;
+}
+
+/* Images note */
+.images-note{
+  grid-column:span 2;
+  padding:20px 22px;
+  background:linear-gradient(135deg,#FFFFFF,var(--gold-soft));
+  border:1.5px dashed rgba(212,175,55,.6);
+  border-radius:14px;
+  display:flex;gap:16px;align-items:flex-start;
+}
+.images-note .icon{
+  width:44px;height:44px;flex-shrink:0;
+  background:linear-gradient(180deg,var(--gold-2),var(--gold));
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-sm);
+}
+.images-note .icon svg{width:24px;height:24px;color:var(--navy-1)}
+.images-note h4{font-size:.95rem;font-weight:900;color:var(--navy-1);margin-bottom:4px}
+.images-note p{font-size:.85rem;color:var(--text-2);line-height:1.7;margin:0}
+
+/* Commission Card */
+.commission-card{
+  grid-column:span 2;
+  padding:26px;
+  background:linear-gradient(135deg,var(--navy-1),var(--navy-3));
+  border-radius:16px;
+  color:var(--white);
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:24px;
+  align-items:center;
+}
+.commission-card::before{
+  content:'';position:absolute;
+  top:-60px;right:-60px;
+  width:200px;height:200px;
+  background:radial-gradient(circle,rgba(212,175,55,.18),transparent 70%);
+  border-radius:50%;
+}
+.commission-num{
+  font-family:'Cairo',sans-serif;
+  font-size:3.4rem;
+  font-weight:900;
+  color:var(--gold);
+  line-height:.9;
+  letter-spacing:-2px;
+  text-shadow:0 6px 20px rgba(212,175,55,.4);
+  position:relative;z-index:2;
+}
+.commission-text{position:relative;z-index:2}
+.commission-text h4{
+  font-size:1.15rem;
+  font-weight:900;
+  margin-bottom:12px;
+  color:var(--gold-2);
+}
+.commission-check{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:12px 14px;
+  background:rgba(212,175,55,.1);
+  border:1.5px solid rgba(212,175,55,.4);
+  border-radius:10px;
+  cursor:pointer;
+  transition:all .3s;
+  font-weight:700;
+  font-size:.88rem;
+  color:var(--white);
+  user-select:none;
+}
+.commission-check:hover{background:rgba(212,175,55,.18)}
+.commission-check input{
+  width:20px;height:20px;
+  accent-color:var(--gold);
+  cursor:pointer;
+  margin-top:2px;
+  flex-shrink:0;
+}
+.commission-check.checked{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:var(--navy-0);
+}
+.commission-check .cb-text{line-height:1.5}
+
+/* Submit */
+.form-submit{
+  grid-column:span 2;
+  margin-top:8px;
+  text-align:center;
+}
+.form-submit .btn-gold-3d{
+  width:100%;
+  font-size:1.15rem;
+  padding:22px 44px;
+}
+
+/* Alerts */
+.alert{
+  grid-column:span 2;
+  padding:14px 18px;
+  border-radius:12px;
+  font-weight:700;
+  font-size:.92rem;
+  display:none;
+  align-items:center;
+  gap:10px;
+}
+.alert.show{display:flex}
+.alert.error{
+  background:#FEF2F2;
+  border:1.5px solid #FECACA;
+  color:#991B1B;
+}
+.alert svg{width:20px;height:20px;flex-shrink:0}
+
+/* ============================================================
+   SUCCESS
+   ============================================================ */
+.success-screen{
+  display:none;
+  padding:50px 40px;
+  text-align:center;
+}
+.success-screen.show{display:block}
+.success-check{
+  width:100px;height:100px;
+  margin:0 auto 26px;
+  background:linear-gradient(135deg,var(--gold-2),var(--gold));
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-gold-lg);
+  animation:successPop .6s cubic-bezier(.34,1.56,.64,1);
+}
+.success-check svg{width:52px;height:52px;color:var(--navy-0)}
+@keyframes successPop{
+  0%{transform:scale(0);opacity:0}
+  60%{transform:scale(1.15)}
+  100%{transform:scale(1);opacity:1}
+}
+.success-screen h2{
+  font-size:1.8rem;
+  font-weight:900;
+  color:var(--navy-1);
+  margin-bottom:14px;
+}
+.success-screen p{
+  color:var(--text-2);
+  font-size:1.02rem;
+  line-height:1.9;
+  margin-bottom:10px;
+}
+.success-order-id{
+  display:inline-block;
+  padding:8px 18px;
+  background:var(--gold-soft);
+  border:1.5px solid var(--gold);
+  border-radius:50px;
+  color:var(--navy-1);
+  font-weight:900;
+  margin:16px 0 26px;
+  font-size:.95rem;
+}
+.success-actions{
+  display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+  margin-top:22px;
+}
+.btn-wa-large{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:16px 30px;
+  background:linear-gradient(135deg,var(--wa-dark),var(--wa));
+  color:var(--white);
+  border-radius:50px;
+  font-weight:800;
+  font-size:1rem;
+  box-shadow:0 12px 30px rgba(37,211,102,.4);
+  transition:all .3s;
+}
+.btn-wa-large:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(37,211,102,.5)}
+.btn-wa-large svg{width:22px;height:22px}
+
+.btn-outline-navy{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:16px 30px;
+  background:transparent;
+  border:2px solid var(--navy-1);
+  color:var(--navy-1);
+  border-radius:50px;
+  font-weight:800;
+  font-size:1rem;
+  transition:all .3s;
+}
+.btn-outline-navy:hover{
+  background:var(--navy-1);
+  color:var(--white);
+  transform:translateY(-3px);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer{
+  background:var(--navy-0);
+  padding:70px 0 0;
+  color:var(--text-on-dark);
+  border-top:1px solid var(--border-dark);
+  position:relative;
+}
+.footer::before{
+  content:'';position:absolute;
+  top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
 }
 .footer-grid{
-  display:grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 50px;
-  padding-bottom: 44px;
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  gap:50px;
+  padding-bottom:50px;
 }
-.f-brand{
-  display:flex; align-items:center; gap: 14px; margin-bottom: 20px;
+.footer-brand .brand{margin-bottom:22px}
+.footer-brand .brand-logo{width:70px;height:70px}
+.footer-brand p{
+  color:var(--text-muted-dark);
+  font-size:.95rem;
+  line-height:1.9;
+  max-width:340px;
+  margin-bottom:20px;
 }
-.f-brand .brand-mark{ width: 52px; height: 52px; font-size: 24px;}
-.f-brand .name{ color:#fff; font-family:'Cairo'; font-weight:900; font-size: 22px;}
-.f-brand .sub{ color: var(--gold-bright); font-size: 12px; letter-spacing: 4px;}
-.footer-grid p{ font-size: 15px; line-height: 2; color: #97A3AE; max-width: 380px;}
-.f-col h4{
-  color:#fff; font-size: 17px; margin-bottom: 22px; position: relative; padding-bottom: 12px;
+.footer-col h4{
+  color:var(--gold);
+  font-size:1.05rem;
+  font-weight:900;
+  margin-bottom:18px;
+  position:relative;
+  padding-bottom:12px;
 }
-.f-col h4::after{
-  content:''; position:absolute; bottom:0; right:0; width: 34px; height: 2px; background: var(--gold);
+.footer-col h4::after{
+  content:'';position:absolute;
+  bottom:0;right:0;
+  width:36px;height:3px;
+  background:var(--gold);
+  border-radius:2px;
 }
-.f-list{ list-style:none; display:flex; flex-direction:column; gap: 14px;}
-.f-list li{ display:flex; align-items:center; gap: 10px; font-size: 15px; color: #B9C2CB;}
-.f-list li a{ display:flex; align-items:center; gap: 10px; transition:.25s;}
-.f-list li a:hover{ color: var(--gold-bright);}
-.f-list .ico{ color: var(--gold); flex-shrink:0;}
-.f-phone{
-  direction: ltr; font-family:'Cairo'; font-weight: 900; font-size: 18px;
-  color:#fff; letter-spacing: 1px;
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul a{
+  color:var(--text-muted-dark);
+  font-size:.92rem;
+  transition:all .3s;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
 }
-.f-phone:hover{ color: var(--gold-bright) !important;}
+.footer-col ul a::before{
+  content:'‹';
+  color:var(--gold);
+  font-weight:900;
+  font-size:1.1rem;
+}
+.footer-col ul a:hover{color:var(--gold-2);transform:translateX(-4px)}
+
+.footer-contact-item{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:14px;
+  color:var(--text-muted-dark);
+  font-size:.95rem;
+}
+.footer-contact-item svg{width:18px;height:18px;color:var(--gold);flex-shrink:0}
+.footer-contact-item a{
+  direction:ltr;
+  font-weight:800;
+  color:var(--white);
+  transition:color .3s;
+  letter-spacing:.5px;
+}
+.footer-contact-item a:hover{color:var(--gold-2)}
 
 .footer-bottom{
-  padding-top: 26px;
-  display:flex; align-items:center; justify-content: space-between; gap: 20px;
-  flex-wrap: wrap;
-  font-size: 13.5px; color: #6C7A88;
-}
-.footer-bottom .tags{ display:flex; gap: 10px; flex-wrap:wrap;}
-.footer-bottom .tag{
-  padding: 5px 14px; border-radius: 100px;
-  border: 1px solid rgba(255,255,255,.1); font-size: 12px;
-}
-.footer-bottom .admin-link{
-  color: #4D5A67; cursor: pointer; transition:.25s; font-size: 12px;
-}
-.footer-bottom .admin-link:hover{ color: var(--gold);}
-
-/* ================= MODAL ================= */
-.modal-overlay{
-  position: fixed; inset:0; z-index: 1000;
-  background: rgba(6,13,19,.82);
-  backdrop-filter: blur(10px);
-  display:flex; align-items: center; justify-content: center;
-  padding: 24px;
-  opacity: 0; visibility: hidden;
-  transition: .35s ease;
-  overflow-y: auto;
-}
-.modal-overlay.active{ opacity:1; visibility: visible;}
-.modal{
-  background: #FFFDF9;
-  width: min(640px, 100%);
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 50px 100px -30px rgba(0,0,0,.7);
-  transform: translateY(24px) scale(.98);
-  transition: .4s cubic-bezier(.34,1.3,.64,1);
-  max-height: 92vh; display: flex; flex-direction: column;
-  border: 1px solid rgba(201,169,97,.25);
-}
-.modal-overlay.active .modal{ transform: translateY(0) scale(1);}
-
-.modal-head{
-  padding: 26px 32px 22px;
-  background: linear-gradient(135deg, var(--ink) 0%, var(--ink-3) 100%);
-  color:#fff;
-  position: relative;
-  flex-shrink: 0;
-}
-.modal-head::after{
-  content:''; position:absolute; bottom:0; right:32px; left:32px; height: 1px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-}
-.modal-head .m-tag{
-  display:inline-flex; align-items:center; gap:8px;
-  padding: 5px 14px; border-radius: 100px;
-  background: rgba(201,169,97,.18); border: 1px solid rgba(201,169,97,.4);
-  color: var(--gold-bright); font-size: 12px; font-weight: 700;
-  letter-spacing: 2px; margin-bottom: 12px;
-}
-.modal-head h3{
-  font-size: 26px; color:#fff; margin-bottom: 6px;
-}
-.modal-head p{ font-size: 14.5px; color: #B9C2CB;}
-.modal-close{
-  position:absolute; top: 20px; left: 22px;
-  width: 38px; height: 38px; border-radius: 50%;
-  background: rgba(255,255,255,.08); color:#fff;
-  display:grid; place-items:center; font-size: 20px;
-  transition:.25s; border: 1px solid rgba(255,255,255,.12);
-}
-.modal-close:hover{ background: rgba(255,60,60,.25); border-color: rgba(255,60,60,.5); transform: rotate(90deg);}
-
-.modal-body{
-  padding: 28px 32px 32px;
-  overflow-y: auto;
-  flex: 1;
-}
-.form-grid{
-  display:grid; grid-template-columns: 1fr 1fr; gap: 18px;
-}
-.field{ display:flex; flex-direction:column; gap: 8px;}
-.field.full{ grid-column: 1 / -1;}
-.field label{
-  font-size: 14px; font-weight: 700; color: var(--ink); display:flex; align-items:center; gap: 6px;
-}
-.field label .req{ color: #D93B3B; font-size: 16px;}
-.field input, .field select, .field textarea{
-  width:100%;
-  padding: 14px 16px;
-  border-radius: 12px;
-  border: 1.5px solid #E2DACB;
-  background: #fff;
-  font-family: inherit;
-  font-size: 15px;
-  color: var(--text-dark);
-  transition: .22s;
-  outline: none;
-}
-.field input:focus, .field select:focus, .field textarea:focus{
-  border-color: var(--gold);
-  box-shadow: 0 0 0 4px rgba(201,169,97,.15);
-}
-.field input::placeholder, .field textarea::placeholder{ color: #A9A296;}
-
-.range-row{ display:flex; align-items:center; gap: 12px;}
-.range-row .sep{ color: var(--text-muted); font-weight: 700; padding-top: 12px;}
-
-/* Areas checkboxes */
-.areas-grid{
-  display:grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 10px;
-  margin-top: 4px;
-}
-.area-chip{
-  position: relative;
-  cursor: pointer;
-}
-.area-chip input{ position:absolute; opacity:0; pointer-events:none;}
-.area-chip .chip{
-  display:flex; align-items:center; justify-content: center; gap: 8px;
-  padding: 12px 10px;
-  border-radius: 12px;
-  border: 1.5px solid #E2DACB;
-  background: #fff;
-  font-size: 14px; font-weight: 600;
-  color: var(--text-dark);
-  transition:.22s;
+  border-top:1px solid var(--border-dark);
+  padding:24px 0;
   text-align:center;
+  color:var(--text-muted-dark);
+  font-size:.85rem;
 }
-.area-chip .chip .box{
-  width: 18px; height: 18px; border-radius: 5px;
-  border: 2px solid #C9C0AE; flex-shrink:0;
-  display:grid; place-items:center;
-  transition:.2s;
-  color: transparent; font-size: 12px;
+.footer-bottom .gold{color:var(--gold);font-weight:800}
+
+/* ============================================================
+   FLOATING WHATSAPP
+   ============================================================ */
+.float-wa{
+  position:fixed;
+  bottom:24px;
+  left:24px;
+  width:58px;height:58px;
+  background:linear-gradient(135deg,var(--wa-dark),var(--wa));
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(37,211,102,.5);
+  z-index:990;
+  transition:all .3s;
+  animation:float 3s ease-in-out infinite;
 }
-.area-chip input:checked + .chip{
-  border-color: var(--gold);
-  background: linear-gradient(180deg, #FFFBF0, #FBF2DC);
-  color: var(--gold-deep);
-  box-shadow: 0 8px 18px -12px rgba(201,169,97,.8);
-}
-.area-chip input:checked + .chip .box{
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
-  border-color: var(--gold-deep);
-  color: #fff;
+.float-wa:hover{transform:scale(1.1);box-shadow:0 14px 40px rgba(37,211,102,.7)}
+.float-wa svg{width:30px;height:30px;color:#fff}
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-6px)}
 }
 
-/* Rooms pills */
-.rooms-row{ display:flex; flex-wrap: wrap; gap: 10px;}
-.room-pill{ cursor: pointer; position: relative;}
-.room-pill input{ position:absolute; opacity:0; pointer-events:none;}
-.room-pill .p{
-  display:inline-flex; align-items:center; padding: 11px 20px;
-  border-radius: 100px; border: 1.5px solid #E2DACB; background:#fff;
-  font-size: 14px; font-weight: 700; color: var(--text-dark);
-  transition:.22s;
-}
-.room-pill input:checked + .p{
-  border-color: var(--gold);
-  background: linear-gradient(180deg, var(--gold-bright), var(--gold-deep));
-  color: var(--ink);
-  box-shadow: 0 10px 22px -12px rgba(201,169,97,.9);
-}
-
-/* Agreement */
-.agree-box{
-  grid-column: 1 / -1;
-  display:flex; align-items:flex-start; gap: 12px;
-  padding: 16px 18px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #FFFBF0, #FBF2DC);
-  border: 1.5px solid rgba(201,169,97,.4);
-  cursor: pointer;
-  transition:.22s;
-}
-.agree-box:hover{ border-color: var(--gold);}
-.agree-box input{ position:absolute; opacity:0; pointer-events:none;}
-.agree-box .box{
-  width: 22px; height: 22px; border-radius: 6px; flex-shrink:0;
-  border: 2px solid var(--gold-deep); background:#fff;
-  display:grid; place-items:center; color: transparent;
-  font-size: 14px; transition:.2s; margin-top: 1px;
-}
-.agree-box input:checked + .box{
-  background: linear-gradient(135deg, var(--gold-bright), var(--gold-deep));
-  color:#fff;
-}
-.agree-box .txt{ font-size: 14px; color: var(--ink); font-weight: 600; line-height: 1.7;}
-.agree-box .txt b{ color: var(--gold-deep);}
-
-/* Form error */
-.form-error{
-  grid-column: 1/-1;
-  padding: 14px 18px;
-  border-radius: 12px;
-  background: #FDECEC;
-  border: 1.5px solid #F5B7B7;
-  color: #A32B2B;
-  font-size: 14px; font-weight: 700;
+/* ============================================================
+   STICKY MOBILE BAR
+   ============================================================ */
+.mobile-bar{
   display:none;
-  align-items:center; gap: 10px;
+  position:fixed;
+  bottom:0;left:0;right:0;
+  z-index:995;
+  background:rgba(5,16,31,.98);
+  backdrop-filter:blur(16px);
+  border-top:1px solid var(--border-dark);
+  padding:10px 12px;
+  gap:8px;
+  box-shadow:0 -8px 30px rgba(0,0,0,.4);
 }
-.form-error.show{ display:flex;}
+.mobile-bar a{
+  flex:1;
+  display:flex;flex-direction:column;align-items:center;gap:3px;
+  padding:10px 6px;
+  border-radius:12px;
+  font-size:.7rem;
+  font-weight:800;
+  transition:all .3s;
+  color:var(--white);
+}
+.mobile-bar a svg{width:22px;height:22px}
+.mobile-bar .mb-call{background:rgba(212,175,55,.15);border:1px solid rgba(212,175,55,.4);color:var(--gold-2)}
+.mobile-bar .mb-order{background:linear-gradient(180deg,var(--gold-2),var(--gold));color:var(--navy-0);border:1px solid var(--gold-3)}
+.mobile-bar .mb-wa{background:linear-gradient(135deg,var(--wa-dark),var(--wa));color:#fff}
+.mobile-bar a:active{transform:scale(.95)}
 
-/* Submit 3D */
-.submit-3d{
-  grid-column: 1/-1;
-  margin-top: 6px;
-  padding: 20px 24px;
-  border-radius: 16px;
-  font-family:'Cairo'; font-weight: 900; font-size: 19px;
-  color: #fff;
-  display:flex; align-items:center; justify-content: center; gap: 12px;
-  transition: transform .12s ease, box-shadow .18s;
-  cursor: pointer;
+/* ============================================================
+   REVEAL
+   ============================================================ */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:opacity .8s cubic-bezier(.4,0,.2,1),transform .8s cubic-bezier(.4,0,.2,1);
 }
-.submit-3d.buy-submit{
-  background: linear-gradient(180deg, #3A7DD1 0%, var(--blue) 55%, #123A75 100%);
-  box-shadow:
-    0 10px 0 0 #0D2C59,
-    0 22px 34px -14px rgba(27,79,156,.7),
-    inset 0 2px 0 rgba(255,255,255,.35),
-    inset 0 -3px 0 rgba(0,0,0,.28);
-}
-.submit-3d.sell-submit{
-  background: linear-gradient(180deg, #2E8A73 0%, var(--green) 55%, #103D31 100%);
-  box-shadow:
-    0 10px 0 0 #0B2C23,
-    0 22px 34px -14px rgba(29,91,74,.7),
-    inset 0 2px 0 rgba(255,255,255,.32),
-    inset 0 -3px 0 rgba(0,0,0,.28);
-}
-.submit-3d:active{ transform: translateY(6px); box-shadow: 0 4px 0 0 rgba(0,0,0,.35);}
-.submit-3d:hover{ filter: brightness(1.06); transform: translateY(-2px);}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.1s}
+.reveal-d2{transition-delay:.2s}
+.reveal-d3{transition-delay:.3s}
+.reveal-d4{transition-delay:.4s}
 
-/* Success */
-.success-screen{
-  padding: 20px 0 10px;
-  text-align:center;
+/* ============================================================
+   ADMIN PANEL (hidden by default)
+   ============================================================ */
+.admin-panel{
+  position:fixed;
+  inset:0;
+  background:var(--navy-0);
+  z-index:2000;
+  padding:40px 24px;
+  overflow-y:auto;
   display:none;
 }
-.success-screen.show{ display:block;}
-.success-ico{
-  width: 92px; height: 92px; border-radius: 50%;
-  background: linear-gradient(135deg, #2E8A73, var(--green));
-  display:grid; place-items:center; margin: 0 auto 24px;
-  box-shadow: 0 22px 45px -18px rgba(29,91,74,.8);
-  animation: popIn .6s cubic-bezier(.34,1.56,.64,1);
+.admin-panel.open{display:block}
+.admin-header{
+  max-width:1200px;
+  margin:0 auto 26px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  flex-wrap:wrap;
 }
-@keyframes popIn{
-  from{ transform: scale(0); opacity:0;}
-  to{ transform: scale(1); opacity:1;}
+.admin-header h2{color:var(--gold);font-size:1.5rem;font-weight:900}
+.admin-close{
+  padding:10px 22px;
+  background:var(--red);
+  color:#fff;
+  border-radius:50px;
+  font-weight:800;
+  font-size:.9rem;
 }
-.success-screen h3{
-  font-size: 26px; color: var(--ink); margin-bottom: 12px;
+.admin-stats{
+  max-width:1200px;
+  margin:0 auto 30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:14px;
 }
-.success-screen p{ color: var(--text-muted); font-size: 16px; line-height: 1.9; max-width: 420px; margin: 0 auto 26px;}
-.success-screen .wa-btn{
-  display:inline-flex; align-items:center; gap: 10px;
-  padding: 16px 32px;
-  border-radius: 100px;
-  background: linear-gradient(180deg, #4CD471, #1FA84A);
-  color:#fff; font-family:'Cairo'; font-weight: 900; font-size: 16px;
-  box-shadow: 0 12px 26px -12px rgba(31,168,74,.9), inset 0 -2px 0 rgba(0,0,0,.2);
-  transition:.28s;
-}
-.success-screen .wa-btn:hover{ transform: translateY(-2px); box-shadow: 0 20px 38px -14px rgba(31,168,74,1);}
-
-/* ================= ADMIN ================= */
-.admin-modal .modal{ width: min(1080px, 100%); }
-.admin-tabs{
-  display:flex; gap: 8px; padding: 0 32px;
-  border-bottom: 1px solid #EAE2D3; background: #fff; flex-shrink: 0;
-}
-.admin-tab{
-  padding: 16px 22px; font-weight: 800; font-size: 15px; color: var(--text-muted);
-  border-bottom: 3px solid transparent; transition:.25s;
-}
-.admin-tab.active{ color: var(--ink); border-bottom-color: var(--gold);}
-.admin-body{ padding: 26px 32px 32px; overflow-y:auto; max-height: 60vh;}
-.admin-stats{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 26px;}
 .admin-stat{
-  padding: 20px 22px; border-radius: 14px;
-  background: linear-gradient(135deg, #FFFDF7, #FBF2DC);
-  border: 1px solid rgba(201,169,97,.35);
+  padding:20px;
+  background:rgba(212,175,55,.08);
+  border:1px solid rgba(212,175,55,.3);
+  border-radius:14px;
+  text-align:center;
 }
-.admin-stat .k{ font-size: 13px; color: var(--text-muted); font-weight: 700; letter-spacing: 1px;}
-.admin-stat .v{ font-family:'Cairo'; font-weight:900; font-size: 34px; color: var(--ink); line-height: 1.2; margin-top: 6px;}
-.admin-table{ width:100%; border-collapse: collapse; font-size: 14px;}
-.admin-table th{
-  text-align: right; padding: 12px 14px; background: var(--ink); color: var(--gold-bright);
-  font-weight: 800; font-size: 13px; letter-spacing: .5px;
+.admin-stat .num{
+  font-size:1.9rem;
+  font-weight:900;
+  color:var(--gold);
+  line-height:1;
 }
-.admin-table th:first-child{ border-radius: 0 12px 0 0;}
-.admin-table th:last-child{ border-radius: 12px 0 0 0;}
-.admin-table td{ padding: 14px; border-bottom: 1px solid #EEE7DA; color: var(--text-dark);}
-.admin-table tr:hover td{ background: #FFFDF7;}
+.admin-stat .lbl{
+  font-size:.8rem;
+  color:var(--text-muted-dark);
+  margin-top:6px;
+  font-weight:600;
+}
+.admin-list{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  gap:12px;
+}
+.admin-card{
+  padding:20px;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--border-dark);
+  border-radius:14px;
+  color:var(--text-on-dark);
+}
+.admin-card-header{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:14px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--border-dark);
+  flex-wrap:wrap;gap:8px;
+}
+.admin-card-header .order-id{
+  font-weight:900;
+  color:var(--gold);
+  font-size:1.05rem;
+}
+.admin-card-header .order-date{font-size:.82rem;color:var(--text-muted-dark)}
+.admin-fields{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:10px;
+}
+.admin-field{
+  font-size:.88rem;
+  color:var(--text-on-dark);
+}
+.admin-field strong{color:var(--gold-2);font-weight:800;display:block;font-size:.78rem;margin-bottom:2px}
 .admin-empty{
-  padding: 50px 20px; text-align:center; color: var(--text-muted); font-size: 15px;
-}
-.admin-login{ padding: 40px 32px 36px; text-align:center;}
-.admin-login h3{ font-size: 24px; color: var(--ink); margin-bottom: 10px;}
-.admin-login p{ color: var(--text-muted); margin-bottom: 24px; font-size: 15px;}
-.admin-login input{
-  width: 100%; max-width: 320px; margin: 0 auto 16px;
-  padding: 14px 18px; border-radius: 12px; border: 1.5px solid #E2DACB;
-  font-size: 15px; text-align:center; font-family: inherit; outline:none;
-}
-.admin-login input:focus{ border-color: var(--gold); box-shadow: 0 0 0 4px rgba(201,169,97,.15);}
-.admin-login button{
-  display:block; margin: 0 auto; padding: 14px 40px; border-radius: 100px;
-  background: linear-gradient(180deg, var(--gold-bright), var(--gold-deep));
-  color: var(--ink); font-family:'Cairo'; font-weight:900; font-size: 15px;
-  box-shadow: 0 10px 24px -12px rgba(201,169,97,.9);
-}
-.admin-login .err{ color: #C93B3B; font-size: 14px; margin-top: 12px; display:none;}
-.admin-login .err.show{ display:block;}
-
-/* ================= TOAST ================= */
-.toast{
-  position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(100px);
-  background: var(--ink); color:#fff; padding: 16px 28px; border-radius: 100px;
-  font-weight: 700; font-size: 15px; z-index: 2000;
-  box-shadow: 0 20px 40px -12px rgba(0,0,0,.6);
-  border: 1px solid var(--line);
-  opacity:0; transition:.4s cubic-bezier(.34,1.3,.64,1);
-  display:flex; align-items:center; gap: 10px;
-}
-.toast.show{ transform: translateX(-50%) translateY(0); opacity:1;}
-.toast .dot{ width: 8px; height:8px; border-radius:50%; background: var(--gold);}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 1024px){
-  .hero-inner{ grid-template-columns: 1fr; }
-  .action-grid{ grid-template-columns: 1fr; gap: 26px;}
-  .commission{ order: 2; max-width: 320px; margin: 0 auto; width:100%;}
-  .action-card.buy{ order: 1;}
-  .action-card.sell{ order: 3;}
-  .exp-grid{ grid-template-columns: 1fr; gap: 40px;}
-  .exp-media{ max-width: 460px; margin: 0 auto; aspect-ratio: 4/3;}
-  .gallery-grid{ grid-template-columns: repeat(4, 1fr); grid-auto-rows: 180px;}
-  .g-1{ grid-column: span 4; grid-row: span 2;}
-  .g-2,.g-3{ grid-column: span 2;}
-  .g-4,.g-5,.g-6{ grid-column: span 2;}
-  .footer-grid{ grid-template-columns: 1fr 1fr; gap: 40px;}
+  text-align:center;
+  padding:60px 20px;
+  color:var(--text-muted-dark);
+  max-width:600px;
+  margin:0 auto;
 }
 
-@media (max-width: 760px){
-  .sec{ padding: 70px 0; }
-  .hero{ padding: 120px 0 60px; min-height: auto;}
-  .hero-title{ font-size: 54px;}
-  .hero-sub{ letter-spacing: 4px; font-size: 20px;}
-  .hero-city .city-name{ font-size: 36px;}
-  .hero-city .line{ flex: 0 0 34px;}
-  .nav-links{ display:none;}
-  .menu-toggle{ display:block;}
-  .phone-chip{ width:100%; min-width: 0;}
-  .phone-chip .num{ font-size: 19px;}
-  .hero-mini{ gap: 22px;}
-  .hero-mini .item .n{ font-size: 24px;}
-
-  .entry-head h2{ font-size: 38px;}
-  .action-card{ padding: 30px 24px;}
-  .btn-3d{ font-size: 18px; padding: 18px 20px;}
-  .commission .big{ font-size: 62px;}
-
-  .counter-grid{ grid-template-columns: 1fr; gap: 20px;}
-  .counter-card{ padding: 30px 26px;}
-  .counter-num{ font-size: 72px;}
-
-  .exp-points{ grid-template-columns: 1fr;}
-  .gallery-grid{ grid-template-columns: repeat(2, 1fr); grid-auto-rows: 160px; gap: 12px;}
-  .g-1{ grid-column: span 2; grid-row: span 2;}
-  .g-2,.g-3{ grid-column: span 2;}
-  .g-4,.g-5,.g-6{ grid-column: span 1;}
-
-  .help-inner{ flex-direction: column; text-align: center; padding: 34px 24px;}
-  .help-inner .btns{ flex-direction: column; width:100%;}
-  .btn-solid{ justify-content: center; width:100%;}
-
-  .footer-grid{ grid-template-columns: 1fr; gap: 34px;}
-  .footer-bottom{ flex-direction: column; text-align:center;}
-
-  .modal{ border-radius: 20px;}
-  .modal-head{ padding: 22px 22px 18px;}
-  .modal-body{ padding: 22px;}
-  .form-grid{ grid-template-columns: 1fr; gap: 16px;}
-  .range-row{ flex-direction: column; align-items: stretch; gap: 12px;}
-  .range-row .sep{ display:none;}
-  .admin-stats{ grid-template-columns: 1fr;}
-  .admin-body{ padding: 20px;}
-  .admin-tabs{ padding: 0 20px; overflow-x:auto;}
-  .admin-table{ font-size: 12.5px;}
-  .admin-table th, .admin-table td{ padding: 10px 8px;}
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1024px){
+  .header-contacts .header-phone:last-child{display:none}
+  .showcase-grid{grid-template-columns:repeat(3,1fr)}
+  .showcase-grid .tile.tall,
+  .showcase-grid .tile.wide{grid-row:auto;grid-column:auto;aspect-ratio:1}
+  .about-grid{grid-template-columns:1fr;gap:34px}
+  .about-image{aspect-ratio:16/10;max-width:600px;margin:0 auto}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:34px}
 }
 
-@media (max-width: 420px){
-  .hero-title{ font-size: 46px;}
-  .hero-city .city-name{ font-size: 30px;}
-  .entry-head h2{ font-size: 32px;}
-  .counter-num{ font-size: 60px;}
-  .commission .big{ font-size: 54px;}
+@media (max-width:768px){
+  body{padding-bottom:74px}
+  html{scroll-padding-top:80px}
+  .section{padding:64px 0}
+  .header-inner{padding:10px 16px;gap:12px}
+  .brand-logo{width:52px;height:52px}
+  .brand-name{font-size:1.2rem}
+  .brand-tag{font-size:.65rem;letter-spacing:1.5px}
+  .header-contacts{display:none}
+  .burger{display:flex}
+
+  .hero{padding:44px 0 40px}
+  .hero-title{font-size:clamp(1.6rem,7vw,2.4rem)}
+  .cta-block{padding:26px 18px}
+  .btn-gold-3d{padding:17px 28px;font-size:1rem;width:100%}
+  .counter-box{padding:12px 20px}
+  .counter-value{font-size:1.35rem}
+
+  .showcase-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .form-wrapper{border-radius:18px}
+  .form-header{padding:26px 22px 22px}
+  .form-header h2{font-size:1.35rem}
+  .form-body{padding:24px 20px 30px}
+  .form-grid{grid-template-columns:1fr;gap:16px}
+  .form-group.full,
+  .util-section,
+  .images-note,
+  .commission-card,
+  .form-submit,
+  .alert{grid-column:span 1}
+  .util-grid{grid-template-columns:1fr 1fr}
+  .util-divider{grid-column:span 2}
+  .commission-card{grid-template-columns:1fr;text-align:center;gap:16px}
+  .commission-num{font-size:2.8rem}
+  .commission-check{text-align:right}
+
+  .about-features{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:30px}
+  .footer{padding:50px 0 0}
+  .float-wa{bottom:82px;left:16px;width:52px;height:52px}
+  .float-wa svg{width:26px;height:26px}
+  .mobile-bar{display:flex}
+
+  .success-screen{padding:36px 22px}
+  .success-screen h2{font-size:1.4rem}
+  .success-actions{flex-direction:column}
+  .success-actions a{width:100%;justify-content:center}
 }
+
+@media (max-width:420px){
+  .hero-eyebrow{font-size:.78rem;padding:7px 16px}
+  .showcase-grid{grid-template-columns:1fr}
+  .showcase-grid .tile{aspect-ratio:4/3}
+  .util-grid{grid-template-columns:1fr}
+  .util-divider{grid-column:span 1}
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:var(--navy-0)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--gold-3),var(--gold));border-radius:5px}
+::-webkit-scrollbar-thumb:hover{background:var(--gold-2)}
+
+::selection{background:var(--gold);color:var(--navy-0)}
 </style>
 </head>
 <body>
 
-<!-- ============ HEADER ============ -->
-<header class="site-header" id="siteHeader">
-  <div class="container nav-wrap">
-    <a href="#top" class="brand">
-      <div class="brand-mark">ق</div>
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#hero" class="brand">
+      <div class="brand-logo">
+        <!-- =====================================================
+             LOGO — ضع صورة اللوجو المرفق هنا كـ Base64
+             استبدل محتوى SVG التالي بـ:
+             <img src="data:image/png;base64,ضع_الكود_هنا" alt="قصر الخطيب">
+             ===================================================== -->
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شعار قصر الخطيب للتسويق العقاري">
+          <defs>
+            <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#E8C766"/>
+              <stop offset="50%" stop-color="#D4AF37"/>
+              <stop offset="100%" stop-color="#B8912B"/>
+            </linearGradient>
+            <linearGradient id="navyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#173A66"/>
+              <stop offset="100%" stop-color="#0A1A33"/>
+            </linearGradient>
+            <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#4A90C4"/>
+              <stop offset="100%" stop-color="#1E5A8E"/>
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="100" r="94" fill="url(#navyGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+          <circle cx="100" cy="100" r="85" fill="none" stroke="url(#goldGrad)" stroke-width="1" opacity="0.7"/>
+          <!-- Sea waves -->
+          <path d="M20 148 Q50 138 80 148 T140 148 T200 148 L200 175 Q180 165 160 175 T120 175 T80 175 T40 175 L20 175 Z" fill="url(#seaGrad)" opacity="0.85"/>
+          <path d="M20 156 Q50 146 80 156 T140 156 T200 156" fill="none" stroke="#7FB3D5" stroke-width="2" opacity="0.6"/>
+          <!-- Palace/building silhouette -->
+          <path d="M55 148 L55 90 L70 90 L70 75 L82 75 L82 90 L90 90 L90 65 L110 65 L110 90 L118 90 L118 75 L130 75 L130 90 L145 90 L145 148 Z" fill="url(#goldGrad)"/>
+          <path d="M80 148 L80 105 L120 105 L120 148 Z" fill="#0A1A33"/>
+          <path d="M92 148 L92 118 L108 118 L108 148 Z" fill="#D4AF37"/>
+          <!-- Dome top -->
+          <ellipse cx="100" cy="65" rx="12" ry="8" fill="url(#goldGrad)"/>
+          <circle cx="100" cy="55" r="4" fill="#D4AF37"/>
+          <path d="M100 51 L100 44 M96 47 L104 47" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round"/>
+          <!-- Sun -->
+          <circle cx="160" cy="60" r="10" fill="url(#goldGrad)" opacity="0.9"/>
+          <circle cx="160" cy="60" r="6" fill="#E8C766"/>
+          <!-- Text: قصر الخطيب -->
+          <text x="100" y="105" text-anchor="middle" font-family="Amiri, serif" font-size="20" font-weight="700" fill="#E8C766" opacity="0.95">قصر الخطيب</text>
+        </svg>
+      </div>
       <div class="brand-text">
-        <span class="name">قصر الخطيب</span>
-        <span class="sub">للتسويق العقاري</span>
+        <span class="brand-name">قصر الخطيب</span>
+        <span class="brand-tag">للتسويق العقاري</span>
       </div>
     </a>
-    <nav class="nav-links">
-      <a href="#request">اطلب الآن</a>
-      <a href="#counters">الطلبات</a>
-      <a href="#experience">من نحن</a>
-      <a href="#properties">العقارات</a>
-      <a href="#contact">تواصل</a>
-    </nav>
-    <a href="#request" class="nav-cta">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/></svg>
-      ادخل بياناتك
-    </a>
+
+    <div class="header-contacts">
+      <a href="tel:01224324243" class="header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        01224324243
+      </a>
+      <a href="tel:01124997077" class="header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        01124997077
+      </a>
+      <a href="#form" class="header-cta">🏠 سجّل بيانات شقتك</a>
+    </div>
+
+    <button class="burger" id="burger" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
-<!-- ============ HERO ============ -->
-<section class="hero" id="top">
-  <div class="hero-bg"></div>
-  <div class="container hero-inner">
-    <div class="hero-content">
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="closeMenu()">الرئيسية</a>
+  <a href="#sell" onclick="closeMenu()">عندك شقة للبيع؟</a>
+  <a href="#showcase" onclick="closeMenu()">صور الشقق</a>
+  <a href="#about" onclick="closeMenu()">عن الشركة</a>
+  <a href="#form" onclick="closeMenu()">سجّل بيانات شقتك</a>
+  <a href="tel:01224324243">📞 01224324243</a>
+  <a href="tel:01124997077">📞 01124997077</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero-inner">
       <div class="hero-eyebrow">
         <span class="dot"></span>
-        بيع • شراء • تسويق عقاري فاخر
+        قصر الخطيب للتسويق العقاري
       </div>
 
       <h1 class="hero-title">
-        <span class="gold">قصر الخطيب</span>
+        تسويق الشقق في <span class="city">الإسكندرية</span>
       </h1>
-      <div class="hero-sub">للتسويق العقاري</div>
 
-      <div class="hero-city">
-        <span class="line"></span>
-        <span class="pin">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>
-        </span>
-        <span class="city-name">الإسكندرية</span>
-      </div>
-
-      <p class="hero-desc">
-        شقق فاخرة، تسويق احترافي، وتجربة عقارية واضحة من أول تواصل حتى إتمام الصفقة.
+      <p class="hero-sub">
+        نساعدك على بيع شقتك بسرعة وثقة، عبر تسويق احترافي ووصول مباشر للمشترين الجادين.
       </p>
 
-      <div class="phone-row">
-        <a href="tel:01224324243" class="phone-chip">
-          <span class="ico">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </span>
-          <span>
-            <span class="num">01224324243</span><br>
-            <span class="lbl">اتصل الآن</span>
-          </span>
+      <div class="cta-block">
+        <h2>ادخل وسجّل بيانات شقتك هنا</h2>
+        <p>لو عندك شقة عايز تبيعها، سجّل بياناتها هنا وسنتواصل معك في أقرب وقت.</p>
+
+        <div class="arrow-down" aria-hidden="true">
+          <svg viewBox="0 0 24 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4 L12 48 M12 48 L4 40 M12 48 L20 40" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="arrow-label">↓ املأ بيانات شقتك من هنا ↓</span>
+
+        <a href="#form" class="btn-gold-3d" id="heroRegisterBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1V9.5z"/>
+          </svg>
+          سجّل بيانات شقتك
         </a>
-        <a href="tel:01124997077" class="phone-chip">
-          <span class="ico">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </span>
-          <span>
-            <span class="num">01124997077</span><br>
-            <span class="lbl">اتصل الآن</span>
-          </span>
-        </a>
-      </div>
 
-      <div class="hero-mini">
-        <div class="item">
-          <div class="n">1%</div>
-          <div class="t">عمولة التسويق</div>
-        </div>
-        <div class="item">
-          <div class="n" id="heroSellCount">122</div>
-          <div class="t">طلب بيع</div>
-        </div>
-        <div class="item">
-          <div class="n" id="heroBuyCount">99</div>
-          <div class="t">طلب شراء</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ MARQUEE ============ -->
-<div class="marquee">
-  <div class="marquee-track" id="marqueeTrack">
-    <!-- JS will duplicate -->
-  </div>
-</div>
-
-<!-- ============ ACTION SECTION ============ -->
-<section class="action-sec" id="request">
-  <div class="container">
-    <div class="entry-head">
-      <div class="kicker">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        خطوة واحدة فقط
-      </div>
-      <h2>ادخل <span class="u">بياناتك هنا</span></h2>
-      <p>اختر الخدمة التي تريدها ثم أدخل بياناتك بسهولة — سنتواصل معك في أقرب وقت.</p>
-    </div>
-
-    <div class="action-grid">
-      <!-- BUY -->
-      <div class="action-card buy">
-        <div class="card-ico">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10z"/><path d="M9 22V12h6v10"/></svg>
-        </div>
-        <h3>أريد شراء شقة</h3>
-        <p class="lead">
-          تبحث عن شقة في الإسكندرية؟<br>
-          لدينا اختيارات متنوعة من الشقق، من الأسعار المناسبة إلى العقارات الفاخرة، ونساعدك في الوصول لما يناسب احتياجاتك وميزانيتك.
-        </p>
-        <button class="btn-3d buy-btn" onclick="openModal('buy')">
-          <span class="b-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10z"/><path d="M9 22V12h6v10"/></svg>
-          </span>
-          أريد شراء شقة
-        </button>
-      </div>
-
-      <!-- COMMISSION -->
-      <div class="commission">
-        <div class="commission-inner">
-          <div class="big">1%</div>
-          <div class="lbl-big">عمولة</div>
-          <div class="sep"></div>
-          <div class="note">عمولة التسويق عند إتمام الصفقة</div>
-        </div>
-      </div>
-
-      <!-- SELL -->
-      <div class="action-card sell">
-        <div class="card-ico">
-          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        </div>
-        <h3>أريد بيع شقتي</h3>
-        <p class="lead">
-          لديك شقة تريد بيعها؟<br>
-          نعمل على تسويق العقار والوصول إلى العملاء الباحثين عن الشراء، ونتواصل معك لمتابعة طلبك.
-        </p>
-        <button class="btn-3d sell-btn" onclick="openModal('sell')">
-          <span class="b-ico">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          </span>
-          أريد بيع شقتي
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ COUNTERS ============ -->
-<section class="counters" id="counters">
-  <div class="container">
-    <div class="sec-head">
-      <div class="sec-tag">أرقام حقيقية</div>
-      <h2 class="sec-title">طلبات <span class="gold">مُسجَّلة</span></h2>
-      <p class="sec-desc">نعمل باستمرار على استقبال طلبات البيع والشراء في الإسكندرية.</p>
-    </div>
-
-    <div class="counter-grid">
-      <div class="counter-card sell-c">
-        <div class="head">
-          <div class="ci">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-          </div>
-          <div>
-            <div class="t">طلبات بيع الشقق</div>
-            <div class="st">في الإسكندرية</div>
-          </div>
-        </div>
-        <div class="counter-num" id="sellCounter">
-          <span class="val">122</span><span class="unit">طلب</span>
-        </div>
-      </div>
-
-      <div class="counter-card buy-c">
-        <div class="head">
-          <div class="ci">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10z"/><path d="M9 22V12h6v10"/></svg>
-          </div>
-          <div>
-            <div class="t">طلبات شراء الشقق</div>
-            <div class="st">في الإسكندرية</div>
-          </div>
-        </div>
-        <div class="counter-num" id="buyCounter">
-          <span class="val">99</span><span class="unit">طلب</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ EXPERIENCE ============ -->
-<section class="experience" id="experience">
-  <div class="container">
-    <div class="exp-grid">
-      <div class="exp-media">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="شقة فاخرة في الإسكندرية">
-        <div class="badge">
-          <div class="ico">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10z"/><path d="M9 22V12h6v10"/></svg>
-          </div>
-          <div class="txt">
-            <b>شقق مختارة بعناية</b>
-            <span>الإسكندرية • عقارات فاخرة</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="exp-content">
-        <div class="sec-tag">من نحن</div>
-        <h2>خبرة تسويقية <span class="gold">نضعها في خدمتك</span></h2>
-        <p>
-          نعمل على تقديم تجربة تسويقية واضحة للمالك والمشتري، من استقبال الطلب واختيار العقار المناسب وحتى التواصل ومتابعة خطوات الصفقة. هدفنا هو تسهيل الوصول إلى العقار المناسب بطريقة احترافية وواضحة.
-        </p>
-
-        <div class="exp-points">
-          <div class="exp-point">
-            <div class="pic">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        <div>
+          <div class="counter-box">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 3v18h18"/><path d="M7 15l4-4 4 4 5-6"/></svg>
             </div>
             <div>
-              <b>وضوح كامل</b>
-              <span>بدون خطوات معقدة</span>
-            </div>
-          </div>
-          <div class="exp-point">
-            <div class="pic">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
-            </div>
-            <div>
-              <b>متابعة سريعة</b>
-              <span>تواصل مباشر معك</span>
-            </div>
-          </div>
-          <div class="exp-point">
-            <div class="pic">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
-            </div>
-            <div>
-              <b>عقارات مختارة</b>
-              <span>في أفضل مناطق الإسكندرية</span>
-            </div>
-          </div>
-          <div class="exp-point">
-            <div class="pic">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
-            </div>
-            <div>
-              <b>عمولة 1%</b>
-              <span>عند إتمام الصفقة فقط</span>
+              <span class="counter-label">طلبات بيع الشقق</span>
+              <span class="counter-value" id="orderCounter">128</span>
             </div>
           </div>
         </div>
@@ -1484,748 +1421,910 @@ section{ position: relative; }
   </div>
 </section>
 
-<!-- ============ GALLERY ============ -->
-<section class="gallery-sec" id="properties">
+<!-- ============================================================
+     SELL BANNER
+     ============================================================ -->
+<section class="sell-banner" id="sell">
   <div class="container">
-    <div class="sec-head">
-      <div class="sec-tag">عقاراتنا</div>
-      <h2 class="sec-title">شقق <span class="gold">مميزة</span></h2>
-      <p class="sec-desc">مجموعة مختارة من الشقق الفاخرة في أرقى مناطق الإسكندرية.</p>
-    </div>
+    <div class="sell-inner">
+      <h2>عندك شقة و<span class="gold">عايز تبيعها؟</span></h2>
+      <p>سجّل بيانات شقتك في دقائق، واترك لنا بيانات العقار وسنتواصل معك لمتابعة الطلب.</p>
 
-    <div class="gallery-grid">
-      <div class="g-card g-1">
-        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80" alt="شقة فاخرة بإطلالة بحرية">
-        <div class="info">
-          <span class="tag">إطلالة بحرية</span>
-          <h4>شقة فاخرة بإطلالة مباشرة على البحر</h4>
-          <div class="loc">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>
-            سيدي بشر • الإسكندرية
-          </div>
-        </div>
+      <div class="sell-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 4 L12 48 M12 48 L4 40 M12 48 L20 40" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </div>
-      <div class="g-card g-2">
-        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80" alt="صالة فاخرة">
-        <div class="info">
-          <span class="tag">تصميم حديث</span>
-          <h4>صالة واسعة بتشطيبات راقية</h4>
-          <div class="loc">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>
-            جليم • الإسكندرية
-          </div>
-        </div>
-      </div>
-      <div class="g-card g-3">
-        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80" alt="غرفة نوم فاخرة">
-        <div class="info">
-          <span class="tag">غرف نوم</span>
-          <h4>غرفة نوم رئيسية بتصميم فاخر</h4>
-          <div class="loc">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>
-            لوران • الإسكندرية
-          </div>
-        </div>
-      </div>
-      <div class="g-card g-4">
-        <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1000&q=80" alt="مطبخ حديث">
-        <div class="info">
-          <span class="tag">مطبخ</span>
-          <h4>مطبخ حديث</h4>
-          <div class="loc">رشدي • الإسكندرية</div>
-        </div>
-      </div>
-      <div class="g-card g-5">
-        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&w=1000&q=80" alt="تراس">
-        <div class="info">
-          <span class="tag">تراس</span>
-          <h4>تراس خاص بإطلالة</h4>
-          <div class="loc">ميامي • الإسكندرية</div>
-        </div>
-      </div>
-      <div class="g-card g-6">
-        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1000&q=80" alt="شقة فاخرة">
-        <div class="info">
-          <span class="tag">فاخر</span>
-          <h4>شقة بتصميم راقٍ</h4>
-          <div class="loc">محطة الرمل • الإسكندرية</div>
-        </div>
-      </div>
+      <span class="sell-arrow-label">↓ سجّل بيانات شقتك الآن ↓</span>
+
+      <a href="#form" class="btn-gold-3d" style="margin-top:14px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1V9.5z"/>
+        </svg>
+        سجّل بيانات شقتك
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ============ HELP BANNER ============ -->
-<section class="help-banner">
+<!-- ============================================================
+     SHOWCASE
+     ============================================================ -->
+<section class="showcase" id="showcase">
   <div class="container">
-    <div class="help-inner">
-      <div class="txt">
-        <h3>نساعدك في الوصول <span class="gold">لما يناسبك</span></h3>
-        <p>سواء كنت تبحث عن شقة للشراء أو ترغب في تسويق شقتك، يمكنك إرسال بياناتك خلال دقائق، وسيتولى فريق قصر الخطيب متابعة طلبك.</p>
+    <div class="divider"></div>
+    <h2 class="section-title reveal">لمحة من الشقق التي نعمل عليها</h2>
+    <p class="section-sub reveal">صور توضيحية لشقق فاخرة في الإسكندرية</p>
+
+    <div class="showcase-grid">
+      <div class="tile reveal">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80&auto=format&fit=crop" alt="شقة فاخرة" loading="lazy">
+        <div class="tile-label"><span class="gold-dot"></span>شقة بإطلالة</div>
       </div>
-      <div class="btns">
-        <a href="#request" class="btn-solid btn-gold">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10z"/><path d="M9 22V12h6v10"/></svg>
-          ادخل بياناتك
-        </a>
-        <a href="tel:01224324243" class="btn-solid btn-outline">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          01224324243
-        </a>
+      <div class="tile tall reveal reveal-d1">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=80&auto=format&fit=crop" alt="صالة معيشة" loading="lazy">
+        <div class="tile-label"><span class="gold-dot"></span>صالة معيشة</div>
+      </div>
+      <div class="tile reveal reveal-d2">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700&q=80&auto=format&fit=crop" alt="مطبخ" loading="lazy">
+        <div class="tile-label"><span class="gold-dot"></span>مطبخ</div>
+      </div>
+      <div class="tile wide reveal reveal-d3">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80&auto=format&fit=crop" alt="إطلالة بحرية" loading="lazy">
+        <div class="tile-label"><span class="gold-dot"></span>إطلالة بحرية</div>
+      </div>
+      <div class="tile reveal">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&q=80&auto=format&fit=crop" alt="غرفة نوم" loading="lazy">
+        <div class="tile-label"><span class="gold-dot"></span>غرفة نوم</div>
+      </div>
+      <div class="tile reveal reveal-d1">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=700&q=80&auto=format&fit=crop" alt="بلكونة" loading="lazy">
+        <div class="tile-label"><span class="gold-dot"></span>بلكونة</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer" id="contact">
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="section light-bg" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h3>قصر الخطيب للتسويق العقاري</h3>
+        <p>نعمل على تسويق الشقق والعقارات في الإسكندرية، واستقبال بيانات الملاك الراغبين في البيع، ثم التواصل معهم لمتابعة طلباتهم بطريقة واضحة ومنظمة.</p>
+        <p>هدفنا تسهيل رحلة بيع شقتك، من تسجيل البيانات وحتى الوصول للمشتري المناسب.</p>
+
+        <div class="about-features">
+          <div class="feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>تسويق احترافي</span>
+          </div>
+          <div class="feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>الإسكندرية فقط</span>
+          </div>
+          <div class="feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>متابعة شخصية</span>
+          </div>
+          <div class="feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>
+            <span>وضوح ومنظمة</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image reveal reveal-d1">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=900&q=80&auto=format&fit=crop" alt="عقارات الإسكندرية" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FORM SECTION
+     ============================================================ -->
+<section class="form-section" id="form">
+  <div class="container">
+    <div class="form-wrapper" id="formWrapper">
+      <div class="form-header">
+        <h2>تسجيل بيانات الشقة</h2>
+        <p>املأ البيانات الأساسية لشقتك، وسنتواصل معك في أقرب وقت.</p>
+      </div>
+
+      <div class="form-body">
+        <form id="propertyForm" class="form-grid" novalidate>
+
+          <!-- Alert -->
+          <div class="alert error" id="formAlert" role="alert">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            <span id="formAlertText">من فضلك أدخل البيانات المطلوبة.</span>
+          </div>
+
+          <!-- بيانات العميل -->
+          <div class="form-group">
+            <label for="clientName">الاسم <span class="req">*</span></label>
+            <input type="text" id="clientName" name="clientName" placeholder="اكتب اسمك الكامل" required>
+          </div>
+
+          <div class="form-group">
+            <label for="clientPhone">رقم التليفون <span class="req">*</span></label>
+            <input type="tel" id="clientPhone" name="clientPhone" placeholder="01xxxxxxxxx" pattern="01[0-9]{9}" required dir="ltr">
+          </div>
+
+          <!-- عنوان الشقة -->
+          <div class="form-group full">
+            <label for="address">عنوان الشقة بالتفصيل <span class="req">*</span></label>
+            <textarea id="address" name="address" placeholder="اكتب عنوان الشقة بالتفصيل: الشارع، رقم العقار، المنطقة وأي تفاصيل تساعدنا في الوصول إليها." required></textarea>
+          </div>
+
+          <!-- المنطقة -->
+          <div class="form-group">
+            <label for="area">المنطقة <span class="req">*</span></label>
+            <select id="area" name="area" required>
+              <option value="">اختر المنطقة</option>
+              <option>سيدي بشر</option>
+              <option>ميامي</option>
+              <option>العصافرة</option>
+              <option>فيكتوريا</option>
+              <option>لوران</option>
+              <option>جليم</option>
+              <option>رشدي</option>
+              <option>الإبراهيمية</option>
+              <option>محطة الرمل</option>
+              <option>سبورتنج</option>
+              <option>كفر عبده</option>
+              <option>سموحة</option>
+              <option>سان ستيفانو</option>
+              <option>زيزينيا</option>
+              <option>أخرى</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="floor">الدور <span class="req">*</span></label>
+            <input type="text" id="floor" name="floor" placeholder="مثال: 3" required>
+          </div>
+
+          <div class="form-group">
+            <label for="areaSize">مساحة الشقة بالمتر <span class="req">*</span></label>
+            <input type="number" id="areaSize" name="areaSize" placeholder="مثال: 150" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="rooms">عدد الغرف <span class="req">*</span></label>
+            <select id="rooms" name="rooms" required>
+              <option value="">اختر عدد الغرف</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label for="price">السعر المطلوب (بالجنيه المصري) <span class="req">*</span></label>
+            <input type="number" id="price" name="price" placeholder="مثال: 1500000" min="1" required>
+          </div>
+
+          <!-- المرافق -->
+          <div class="util-section">
+            <div class="util-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              المرافق
+            </div>
+            <div class="util-grid">
+              <label class="util-item">
+                <input type="checkbox" id="utilElec" name="utilElec">
+                <span>كهرباء</span>
+              </label>
+              <label class="util-item">
+                <input type="checkbox" id="utilWater" name="utilWater">
+                <span>مياه</span>
+              </label>
+              <label class="util-item">
+                <input type="checkbox" id="utilGas" name="utilGas">
+                <span>غاز طبيعي</span>
+              </label>
+
+              <div class="util-divider"></div>
+
+              <label class="util-item">
+                <input type="checkbox" id="meterElec" name="meterElec">
+                <span>عداد كهرباء مستقل</span>
+              </label>
+              <label class="util-item">
+                <input type="checkbox" id="meterWater" name="meterWater">
+                <span>عداد مياه مستقل</span>
+              </label>
+              <label class="util-item">
+                <input type="checkbox" id="meterGas" name="meterGas">
+                <span>عداد غاز مستقل</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- صور الشقة -->
+          <div class="images-note">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <div>
+              <h4>هل لديك صور للشقة؟</h4>
+              <p>إذا كانت لديك صور للشقة، يمكنك إرسالها لنا على WhatsApp بعد إتمام الطلب.</p>
+            </div>
+          </div>
+
+          <!-- العمولة -->
+          <div class="commission-card">
+            <div class="commission-num">1%</div>
+            <div class="commission-text">
+              <h4>عمولة التسويق</h4>
+              <label class="commission-check" id="commissionWrap">
+                <input type="checkbox" id="commissionAgree" required>
+                <span class="cb-text">أوافق على عمولة التسويق العقاري بنسبة 1% عند إتمام الصفقة.</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <div class="form-submit">
+            <button type="submit" class="btn-gold-3d">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+              </svg>
+              إتمام طلب تسجيل الشقة
+            </button>
+          </div>
+        </form>
+
+        <!-- Success -->
+        <div class="success-screen" id="successScreen">
+          <div class="success-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2>تم استلام طلبك بنجاح</h2>
+          <p>شكرًا لتواصلك مع قصر الخطيب للتسويق العقاري.</p>
+          <p>سيتم التواصل معك في أقرب وقت.</p>
+          <div class="success-order-id" id="successOrderId">رقم الطلب: #129</div>
+          <p style="font-weight:700;color:var(--navy-1);margin-top:14px">إذا كانت لديك صور للشقة، يمكنك إرسالها الآن على WhatsApp.</p>
+
+          <div class="success-actions">
+            <a href="#" id="sendPhotosBtn" class="btn-wa-large" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              إرسال صور الشقة على WhatsApp
+            </a>
+            <a href="tel:01224324243" class="btn-outline-navy">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              اتصال بالشركة
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div>
-        <div class="f-brand">
-          <div class="brand-mark">ق</div>
-          <div>
-            <div class="name">قصر الخطيب</div>
-            <div class="sub">للتسويق العقاري</div>
+      <div class="footer-brand">
+        <a href="#hero" class="brand">
+          <div class="brand-logo">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="شعار قصر الخطيب">
+              <defs>
+                <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#E8C766"/>
+                  <stop offset="50%" stop-color="#D4AF37"/>
+                  <stop offset="100%" stop-color="#B8912B"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="100" r="94" fill="#0A1A33" stroke="url(#goldGrad2)" stroke-width="3"/>
+              <circle cx="100" cy="100" r="85" fill="none" stroke="url(#goldGrad2)" stroke-width="1" opacity="0.7"/>
+              <path d="M20 148 Q50 138 80 148 T140 148 T200 148 L200 175 Q180 165 160 175 T120 175 T80 175 T40 175 L20 175 Z" fill="#1E5A8E" opacity="0.85"/>
+              <path d="M55 148 L55 90 L70 90 L70 75 L82 75 L82 90 L90 90 L90 65 L110 65 L110 90 L118 90 L118 75 L130 75 L130 90 L145 90 L145 148 Z" fill="url(#goldGrad2)"/>
+              <path d="M80 148 L80 105 L120 105 L120 148 Z" fill="#0A1A33"/>
+              <path d="M92 148 L92 118 L108 118 L108 148 Z" fill="#D4AF37"/>
+              <ellipse cx="100" cy="65" rx="12" ry="8" fill="url(#goldGrad2)"/>
+              <circle cx="160" cy="60" r="10" fill="url(#goldGrad2)" opacity="0.9"/>
+            </svg>
           </div>
-        </div>
-        <p>
-          بيع وشراء وتسويق الشقق الفاخرة في الإسكندرية. نقدم تجربة تسويقية واضحة واحترافية من أول تواصل حتى إتمام الصفقة.
-        </p>
+          <div class="brand-text">
+            <span class="brand-name">قصر الخطيب</span>
+            <span class="brand-tag">للتسويق العقاري</span>
+          </div>
+        </a>
+        <p>تسويق الشقق في الإسكندرية — نستقبل بيانات الملاك ونتواصل معهم لمتابعة طلبات البيع بشكل واضح ومنظم.</p>
       </div>
 
-      <div class="f-col">
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+          <li><a href="#hero">الرئيسية</a></li>
+          <li><a href="#sell">عندك شقة للبيع؟</a></li>
+          <li><a href="#showcase">صور الشقق</a></li>
+          <li><a href="#about">عن الشركة</a></li>
+          <li><a href="#form">سجّل بيانات شقتك</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
         <h4>تواصل معنا</h4>
-        <ul class="f-list">
-          <li>
-            <a href="tel:01224324243" class="f-phone">
-              <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              01224324243
-            </a>
-          </li>
-          <li>
-            <a href="tel:01124997077" class="f-phone">
-              <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              01124997077
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="f-col">
-        <h4>العنوان</h4>
-        <ul class="f-list">
-          <li>
-            <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>
-            الإسكندرية — شارع محمد نجيب
-          </li>
-          <li>
-            <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 14"/></svg>
-            متاحون يوميًا للتواصل
-          </li>
-        </ul>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>شارع محمد نجيب — الإسكندرية</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:01224324243">01224324243</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:01124997077">01124997077</a>
+        </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <div class="tags">
-        <span class="tag">قصر الخطيب للتسويق العقاري</span>
-        <span class="tag">الإسكندرية</span>
-        <span class="tag">بيع وشراء وتسويق الشقق الفاخرة</span>
-      </div>
-      <div>
-        © <span id="year"></span> قصر الخطيب — جميع الحقوق محفوظة
-        <span class="admin-link" onclick="openAdmin()" style="margin-inline-start:14px;">•</span>
-      </div>
+      © <span id="year"></span> <span class="gold">قصر الخطيب للتسويق العقاري</span> — تسويق الشقق في الإسكندرية
     </div>
   </div>
 </footer>
 
-<!-- ============ MODAL: SELL ============ -->
-<div class="modal-overlay" id="modal-sell">
-  <div class="modal">
-    <div class="modal-head">
-      <button class="modal-close" onclick="closeModal('sell')">✕</button>
-      <div class="m-tag">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        طلب بيع شقة
-      </div>
-      <h3>ادخل بياناتك هنا</h3>
-      <p>بيانات بسيطة لتسويق شقتك</p>
-    </div>
-    <div class="modal-body">
-      <form class="form-grid" id="sellForm" novalidate>
-        <div class="field">
-          <label>الاسم <span class="req">*</span></label>
-          <input type="text" name="name" placeholder="اكتب اسمك" required>
-        </div>
-        <div class="field">
-          <label>رقم التليفون <span class="req">*</span></label>
-          <input type="tel" name="phone" placeholder="01xxxxxxxxx" inputmode="numeric" required>
-        </div>
-        <div class="field">
-          <label>المنطقة <span class="req">*</span></label>
-          <input type="text" name="area" placeholder="مثال: سيدي بشر" required>
-        </div>
-        <div class="field">
-          <label>مساحة الشقة بالمتر <span class="req">*</span></label>
-          <input type="number" name="size" placeholder="مثال: 150" min="20" required>
-        </div>
-        <div class="field">
-          <label>عدد الغرف <span class="req">*</span></label>
-          <select name="rooms" required>
-            <option value="">اختر عدد الغرف</option>
-            <option>1 غرفة</option>
-            <option>2 غرف</option>
-            <option>3 غرف</option>
-            <option>4 غرف</option>
-            <option>5 غرف أو أكثر</option>
-          </select>
-        </div>
-        <div class="field">
-          <label>السعر المطلوب <span class="req">*</span></label>
-          <input type="number" name="price" placeholder="مثال: 3500000" min="0" required>
-        </div>
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/201124997077?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20%D9%82%D8%B5%D8%B1%20%D8%A7%D9%84%D8%AE%D8%B7%D9%8A%D8%A8%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B3%D9%88%D9%8A%D9%82%20%D8%B4%D9%82%D8%AA%D9%8A" target="_blank" rel="noopener" class="float-wa" aria-label="تواصل واتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
-        <label class="agree-box">
-          <input type="checkbox" name="agree" required>
-          <span class="box">✓</span>
-          <span class="txt">أوافق على عمولة التسويق العقاري بنسبة <b>1%</b> عند إتمام الصفقة.</span>
-        </label>
-
-        <div class="form-error" id="sellError">من فضلك أدخل الاسم ورقم التليفون.</div>
-
-        <button type="submit" class="submit-3d sell-submit">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-          إتمام طلب البيع
-        </button>
-      </form>
-
-      <div class="success-screen" id="sellSuccess">
-        <div class="success-ico">
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        </div>
-        <h3>تم استلام طلبك بنجاح</h3>
-        <p>شكرًا لتواصلك مع قصر الخطيب للتسويق العقاري.<br>سنتواصل معك في أقرب وقت.</p>
-        <a href="#" id="sellWaBtn" target="_blank" class="wa-btn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-          التواصل عبر WhatsApp
-        </a>
-      </div>
-    </div>
-  </div>
+<!-- Mobile Bar -->
+<div class="mobile-bar">
+  <a href="tel:01224324243" class="mb-call">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    اتصال
+  </a>
+  <a href="#form" class="mb-order">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1V9.5z"/></svg>
+    سجّل شقتك
+  </a>
+  <a href="https://wa.me/201124997077" target="_blank" rel="noopener" class="mb-wa">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    واتساب
+  </a>
 </div>
 
-<!-- ============ MODAL: BUY ============ -->
-<div class="modal-overlay" id="modal-buy">
-  <div class="modal">
-    <div class="modal-head">
-      <button class="modal-close" onclick="closeModal('buy')">✕</button>
-      <div class="m-tag">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10z"/><path d="M9 22V12h6v10"/></svg>
-        طلب شراء شقة
-      </div>
-      <h3>ادخل بياناتك هنا</h3>
-      <p>بيانات بسيطة لنساعدك في العثور على الشقة المناسبة</p>
-    </div>
-    <div class="modal-body">
-      <form class="form-grid" id="buyForm" novalidate>
-        <div class="field">
-          <label>الاسم <span class="req">*</span></label>
-          <input type="text" name="name" placeholder="اكتب اسمك" required>
-        </div>
-        <div class="field">
-          <label>رقم التليفون <span class="req">*</span></label>
-          <input type="tel" name="phone" placeholder="01xxxxxxxxx" inputmode="numeric" required>
-        </div>
-
-        <div class="field full">
-          <label>المناطق المطلوبة <span class="req">*</span></label>
-          <div class="areas-grid" id="areasGrid">
-            <!-- JS -->
-          </div>
-        </div>
-
-        <div class="field full">
-          <label>الميزانية <span class="req">*</span></label>
-          <div class="range-row">
-            <input type="number" name="budgetFrom" placeholder="من (مثال: 2000000)" min="0" required style="flex:1;">
-            <span class="sep">←</span>
-            <input type="number" name="budgetTo" placeholder="إلى (مثال: 4000000)" min="0" required style="flex:1;">
-          </div>
-        </div>
-
-        <div class="field full">
-          <label>عدد الغرف <span class="req">*</span></label>
-          <div class="rooms-row" id="roomsRow">
-            <!-- JS -->
-          </div>
-        </div>
-
-        <label class="agree-box">
-          <input type="checkbox" name="agree" required>
-          <span class="box">✓</span>
-          <span class="txt">أوافق على عمولة التسويق العقاري بنسبة <b>1%</b> عند إتمام الصفقة.</span>
-        </label>
-
-        <div class="form-error" id="buyError">من فضلك أدخل الاسم ورقم التليفون.</div>
-
-        <button type="submit" class="submit-3d buy-submit">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-          إتمام طلب الشراء
-        </button>
-      </form>
-
-      <div class="success-screen" id="buySuccess">
-        <div class="success-ico" style="background: linear-gradient(135deg, #3A7DD1, #1B4F9C); box-shadow: 0 22px 45px -18px rgba(27,79,156,.8);">
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        </div>
-        <h3>تم استلام طلبك بنجاح</h3>
-        <p>شكرًا لتواصلك مع قصر الخطيب للتسويق العقاري.<br>سنتواصل معك في أقرب وقت.</p>
-        <a href="#" id="buyWaBtn" target="_blank" class="wa-btn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
-          التواصل عبر WhatsApp
-        </a>
-      </div>
-    </div>
+<!-- ============================================================
+     ADMIN PANEL (Hidden — Access via #admin-hk-2025 in URL)
+     ============================================================ -->
+<div class="admin-panel" id="adminPanel">
+  <div class="admin-header">
+    <h2>لوحة الإدارة — قصر الخطيب</h2>
+    <button class="admin-close" onclick="closeAdmin()">إغلاق</button>
   </div>
-</div>
-
-<!-- ============ MODAL: ADMIN ============ -->
-<div class="modal-overlay admin-modal" id="modal-admin">
-  <div class="modal">
-    <div class="modal-head">
-      <button class="modal-close" onclick="closeModal('admin')">✕</button>
-      <div class="m-tag">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        منطقة محمية
-      </div>
-      <h3>لوحة الإدارة</h3>
-      <p>قصر الخطيب للتسويق العقاري</p>
-    </div>
-
-    <!-- Login view -->
-    <div class="admin-login" id="adminLogin">
-      <h3>الدخول للإدارة</h3>
-      <p>هذه الصفحة مخصصة لصاحب الموقع فقط</p>
-      <input type="password" id="adminPass" placeholder="كلمة المرور" autocomplete="off">
-      <button onclick="adminLogin()">دخول</button>
-      <div class="err" id="adminErr">كلمة المرور غير صحيحة</div>
-    </div>
-
-    <!-- Dashboard view -->
-    <div id="adminDash" style="display:none;">
-      <div class="admin-tabs">
-        <button class="admin-tab active" onclick="switchTab('sell', this)">طلبات البيع</button>
-        <button class="admin-tab" onclick="switchTab('buy', this)">طلبات الشراء</button>
-      </div>
-      <div class="admin-body">
-        <div class="admin-stats">
-          <div class="admin-stat">
-            <div class="k">إجمالي طلبات البيع</div>
-            <div class="v" id="adminSellTotal">122</div>
-          </div>
-          <div class="admin-stat">
-            <div class="k">إجمالي طلبات الشراء</div>
-            <div class="v" id="adminBuyTotal">99</div>
-          </div>
-        </div>
-        <div id="adminTableWrap"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ============ TOAST ============ -->
-<div class="toast" id="toast">
-  <span class="dot"></span>
-  <span id="toastMsg">تم</span>
+  <div class="admin-stats" id="adminStats"></div>
+  <div class="admin-list" id="adminList"></div>
 </div>
 
 <script>
-/* =========================================================
-   قصر الخطيب — JavaScript
-   ========================================================= */
+/* ============================================================
+   CONFIGURATION — ضع إعداداتك هنا
+   ============================================================
+   لعرض الطلبات في لوحة الإدارة بشكل مركزي، املأ بيانات Supabase.
+   إذا تركت القيم فارغة، سيعمل الموقع باستخدام localStorage فقط
+   (محلي على المتصفح الحالي).
+   
+   طريقة إعداد Supabase (مجاني):
+   1. أنشئ حساب على https://supabase.com
+   2. أنشئ مشروع جديد
+   3. أنشئ جدول باسم: orders
+      الأعمدة المطلوبة (كلها من نوع text إلا ما ذُكر):
+        id (text, primary key)
+        order_number (int8)
+        created_at (timestamptz, default now())
+        client_name (text)
+        client_phone (text)
+        address (text)
+        area (text)
+        floor (text)
+        area_size (text)
+        rooms (text)
+        price (text)
+        util_elec (text)
+        util_water (text)
+        util_gas (text)
+        meter_elec (text)
+        meter_water (text)
+        meter_gas (text)
+        commission (text)
+   ============================================================ */
+const CONFIG = {
+  // رقم WhatsApp الشركة (بصيغة دولية بدون +)
+  whatsappNumber: "201124997077",
+  
+  // رقم الاتصال المباشر
+  phone1: "01224324243",
+  phone2: "01124997077",
+  
+  // رقم بداية العداد
+  counterStart: 128,
+  
+  // ===== Supabase (اختياري) =====
+  supabase: {
+    url: "",        // مثال: "https://xxxx.supabase.co"
+    anonKey: "",    // مثال: "eyJhbGciOi..."
+    tableName: "orders"
+  },
+  
+  // ===== Admin Password (لتأمين الوصول) =====
+  adminPassword: "khatib2025"
+};
 
-const WHATSAPP_NUMBER = '201224324243'; // primary WhatsApp number in intl format
-const BASE_SELL = 122;
-const BASE_BUY  = 99;
-const ADMIN_PASSWORD = 'qasr2025';
+/* ============================================================
+   STATE
+   ============================================================ */
+const STORAGE_KEY = "khatib_orders_v1";
+const COUNTER_KEY = "khatib_counter_v1";
 
-const AREAS = ['سيدي بشر','ميامي','العصافرة','فيكتوريا','لوران','جليم','رشدي','الإبراهيمية','محطة الرمل','مناطق أخرى'];
-const ROOMS = ['1 غرفة','2 غرف','3 غرف','4 غرف','5 غرف أو أكثر'];
+let supabaseClient = null;
+let ordersCache = [];
 
-/* ---------- Storage helpers ---------- */
-function getList(key){
-  try { return JSON.parse(localStorage.getItem(key) || '[]'); }
-  catch(e){ return []; }
+/* ============================================================
+   SUPABASE INIT (if configured)
+   ============================================================ */
+function initSupabase(){
+  if(!CONFIG.supabase.url || !CONFIG.supabase.anonKey) return null;
+  if(typeof supabase === "undefined") return null;
+  try{
+    return supabase.createClient(CONFIG.supabase.url, CONFIG.supabase.anonKey);
+  }catch(e){
+    console.warn("Supabase init failed:", e);
+    return null;
+  }
 }
-function pushItem(key, item){
-  const list = getList(key);
-  list.push(item);
-  localStorage.setItem(key, JSON.stringify(list));
-  return list;
-}
 
-function getSellCount(){ return BASE_SELL + getList('qk_sell_requests').length; }
-function getBuyCount(){  return BASE_BUY  + getList('qk_buy_requests').length;  }
-
-/* ---------- Counter rendering ---------- */
-function renderCounters(){
-  const s = getSellCount();
-  const b = getBuyCount();
-  document.querySelector('#sellCounter .val').textContent = s;
-  document.querySelector('#buyCounter  .val').textContent = b;
-  document.getElementById('heroSellCount').textContent = s;
-  document.getElementById('heroBuyCount').textContent  = b;
+/* ============================================================
+   COUNTER MANAGEMENT
+   ============================================================ */
+function getLocalCounter(){
+  const v = localStorage.getItem(COUNTER_KEY);
+  const n = v ? parseInt(v, 10) : CONFIG.counterStart;
+  return isNaN(n) ? CONFIG.counterStart : n;
 }
-function bumpCounter(which){
-  const el = document.querySelector(which === 'sell' ? '#sellCounter' : '#buyCounter');
+function setLocalCounter(n){
+  localStorage.setItem(COUNTER_KEY, String(n));
+}
+async function getCurrentCounter(){
+  // إذا كان Supabase مفعّلًا، احصل على عدد الطلبات
+  if(supabaseClient){
+    try{
+      const { count, error } = await supabaseClient
+        .from(CONFIG.supabase.tableName)
+        .select("*", { count: "exact", head: true });
+      if(!error && typeof count === "number"){
+        return CONFIG.counterStart + count;
+      }
+    }catch(e){ console.warn(e); }
+  }
+  return getLocalCounter();
+}
+async function renderCounter(){
+  const val = await getCurrentCounter();
+  const el = document.getElementById("orderCounter");
+  if(el) el.textContent = val;
+}
+function flashCounter(newVal){
+  const el = document.getElementById("orderCounter");
   if(!el) return;
-  el.classList.remove('bump');
+  el.textContent = newVal;
+  el.classList.remove("flash");
   void el.offsetWidth;
-  el.classList.add('bump');
+  el.classList.add("flash");
 }
 
-/* ---------- Modal ---------- */
-function openModal(type){
-  // Reset forms
-  if(type === 'sell'){
-    document.getElementById('sellForm').reset();
-    document.getElementById('sellForm').style.display = '';
-    document.getElementById('sellSuccess').classList.remove('show');
-    document.getElementById('sellError').classList.remove('show');
+/* ============================================================
+   ORDER SAVE
+   ============================================================ */
+function buildOrderNumber(){
+  return CONFIG.counterStart + 1 + getLocalOrderCount();
+}
+function getLocalOrders(){
+  try{
+    const v = localStorage.getItem(STORAGE_KEY);
+    return v ? JSON.parse(v) : [];
+  }catch(e){ return []; }
+}
+function saveLocalOrder(order){
+  const list = getLocalOrders();
+  list.push(order);
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+}
+function getLocalOrderCount(){
+  return getLocalOrders().length;
+}
+
+async function saveOrderToSupabase(order){
+  if(!supabaseClient) return { ok:false, reason:"no-supabase" };
+  try{
+    const { error } = await supabaseClient
+      .from(CONFIG.supabase.tableName)
+      .insert([order]);
+    if(error){ return { ok:false, reason:error.message }; }
+    return { ok:true };
+  }catch(e){
+    return { ok:false, reason:e.message };
   }
-  if(type === 'buy'){
-    document.getElementById('buyForm').reset();
-    document.getElementById('buyForm').style.display = '';
-    document.getElementById('buySuccess').classList.remove('show');
-    document.getElementById('buyError').classList.remove('show');
-    // clear areas
-    document.querySelectorAll('#areasGrid input').forEach(i => i.checked = false);
-    document.querySelectorAll('#roomsRow input').forEach(i => i.checked = false);
-  }
-  const m = document.getElementById('modal-' + type);
-  if(m){ m.classList.add('active'); document.body.style.overflow = 'hidden'; }
-}
-function closeModal(type){
-  const m = document.getElementById('modal-' + type);
-  if(m){ m.classList.remove('active'); document.body.style.overflow = ''; }
 }
 
-// close on overlay click
-document.querySelectorAll('.modal-overlay').forEach(ov => {
-  ov.addEventListener('click', e => {
-    if(e.target === ov){ ov.classList.remove('active'); document.body.style.overflow = ''; }
-  });
-});
-document.addEventListener('keydown', e => {
-  if(e.key === 'Escape'){
-    document.querySelectorAll('.modal-overlay.active').forEach(m => m.classList.remove('active'));
-    document.body.style.overflow = '';
-  }
-});
+/* ============================================================
+   HELPERS
+   ============================================================ */
+function pad(n){ return String(n).padStart(2,"0"); }
+function formatDateTime(d){
+  const days = ["الأحد","الاثنين","الثلاثاء","الأربعاء","الخميس","الجمعة","السبت"];
+  const dStr = days[d.getDay()];
+  const date = `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+  const time = `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+  return `${dStr} ${date} - ${time}`;
+}
+function generateOrderId(){
+  return "HK-" + Date.now().toString(36).toUpperCase() + "-" + Math.floor(Math.random()*1000);
+}
+function yn(v){ return v ? "نعم" : "لا"; }
 
-/* ---------- Toast ---------- */
-let toastT;
-function showToast(msg){
-  const t = document.getElementById('toast');
-  document.getElementById('toastMsg').textContent = msg;
-  t.classList.add('show');
-  clearTimeout(toastT);
-  toastT = setTimeout(() => t.classList.remove('show'), 3000);
+/* ============================================================
+   VALIDATION + SUBMIT
+   ============================================================ */
+function showAlert(text){
+  const el = document.getElementById("formAlert");
+  const txt = document.getElementById("formAlertText");
+  if(txt) txt.textContent = text;
+  if(el) el.classList.add("show");
+  if(el) el.scrollIntoView({behavior:"smooth", block:"center"});
+}
+function hideAlert(){
+  const el = document.getElementById("formAlert");
+  if(el) el.classList.remove("show");
 }
 
-/* ---------- Build Buy form UI ---------- */
-function buildBuyFormUI(){
-  // Areas
-  const ag = document.getElementById('areasGrid');
-  ag.innerHTML = AREAS.map(a => `
-    <label class="area-chip">
-      <input type="checkbox" value="${a}">
-      <span class="chip"><span class="box">✓</span>${a}</span>
-    </label>
-  `).join('');
-
-  // Rooms
-  const rr = document.getElementById('roomsRow');
-  rr.innerHTML = ROOMS.map(r => `
-    <label class="room-pill">
-      <input type="radio" name="rooms" value="${r}">
-      <span class="p">${r}</span>
-    </label>
-  `).join('');
-}
-
-/* ---------- WhatsApp message builders ---------- */
-function waLink(text){
-  return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(text);
-}
-
-function buildSellMessage(d){
-  return [
-    'طلب بيع شقة - قصر الخطيب للتسويق العقاري',
-    '',
-    'الاسم: ' + d.name,
-    'رقم التليفون: ' + d.phone,
-    'المنطقة: ' + d.area,
-    'مساحة الشقة: ' + d.size + ' متر',
-    'عدد الغرف: ' + d.rooms,
-    'السعر المطلوب: ' + Number(d.price).toLocaleString('en-US') + ' جنيه',
-    'العمولة: 1%',
-    'موافقة العميل على العمولة: نعم'
-  ].join('\n');
-}
-
-function buildBuyMessage(d){
-  return [
-    'طلب شراء شقة - قصر الخطيب للتسويق العقاري',
-    '',
-    'الاسم: ' + d.name,
-    'رقم التليفون: ' + d.phone,
-    'المناطق المطلوبة: ' + d.areas.join('، '),
-    'الميزانية: من ' + Number(d.budgetFrom).toLocaleString('en-US') + ' إلى ' + Number(d.budgetTo).toLocaleString('en-US') + ' جنيه',
-    'عدد الغرف: ' + d.rooms,
-    'العمولة: 1%',
-    'موافقة العميل على العمولة: نعم'
-  ].join('\n');
-}
-
-/* ---------- Form: SELL submit ---------- */
-document.getElementById('sellForm').addEventListener('submit', function(e){
+async function submitOrder(e){
   e.preventDefault();
-  const f = e.target;
-  const errEl = document.getElementById('sellError');
+  hideAlert();
 
-  const name  = f.name.value.trim();
-  const phone = f.phone.value.trim();
-  const area  = f.area.value.trim();
-  const size  = f.size.value.trim();
-  const rooms = f.rooms.value;
-  const price = f.price.value.trim();
-  const agree = f.agree.checked;
+  const name    = document.getElementById("clientName").value.trim();
+  const phone   = document.getElementById("clientPhone").value.trim();
+  const address = document.getElementById("address").value.trim();
+  const area    = document.getElementById("area").value;
+  const floor   = document.getElementById("floor").value.trim();
+  const areaSize= document.getElementById("areaSize").value.trim();
+  const rooms   = document.getElementById("rooms").value;
+  const price   = document.getElementById("price").value.trim();
+  const agree   = document.getElementById("commissionAgree").checked;
 
-  // Required check
+  const utilElec   = document.getElementById("utilElec").checked;
+  const utilWater  = document.getElementById("utilWater").checked;
+  const utilGas    = document.getElementById("utilGas").checked;
+  const meterElec  = document.getElementById("meterElec").checked;
+  const meterWater = document.getElementById("meterWater").checked;
+  const meterGas   = document.getElementById("meterGas").checked;
+
+  // Validations
   if(!name || !phone){
-    errEl.textContent = 'من فضلك أدخل الاسم ورقم التليفون.';
-    errEl.classList.add('show');
+    showAlert("من فضلك أدخل الاسم ورقم التليفون.");
     return;
   }
-  if(!area || !size || !rooms || !price){
-    errEl.textContent = 'من فضلك أكمل جميع الحقول المطلوبة.';
-    errEl.classList.add('show');
+  if(!/^01[0-9]{9}$/.test(phone)){
+    showAlert("من فضلك أدخل رقم تليفون صحيح (مثال: 01xxxxxxxxx).");
+    return;
+  }
+  if(!address || !area || !floor || !areaSize || !rooms || !price){
+    showAlert("من فضلك أكمل بيانات الشقة الأساسية (العنوان، المنطقة، الدور، المساحة، الغرف، السعر).");
     return;
   }
   if(!agree){
-    errEl.textContent = 'يجب الموافقة على عمولة التسويق 1% قبل إرسال الطلب.';
-    errEl.classList.add('show');
+    showAlert("من فضلك وافق على عمولة التسويق العقاري بنسبة 1% لإتمام الطلب.");
     return;
   }
-  errEl.classList.remove('show');
 
-  const record = {
-    id: 'S-' + Date.now(),
-    name, phone, area, size, rooms, price,
-    agree: true,
-    date: new Date().toISOString()
+  // Order meta
+  const now = new Date();
+  const orderId = generateOrderId();
+
+  // Get counter — real value
+  let currentCounter = await getCurrentCounter();
+  const nextNumber = currentCounter + 1;
+
+  const order = {
+    id: orderId,
+    order_number: nextNumber,
+    created_at: now.toISOString(),
+    client_name: name,
+    client_phone: phone,
+    address: address,
+    area: area,
+    floor: floor,
+    area_size: areaSize,
+    rooms: rooms,
+    price: price,
+    util_elec: yn(utilElec),
+    util_water: yn(utilWater),
+    util_gas: yn(utilGas),
+    meter_elec: yn(meterElec),
+    meter_water: yn(meterWater),
+    meter_gas: yn(meterGas),
+    commission: "1%"
   };
 
-  pushItem('qk_sell_requests', record);
-  renderCounters();
-  bumpCounter('sell');
-
-  const msg = buildSellMessage(record);
-  const link = waLink(msg);
-  document.getElementById('sellWaBtn').href = link;
-
-  // Show success
-  f.style.display = 'none';
-  document.getElementById('sellSuccess').classList.add('show');
-
-  // Auto open WhatsApp
-  window.open(link, '_blank');
-  showToast('تم استلام طلب البيع بنجاح');
-});
-
-/* ---------- Form: BUY submit ---------- */
-document.getElementById('buyForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  const f = e.target;
-  const errEl = document.getElementById('buyError');
-
-  const name  = f.name.value.trim();
-  const phone = f.phone.value.trim();
-  const areas = Array.from(document.querySelectorAll('#areasGrid input:checked')).map(i => i.value);
-  const budgetFrom = f.budgetFrom.value.trim();
-  const budgetTo   = f.budgetTo.value.trim();
-  const roomsInput = document.querySelector('#roomsRow input:checked');
-  const rooms = roomsInput ? roomsInput.value : '';
-  const agree = f.agree.checked;
-
-  if(!name || !phone){
-    errEl.textContent = 'من فضلك أدخل الاسم ورقم التليفون.';
-    errEl.classList.add('show');
-    return;
+  // Save to Supabase (if available)
+  if(supabaseClient){
+    await saveOrderToSupabase(order);
   }
-  if(areas.length === 0){
-    errEl.textContent = 'من فضلك اختر منطقة واحدة على الأقل.';
-    errEl.classList.add('show');
-    return;
-  }
-  if(!budgetFrom || !budgetTo){
-    errEl.textContent = 'من فضلك أدخل نطاق الميزانية.';
-    errEl.classList.add('show');
-    return;
-  }
-  if(!rooms){
-    errEl.textContent = 'من فضلك اختر عدد الغرف.';
-    errEl.classList.add('show');
-    return;
-  }
-  if(!agree){
-    errEl.textContent = 'يجب الموافقة على عمولة التسويق 1% قبل إرسال الطلب.';
-    errEl.classList.add('show');
-    return;
-  }
-  errEl.classList.remove('show');
 
-  const record = {
-    id: 'B-' + Date.now(),
-    name, phone, areas,
-    budgetFrom, budgetTo, rooms,
-    agree: true,
-    date: new Date().toISOString()
-  };
+  // Always save locally as fallback for admin
+  saveLocalOrder(order);
 
-  pushItem('qk_buy_requests', record);
-  renderCounters();
-  bumpCounter('buy');
-
-  const msg = buildBuyMessage(record);
-  const link = waLink(msg);
-  document.getElementById('buyWaBtn').href = link;
-
-  f.style.display = 'none';
-  document.getElementById('buySuccess').classList.add('show');
-
-  window.open(link, '_blank');
-  showToast('تم استلام طلب الشراء بنجاح');
-});
-
-/* ---------- Marquee ---------- */
-function buildMarquee(){
-  const track = document.getElementById('marqueeTrack');
-  const items = [
-    'قصر الخطيب للتسويق العقاري',
-    'الإسكندرية',
-    '01224324243',
-    '01124997077',
-    'بيع وشراء وتسويق الشقق الفاخرة',
-    'عمولة 1% عند إتمام الصفقة'
-  ];
-  const html = items.map((t, i) =>
-    `<span class="marquee-item"><span class="hl">${t}</span>${i < items.length - 1 ? '<span class="sep">◆</span>' : ''}</span>`
-  ).join('');
-  track.innerHTML = html + html; // duplicate for seamless loop
-}
-
-/* ---------- Header scroll ---------- */
-function initHeader(){
-  const h = document.getElementById('siteHeader');
-  const onScroll = () => {
-    if(window.scrollY > 40) h.classList.add('scrolled');
-    else h.classList.remove('scrolled');
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-}
-
-/* ---------- Admin ---------- */
-function openAdmin(){
-  document.getElementById('adminLogin').style.display = '';
-  document.getElementById('adminDash').style.display = 'none';
-  document.getElementById('adminPass').value = '';
-  document.getElementById('adminErr').classList.remove('show');
-  document.getElementById('modal-admin').classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-function adminLogin(){
-  const v = document.getElementById('adminPass').value;
-  if(v === ADMIN_PASSWORD){
-    document.getElementById('adminLogin').style.display = 'none';
-    document.getElementById('adminDash').style.display = 'block';
-    renderAdmin('sell');
+  // Update local counter
+  if(nextNumber > getLocalCounter()){
+    setLocalCounter(nextNumber);
   } else {
-    document.getElementById('adminErr').classList.add('show');
+    setLocalCounter(getLocalCounter() + 1);
   }
+
+  // Flash counter
+  flashCounter(nextNumber);
+
+  // Build WhatsApp message
+  const lines = [
+    "طلب جديد لتسجيل شقة للبيع - قصر الخطيب للتسويق العقاري",
+    "",
+    `الاسم: ${name}`,
+    `رقم التليفون: ${phone}`,
+    `عنوان الشقة بالتفصيل: ${address}`,
+    `المنطقة: ${area}`,
+    `الدور: ${floor}`,
+    `مساحة الشقة: ${areaSize} متر`,
+    `عدد الغرف: ${rooms}`,
+    `السعر المطلوب: ${price} جنيه`,
+    "",
+    `الكهرباء: ${yn(utilElec)}`,
+    `المياه: ${yn(utilWater)}`,
+    `الغاز الطبيعي: ${yn(utilGas)}`,
+    `عداد كهرباء مستقل: ${yn(meterElec)}`,
+    `عداد مياه مستقل: ${yn(meterWater)}`,
+    `عداد غاز مستقل: ${yn(meterGas)}`,
+    "",
+    `العمولة: 1%`,
+    `موافقة العميل على العمولة: نعم`,
+    `وقت إرسال الطلب: ${formatDateTime(now)}`,
+    `رقم الطلب: #${nextNumber}`
+  ];
+  const message = lines.join("\n");
+
+  const waUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+  // Save for photos button
+  const photosUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(
+    `مرحبًا قصر الخطيب،\nأرغب في إرسال صور شقتي.\nرقم الطلب: #${nextNumber}\nالاسم: ${name}`
+  )}`;
+
+  // Show success screen
+  document.getElementById("propertyForm").style.display = "none";
+  const success = document.getElementById("successScreen");
+  success.classList.add("show");
+  document.getElementById("successOrderId").textContent = `رقم الطلب: #${nextNumber}`;
+  document.getElementById("sendPhotosBtn").href = photosUrl;
+
+  // Open WhatsApp in new tab
+  window.open(waUrl, "_blank", "noopener");
+
+  // Scroll to top of form
+  document.getElementById("formWrapper").scrollIntoView({behavior:"smooth", block:"start"});
+
+  // Update admin cache
+  ordersCache = getLocalOrders();
 }
-document.getElementById('adminPass').addEventListener('keydown', e => {
-  if(e.key === 'Enter') adminLogin();
-});
 
-let currentTab = 'sell';
-function switchTab(type, btn){
-  currentTab = type;
-  document.querySelectorAll('.admin-tab').forEach(b => b.classList.remove('active'));
-  if(btn) btn.classList.add('active');
-  renderAdmin(type);
+/* ============================================================
+   ADMIN PANEL
+   ============================================================ */
+async function openAdmin(){
+  const pwd = prompt("أدخل كلمة مرور الإدارة:");
+  if(pwd !== CONFIG.adminPassword){
+    alert("كلمة المرور غير صحيحة.");
+    return;
+  }
+  const panel = document.getElementById("adminPanel");
+  panel.classList.add("open");
+  document.body.style.overflow = "hidden";
+
+  let orders = [];
+  if(supabaseClient){
+    try{
+      const { data, error } = await supabaseClient
+        .from(CONFIG.supabase.tableName)
+        .select("*")
+        .order("created_at", { ascending:false });
+      if(!error && data) orders = data;
+    }catch(e){ console.warn(e); }
+  }
+  if(orders.length === 0){
+    orders = getLocalOrders().slice().reverse();
+  }
+
+  renderAdmin(orders);
 }
 
-function renderAdmin(type){
-  const sellTotal = getSellCount();
-  const buyTotal  = getBuyCount();
-  document.getElementById('adminSellTotal').textContent = sellTotal;
-  document.getElementById('adminBuyTotal').textContent  = buyTotal;
+function renderAdmin(orders){
+  const stats = document.getElementById("adminStats");
+  const list = document.getElementById("adminList");
 
-  const wrap = document.getElementById('adminTableWrap');
-  const list = type === 'sell' ? getList('qk_sell_requests') : getList('qk_buy_requests');
+  const total = CONFIG.counterStart + orders.length;
 
-  if(list.length === 0){
-    wrap.innerHTML = `<div class="admin-empty">لا توجد طلبات مسجلة بعد.</div>`;
+  stats.innerHTML = `
+    <div class="admin-stat">
+      <div class="num">${total}</div>
+      <div class="lbl">إجمالي طلبات البيع</div>
+    </div>
+    <div class="admin-stat">
+      <div class="num">${orders.length}</div>
+      <div class="lbl">طلبات مسجلة (مفصلة)</div>
+    </div>
+    <div class="admin-stat">
+      <div class="num">${CONFIG.counterStart}</div>
+      <div class="lbl">بداية العداد</div>
+    </div>
+  `;
+
+  if(orders.length === 0){
+    list.innerHTML = `<div class="admin-empty">لا توجد طلبات مسجلة بعد.</div>`;
     return;
   }
 
-  const rows = list.slice().reverse().map((r, idx) => {
-    const d = new Date(r.date).toLocaleString('ar-EG');
-    if(type === 'sell'){
-      return `<tr>
-        <td>${list.length - idx}</td>
-        <td>${r.name}</td>
-        <td style="direction:ltr; font-weight:700;">${r.phone}</td>
-        <td>${r.area}</td>
-        <td>${r.size} م</td>
-        <td>${r.rooms}</td>
-        <td>${Number(r.price).toLocaleString('en-US')}</td>
-        <td style="font-size:12px; color:#5A6B78;">${d}</td>
-      </tr>`;
-    } else {
-      return `<tr>
-        <td>${list.length - idx}</td>
-        <td>${r.name}</td>
-        <td style="direction:ltr; font-weight:700;">${r.phone}</td>
-        <td>${r.areas.join('، ')}</td>
-        <td>${Number(r.budgetFrom).toLocaleString('en-US')} → ${Number(r.budgetTo).toLocaleString('en-US')}</td>
-        <td>${r.rooms}</td>
-        <td style="font-size:12px; color:#5A6B78;">${d}</td>
-      </tr>`;
-    }
-  }).join('');
-
-  const head = type === 'sell'
-    ? `<tr><th>#</th><th>الاسم</th><th>رقم التليفون</th><th>المنطقة</th><th>المساحة</th><th>الغرف</th><th>السعر</th><th>التاريخ</th></tr>`
-    : `<tr><th>#</th><th>الاسم</th><th>رقم التليفون</th><th>المناطق المطلوبة</th><th>الميزانية</th><th>الغرف</th><th>التاريخ</th></tr>`;
-
-  wrap.innerHTML = `<table class="admin-table"><thead>${head}</thead><tbody>${rows}</tbody></table>`;
+  list.innerHTML = orders.map((o, i) => {
+    const num = o.order_number || (total - i);
+    const d = o.created_at ? new Date(o.created_at) : new Date();
+    return `
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <span class="order-id">طلب #${num}</span>
+          <span class="order-date">${formatDateTime(d)}</span>
+        </div>
+        <div class="admin-fields">
+          <div class="admin-field"><strong>الاسم</strong>${escapeHtml(o.client_name||"")}</div>
+          <div class="admin-field"><strong>رقم التليفون</strong><a href="tel:${escapeHtml(o.client_phone||"")}" style="color:var(--gold-2);direction:ltr;display:inline-block">${escapeHtml(o.client_phone||"")}</a></div>
+          <div class="admin-field"><strong>المنطقة</strong>${escapeHtml(o.area||"")}</div>
+          <div class="admin-field"><strong>الدور</strong>${escapeHtml(String(o.floor||""))}</div>
+          <div class="admin-field"><strong>المساحة</strong>${escapeHtml(String(o.area_size||""))} متر</div>
+          <div class="admin-field"><strong>الغرف</strong>${escapeHtml(String(o.rooms||""))}</div>
+          <div class="admin-field"><strong>السعر</strong>${escapeHtml(String(o.price||""))} جنيه</div>
+          <div class="admin-field"><strong>العنوان</strong>${escapeHtml(o.address||"")}</div>
+          <div class="admin-field"><strong>المرافق</strong>كهرباء:${escapeHtml(o.util_elec||"-")} | مياه:${escapeHtml(o.util_water||"-")} | غاز:${escapeHtml(o.util_gas||"-")}</div>
+          <div class="admin-field"><strong>عدادات مستقلة</strong>كهرباء:${escapeHtml(o.meter_elec||"-")} | مياه:${escapeHtml(o.meter_water||"-")} | غاز:${escapeHtml(o.meter_gas||"-")}</div>
+          <div class="admin-field"><strong>العمولة</strong>${escapeHtml(o.commission||"1%")}</div>
+          <div class="admin-field"><strong>رقم الطلب</strong>${num}</div>
+        </div>
+      </div>
+    `;
+  }).join("");
 }
 
-/* ---------- Init ---------- */
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('year').textContent = new Date().getFullYear();
-  buildMarquee();
-  buildBuyFormUI();
-  renderCounters();
-  initHeader();
+function closeAdmin(){
+  document.getElementById("adminPanel").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+function escapeHtml(s){
+  return String(s)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#39;");
+}
+
+/* ============================================================
+   UI WIRING
+   ============================================================ */
+function closeMenu(){
+  document.getElementById("burger").classList.remove("open");
+  document.getElementById("mobileMenu").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  // Init Supabase
+  supabaseClient = initSupabase();
+
+  // Year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Counter
+  await renderCounter();
+
+  // Header scroll
+  const header = document.getElementById("header");
+  window.addEventListener("scroll", () => {
+    if(window.scrollY > 30) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
+  }, { passive:true });
+
+  // Burger
+  const burger = document.getElementById("burger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  burger.addEventListener("click", () => {
+    const opening = !mobileMenu.classList.contains("open");
+    burger.classList.toggle("open", opening);
+    mobileMenu.classList.toggle("open", opening);
+    document.body.style.overflow = opening ? "hidden" : "";
+  });
+
+  // Checkbox utility styling
+  document.querySelectorAll(".util-item input").forEach(cb => {
+    cb.addEventListener("change", () => {
+      cb.closest(".util-item").classList.toggle("checked", cb.checked);
+    });
+  });
+  const commWrap = document.getElementById("commissionWrap");
+  const commCb = document.getElementById("commissionAgree");
+  if(commCb){
+    commCb.addEventListener("change", () => {
+      commWrap.classList.toggle("checked", commCb.checked);
+    });
+  }
+
+  // Form submit
+  document.getElementById("propertyForm").addEventListener("submit", submitOrder);
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if(en.isIntersecting){
+        en.target.classList.add("visible");
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+  // Smooth scroll for internal anchors
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener("click", (e) => {
+      const href = a.getAttribute("href");
+      if(href.length > 1){
+        const target = document.querySelector(href);
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({ behavior:"smooth", block:"start" });
+          closeMenu();
+        }
+      }
+    });
+  });
+
+  // Admin panel trigger via hash
+  if(location.hash === "#admin-hk-2025"){
+    // auto prompt
+    setTimeout(openAdmin, 500);
+  }
+  window.addEventListener("hashchange", () => {
+    if(location.hash === "#admin-hk-2025"){
+      openAdmin();
+    }
+  });
+
+  // Counter refresh every 30s (in case supabase updates from other users)
+  setInterval(async () => {
+    if(supabaseClient){
+      const val = await getCurrentCounter();
+      const el = document.getElementById("orderCounter");
+      if(el && el.textContent !== String(val)) el.textContent = val;
+    }
+  }, 30000);
 });
 </script>
+
 </body>
 </html>
