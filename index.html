@@ -2,947 +2,1751 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>قصر الخطيب للتسويق العقاري | شراء الشقق في الإسكندرية</title>
-<meta name="description" content="قصر الخطيب للتسويق العقاري - سجّل طلبك لشراء شقة في الإسكندرية وحدد المنطقة والسعر والمساحة والمواصفات التي تبحث عنها.">
-<meta name="keywords" content="شقق للبيع في الإسكندرية, شراء شقة الإسكندرية, عقارات الإسكندرية, قصر الخطيب للتسويق العقاري">
-<meta name="theme-color" content="#081428">
-<meta property="og:title" content="قصر الخطيب للتسويق العقاري | شراء الشقق في الإسكندرية">
-<meta property="og:description" content="سجّل طلبك لشراء شقة في الإسكندرية وحدد المنطقة والسعر والمساحة والمواصفات.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>قصر الخطيب للتسويق العقاري | تسويق وبيع الشقق في الإسكندرية</title>
+
+<meta name="description" content="قصر الخطيب للتسويق العقاري - تسويق وبيع الشقق في الإسكندرية واستقبال بيانات ملاك الشقق الراغبين في البيع.">
+<meta name="keywords" content="تسويق عقاري الإسكندرية, بيع شقة الإسكندرية, قصر الخطيب, تسويق شقق, عمولة 1%">
+<meta name="author" content="قصر الخطيب للتسويق العقاري">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#081226">
+<meta name="format-detection" content="telephone=yes">
+
 <meta property="og:type" content="website">
+<meta property="og:title" content="قصر الخطيب للتسويق العقاري | تسويق وبيع الشقق في الإسكندرية">
+<meta property="og:description" content="لو عايز تبيع شقتك في الإسكندرية — نساعدك في تسويق شقتك والوصول إلى العملاء الباحثين عن الشراء. عمولة 1% عند إتمام الصفقة.">
+<meta property="og:locale" content="ar_EG">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Amiri:wght@700&display=swap" rel="stylesheet">
 
 <style>
-/* ================= RESET ================= */
-*{box-sizing:border-box;margin:0;padding:0}
+/* ============================================================
+   المتغيرات العامة
+   ============================================================ */
 :root{
-  --navy:#081428;--navy2:#0c1e3a;--navy3:#122b52;
-  --gold:#d4af37;--goldL:#f7e3a1;--goldM:#e8c874;--goldD:#9c7714;
-  --red:#e11d2c;--redD:#8b0a14;--redL:#ff4d5a;
-  --muted:#a9b8d0;--line:rgba(212,175,55,.25);
+  --navy-900:#04091a;
+  --navy-800:#081226;
+  --navy-700:#0c1a38;
+  --navy-600:#122450;
+  --navy-500:#1a3168;
+
+  --gold:#d4af37;
+  --gold-light:#f2dc8a;
+  --gold-soft:#e8c766;
+  --gold-dark:#a8842a;
+
+  --white:#ffffff;
+  --muted:#c3cfe8;
+
+  --red:#e11d2e;
+  --red-dark:#9c0c1a;
+  --red-light:#ff4d5e;
+
+  --green-1:#5ec46a;
+  --green-2:#2f8b3c;
+  --green-3:#17471f;
+
+  --radius:20px;
+  --shadow-soft:0 18px 50px rgba(0,0,0,.45);
+  --glass:rgba(255,255,255,.045);
+  --glass-border:rgba(212,175,55,.22);
 }
-html{scroll-behavior:smooth}
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+
+html{
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+  -webkit-text-size-adjust:100%;
+}
+
 body{
   font-family:'Cairo',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;
-  background:var(--navy);color:#fff;overflow-x:hidden;line-height:1.75;
-  -webkit-font-smoothing:antialiased;
-}
-body::before{
-  content:"";position:fixed;inset:0;z-index:-2;
-  background:
-    radial-gradient(900px 600px at 85% -5%,rgba(212,175,55,.12),transparent 60%),
-    radial-gradient(800px 600px at 5% 35%,rgba(18,43,82,.85),transparent 65%),
-    radial-gradient(700px 700px at 90% 95%,rgba(212,175,55,.07),transparent 60%),
-    linear-gradient(180deg,#081428 0%,#0a1730 45%,#081428 100%);
-}
-img{max-width:100%;display:block}
-a{text-decoration:none;color:inherit}
-button,input,select,textarea{font-family:inherit;font-size:inherit;outline:none}
-::selection{background:var(--gold);color:#081428}
-.container{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
-
-/* ================= TEXT ================= */
-.gold-text{background:linear-gradient(180deg,#f9ebb5,#d4af37 50%,#a8801f);-webkit-background-clip:text;background-clip:text;color:transparent}
-.sec-title{font-size:clamp(26px,4.2vw,44px);font-weight:900;line-height:1.35;margin-bottom:14px}
-.sec-sub{color:var(--muted);font-size:clamp(15px,2vw,18px);max-width:720px;margin:0 auto}
-.center{text-align:center}
-.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:1px;color:var(--gold);border:1px solid var(--line);border-radius:999px;padding:6px 18px;margin-bottom:16px;background:rgba(212,175,55,.07)}
-.gold-divider{width:110px;height:3px;margin:18px auto 30px;border-radius:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-
-/* ================= BUTTONS ================= */
-.btn-gold{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  background:linear-gradient(180deg,#f9e9b6 0%,#d4af37 45%,#a8801f 100%);
-  color:#081428!important;font-weight:900;font-size:17px;padding:17px 38px;border-radius:15px;border:none;cursor:pointer;
-  box-shadow:0 6px 0 #6f5510,0 14px 30px rgba(212,175,55,.32);
-  transition:transform .12s ease,box-shadow .12s ease,filter .25s ease;text-align:center;line-height:1.3;
-}
-.btn-gold:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 8px 0 #6f5510,0 18px 38px rgba(212,175,55,.45)}
-.btn-gold:active{transform:translateY(4px);box-shadow:0 2px 0 #6f5510,0 6px 14px rgba(212,175,55,.3)}
-.btn-gold.big{font-size:19px;padding:20px 46px;border-radius:17px}
-.btn-gold.full{width:100%}
-.btn-ghost{
-  display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  background:rgba(255,255,255,.04);border:1.5px solid var(--line);
-  color:#fff;font-weight:700;padding:14px 28px;border-radius:14px;cursor:pointer;transition:.25s;
-}
-.btn-ghost:hover{border-color:var(--gold);background:rgba(212,175,55,.12);color:var(--goldL);transform:translateY(-2px)}
-
-/* ================= NAV ================= */
-.nav{position:fixed;top:0;right:0;left:0;z-index:200;background:rgba(8,20,40,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(212,175,55,.15);transition:background .3s,box-shadow .3s}
-.nav.scrolled{background:rgba(6,15,32,.94);box-shadow:0 8px 30px rgba(0,0,0,.45)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;height:76px}
-.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
-.brand-logo{width:48px;height:48px;flex-shrink:0;filter:drop-shadow(0 3px 10px rgba(212,175,55,.4))}
-.brand-logo svg{width:100%;height:100%;display:block}
-.brand-text b{display:block;font-size:17px;font-weight:900;line-height:1.25;color:#fff;white-space:nowrap}
-.brand-text span{display:block;font-size:11px;color:var(--gold);font-weight:600;letter-spacing:.5px;white-space:nowrap}
-.nav-links{display:flex;gap:28px;align-items:center}
-.nav-links a{color:#cfd9ea;font-size:15px;font-weight:600;transition:.25s;position:relative;padding:4px 0}
-.nav-links a::after{content:"";position:absolute;bottom:0;right:0;width:0;height:2px;background:var(--gold);transition:width .3s;border-radius:2px}
-.nav-links a:hover{color:var(--goldL)}
-.nav-links a:hover::after{width:100%}
-.nav .btn-gold{padding:12px 24px;font-size:15px;border-radius:12px;box-shadow:0 4px 0 #6f5510,0 10px 22px rgba(212,175,55,.3)}
-
-/* ================= HERO ================= */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 0 60px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=70');background-size:cover;background-position:center;opacity:.18;filter:saturate(.85)}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,40,.6) 0%,rgba(8,20,40,.88) 55%,rgba(8,20,40,1) 100%)}
-.hero-inner{position:relative;z-index:3;text-align:center;width:100%}
-
-.hero-logo{width:110px;height:110px;margin:0 auto 20px;filter:drop-shadow(0 8px 30px rgba(212,175,55,.5));animation:floaty 5s ease-in-out infinite}
-.hero-logo svg{width:100%;height:100%}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-
-.hero h1{font-size:clamp(28px,5.8vw,62px);font-weight:900;line-height:1.28;margin-bottom:10px;letter-spacing:-.5px}
-.hero h1 .alex{display:inline-block;position:relative;background:linear-gradient(180deg,#fdf0c4,#d4af37 45%,#a8801f);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 60px rgba(212,175,55,.35)}
-.hero h1 .alex::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:5px;border-radius:5px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.85}
-.hero h2{font-size:clamp(22px,4.2vw,44px);font-weight:900;margin:18px 0 6px;color:#fff}
-.hero .lead-action{font-size:clamp(17px,2.4vw,24px);font-weight:700;color:var(--goldL);margin-bottom:14px}
-.hero p.hero-desc{color:#c4d2e8;font-size:clamp(14.5px,1.8vw,17px);max-width:680px;margin:0 auto 30px;line-height:1.9}
-
-/* =============== GIANT SCENE =============== */
-.scene{
+  background:var(--navy-800);
+  color:var(--white);
+  overflow-x:hidden;
+  max-width:100vw;
+  line-height:1.85;
+  font-size:17px;
+  font-weight:600;
   position:relative;
-  display:flex;align-items:center;justify-content:center;gap:20px;
-  flex-wrap:wrap;
-  margin:30px auto 10px;
-  padding:20px;
-  max-width:1000px;
-  border:1.5px solid rgba(212,175,55,.28);
-  border-radius:28px;
+}
+
+/* خلفية فاخرة */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
   background:
-    radial-gradient(600px 380px at 30% 50%,rgba(212,175,55,.09),transparent 70%),
-    linear-gradient(160deg,rgba(18,43,82,.75),rgba(8,20,40,.85));
-  backdrop-filter:blur(10px);
-  box-shadow:0 24px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.06);
+    radial-gradient(circle at 85% -5%, rgba(212,175,55,.16), transparent 45%),
+    radial-gradient(circle at 5% 20%, rgba(26,49,104,.75), transparent 50%),
+    radial-gradient(circle at 50% 110%, rgba(212,175,55,.10), transparent 55%),
+    linear-gradient(180deg,#081226 0%,#050d20 50%,#081226 100%);
+  z-index:-2;
+  pointer-events:none;
+}
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(212,175,55,.035) 0 1px, transparent 1px 26px),
+    repeating-linear-gradient(-45deg, rgba(212,175,55,.035) 0 1px, transparent 1px 26px);
+  z-index:-1;
+  pointer-events:none;
+  opacity:.6;
+}
+
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+
+/* ============================================================
+   الحاوية العامة
+   ============================================================ */
+.wrap{
+  width:100%;
+  max-width:1240px;
+  margin:0 auto;
+  padding:0 18px;
+}
+
+/* ============================================================
+   الهيدر + اللوجو
+   ============================================================ */
+header.site-header{
+  padding:26px 0 10px;
+  text-align:center;
+  position:relative;
+}
+
+.logo-wrap{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:14px;
+}
+
+#brandLogo{
+  width:clamp(110px,26vw,165px);
+  height:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 10px 28px rgba(212,175,55,.42));
+}
+
+.logo-fallback{
+  width:clamp(105px,25vw,150px);
+  height:clamp(105px,25vw,150px);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:clamp(48px,12vw,68px);
+  background:linear-gradient(145deg,rgba(212,175,55,.22),rgba(212,175,55,.05));
+  border:3px solid var(--gold);
+  box-shadow:0 10px 30px rgba(212,175,55,.35), inset 0 0 30px rgba(212,175,55,.18);
+}
+
+.brand-name{
+  font-family:'Amiri',serif;
+  font-weight:700;
+  font-size:clamp(2.6rem,11vw,5rem);
+  line-height:1.15;
+  letter-spacing:1px;
+  background:linear-gradient(180deg,#fff6d8 0%,#f2dc8a 35%,#d4af37 65%,#a8842a 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 8px 40px rgba(212,175,55,.28);
+  margin-bottom:2px;
+}
+
+.brand-sub{
+  font-size:clamp(1.15rem,4.6vw,1.85rem);
+  font-weight:800;
+  color:var(--gold-light);
+  letter-spacing:2px;
+  margin-bottom:6px;
+  text-shadow:0 3px 18px rgba(212,175,55,.35);
+}
+
+.brand-line{
+  width:min(320px,72vw);
+  height:2px;
+  margin:14px auto 0;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:.85;
+  position:relative;
+}
+.brand-line::after{
+  content:"";
+  position:absolute;
+  left:50%;top:50%;
+  width:9px;height:9px;
+  transform:translate(-50%,-50%) rotate(45deg);
+  background:var(--gold);
+  box-shadow:0 0 14px var(--gold);
+}
+
+/* ============================================================
+   شريط المعلومات الثابت
+   ============================================================ */
+.info-bar{
+  position:sticky;
+  top:0;
+  z-index:80;
+  background:linear-gradient(180deg,rgba(8,18,38,.97),rgba(8,18,38,.88));
+  border-top:1px solid rgba(212,175,55,.35);
+  border-bottom:1px solid rgba(212,175,55,.35);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  box-shadow:0 10px 34px rgba(0,0,0,.55);
+  padding:10px 0;
+  margin-top:20px;
+}
+
+.info-bar-inner{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:10px 20px;
+  text-align:center;
+}
+
+.info-title{
+  font-size:clamp(.95rem,3.4vw,1.15rem);
+  font-weight:900;
+  color:var(--gold-light);
+  letter-spacing:.5px;
+  width:100%;
+}
+
+.info-phones{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+}
+
+.info-phone{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:clamp(1.02rem,4vw,1.28rem);
+  font-weight:900;
+  color:#fff;
+  background:linear-gradient(145deg,rgba(212,175,55,.16),rgba(212,175,55,.04));
+  border:1.5px solid rgba(212,175,55,.5);
+  border-radius:999px;
+  padding:8px 18px;
+  direction:ltr;
+  transition:.25s;
+  white-space:nowrap;
+}
+.info-phone:hover,.info-phone:active{
+  background:linear-gradient(145deg,var(--gold),var(--gold-dark));
+  color:#07101f;
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px rgba(212,175,55,.45);
+}
+.info-phone svg{width:19px;height:19px;flex:0 0 auto;}
+
+/* ============================================================
+   الشريط المتحرك
+   ============================================================ */
+.marquee{
+  overflow:hidden;
+  direction:ltr;
+  background:linear-gradient(90deg,#a8842a,#d4af37,#f2dc8a,#d4af37,#a8842a);
+  padding:11px 0;
+  border-top:2px solid rgba(255,255,255,.22);
+  border-bottom:2px solid rgba(255,255,255,.22);
+  position:relative;
+}
+.marquee-track{
+  display:flex;
+  width:max-content;
+  animation:marqueeScroll 34s linear infinite;
+  will-change:transform;
+}
+.marquee-track span{
+  font-size:clamp(.95rem,3.5vw,1.15rem);
+  font-weight:900;
+  color:#06101f;
+  padding:0 18px;
+  white-space:nowrap;
+  direction:rtl;
+}
+@keyframes marqueeScroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+
+/* ============================================================
+   قسم الهيرو
+   ============================================================ */
+.hero{
+  padding:52px 0 26px;
+  text-align:center;
+}
+
+.hero-badge{
+  display:inline-block;
+  font-size:clamp(.9rem,3.3vw,1.05rem);
+  font-weight:900;
+  color:var(--gold-light);
+  border:1.5px solid rgba(212,175,55,.5);
+  background:rgba(212,175,55,.08);
+  border-radius:999px;
+  padding:8px 22px;
+  margin-bottom:20px;
+  letter-spacing:.5px;
+}
+
+.hero h1{
+  font-size:clamp(1.75rem,7.4vw,3.1rem);
+  font-weight:900;
+  line-height:1.5;
+  color:#fff;
+  margin-bottom:18px;
+  text-shadow:0 6px 30px rgba(0,0,0,.5);
+}
+.hero h1 .gold{
+  background:linear-gradient(180deg,#fff6d8,#f2dc8a,#d4af37);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p.lead{
+  font-size:clamp(1.05rem,4.2vw,1.35rem);
+  font-weight:700;
+  color:var(--muted);
+  max-width:820px;
+  margin:0 auto 32px;
+  line-height:1.95;
+}
+
+/* بطاقة العمولة */
+.commission-card{
+  max-width:640px;
+  margin:0 auto;
+  background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  border:2px solid rgba(212,175,55,.4);
+  border-radius:28px;
+  padding:26px 22px 24px;
+  box-shadow:var(--shadow-soft), inset 0 1px 0 rgba(255,255,255,.09);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  position:relative;
   overflow:hidden;
 }
-.scene::before{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(800px 400px at 20% 100%,rgba(74,155,63,.12),transparent 70%);
-}
-
-/* Giant */
-.giant{
-  position:relative;z-index:2;
-  flex:0 0 auto;
-  width:clamp(200px,26vw,300px);
-  height:clamp(250px,32vw,370px);
-  filter:drop-shadow(0 30px 40px rgba(0,0,0,.55));
-  animation:giantBob 3.2s ease-in-out infinite;
-}
-@keyframes giantBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.giant svg{width:100%;height:100%;display:block;overflow:visible}
-
-/* Action side */
-.action{
-  position:relative;z-index:2;
-  flex:1 1 320px;min-width:260px;
-  text-align:center;
-  display:flex;flex-direction:column;align-items:center;gap:8px;
-}
-.big-text{
-  font-size:clamp(24px,4vw,42px);
-  font-weight:900;
-  line-height:1.3;
-  letter-spacing:-.5px;
-  background:linear-gradient(180deg,#ffffff 0%,#f9e9b6 55%,#d4af37 100%);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  filter:drop-shadow(0 4px 20px rgba(212,175,55,.4));
-  animation:textGlow 2.4s ease-in-out infinite;
-}
-@keyframes textGlow{
-  0%,100%{filter:drop-shadow(0 4px 20px rgba(212,175,55,.35))}
-  50%{filter:drop-shadow(0 6px 28px rgba(212,175,55,.7))}
-}
-.arrow-down{
-  font-size:clamp(28px,4vw,44px);
-  line-height:1;
-  animation:arrowBounce 1.4s ease-in-out infinite;
-  filter:drop-shadow(0 4px 12px rgba(212,175,55,.5));
-}
-@keyframes arrowBounce{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(10px) scale(1.08)}}
-
-/* THE BIG RED BUTTON */
-.red-btn{
-  position:relative;
-  display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
-  width:clamp(170px,22vw,220px);
-  height:clamp(170px,22vw,220px);
-  border-radius:50%;
-  border:6px solid #ff8189;
-  cursor:pointer;
-  font-family:inherit;font-weight:900;color:#fff;
-  font-size:clamp(15px,1.7vw,19px);
-  line-height:1.3;text-align:center;padding:16px;
-  background:
-    radial-gradient(circle at 35% 30%,#ff6b78 0%,#e11d2c 45%,#8b0a14 100%);
-  box-shadow:
-    0 0 0 8px rgba(225,29,44,.25),
-    0 0 0 18px rgba(225,29,44,.10),
-    0 14px 0 #5a0409,
-    0 26px 50px rgba(225,29,44,.55),
-    inset 0 -10px 24px rgba(0,0,0,.45),
-    inset 0 12px 24px rgba(255,255,255,.28);
-  text-shadow:0 2px 4px rgba(0,0,0,.4);
-  transition:transform .18s ease,box-shadow .18s ease;
-  animation:btnFull 9s ease-in-out infinite;
-  z-index:5;
-}
-.red-btn:hover{transform:scale(1.05)}
-.red-btn:active{transform:scale(.94) translateY(6px);box-shadow:0 0 0 12px rgba(225,29,44,.3),0 6px 0 #5a0409,0 12px 30px rgba(225,29,44,.7),inset 0 -6px 16px rgba(0,0,0,.5),inset 0 8px 18px rgba(255,255,255,.3)}
-.red-btn .icon{font-size:clamp(28px,3.6vw,40px);line-height:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5))}
-.red-btn .lbl{font-weight:900;letter-spacing:.3px}
-.red-btn .sub{font-size:clamp(12px,1.3vw,14px);font-weight:800;color:#ffe0e3}
-
-@keyframes btnFull{
-  0%   {transform:scale(1);    box-shadow:0 0 0 8px rgba(225,29,44,.25),0 0 0 18px rgba(225,29,44,.10),0 14px 0 #5a0409,0 26px 50px rgba(225,29,44,.55),inset 0 -10px 24px rgba(0,0,0,.45),inset 0 12px 24px rgba(255,255,255,.28)}
-  22%  {transform:scale(1.04); box-shadow:0 0 0 12px rgba(225,29,44,.30),0 0 0 26px rgba(225,29,44,.14),0 14px 0 #5a0409,0 32px 60px rgba(225,29,44,.75),inset 0 -10px 24px rgba(0,0,0,.45),inset 0 12px 24px rgba(255,255,255,.30)}
-  44%  {transform:scale(1);    box-shadow:0 0 0 8px rgba(225,29,44,.25),0 0 0 18px rgba(225,29,44,.10),0 14px 0 #5a0409,0 26px 50px rgba(225,29,44,.55),inset 0 -10px 24px rgba(0,0,0,.45),inset 0 12px 24px rgba(255,255,255,.28)}
-  55%  {transform:scale(.90) translate(3px,6px); box-shadow:0 0 0 20px rgba(255,120,40,.55),0 0 0 40px rgba(255,120,40,.2),0 8px 0 #5a0409,0 14px 30px rgba(255,140,40,.9),inset 0 -8px 20px rgba(0,0,0,.6),inset 0 10px 22px rgba(255,255,255,.4)}
-  58%  {transform:scale(1.08); box-shadow:0 0 0 30px rgba(255,170,60,.35),0 0 0 60px rgba(255,170,60,.12),0 16px 0 #5a0409,0 36px 70px rgba(255,170,60,.85),inset 0 -12px 26px rgba(0,0,0,.4),inset 0 14px 26px rgba(255,255,255,.4)}
-  62%  {transform:scale(1);    box-shadow:0 0 0 10px rgba(225,29,44,.3),0 0 0 20px rgba(225,29,44,.1),0 14px 0 #5a0409,0 28px 54px rgba(225,29,44,.6),inset 0 -10px 24px rgba(0,0,0,.45),inset 0 12px 24px rgba(255,255,255,.28)}
-  78%  {transform:scale(1.04); box-shadow:0 0 0 12px rgba(225,29,44,.30),0 0 0 26px rgba(225,29,44,.14),0 14px 0 #5a0409,0 32px 60px rgba(225,29,44,.75),inset 0 -10px 24px rgba(0,0,0,.45),inset 0 12px 24px rgba(255,255,255,.30)}
-  100% {transform:scale(1);    box-shadow:0 0 0 8px rgba(225,29,44,.25),0 0 0 18px rgba(225,29,44,.10),0 14px 0 #5a0409,0 26px 50px rgba(225,29,44,.55),inset 0 -10px 24px rgba(0,0,0,.45),inset 0 12px 24px rgba(255,255,255,.28)}
-}
-
-/* Impact spark */
-.spark{
-  position:absolute;top:50%;left:50%;
-  width:10px;height:10px;border-radius:50%;
-  background:radial-gradient(circle,#fff,#ffb347 40%,transparent 70%);
-  transform:translate(-50%,-50%) scale(0);
+.commission-card::before{
+  content:"";
+  position:absolute;
+  top:-60%;left:-20%;
+  width:70%;height:200%;
+  background:linear-gradient(90deg,transparent,rgba(212,175,55,.14),transparent);
+  transform:rotate(18deg);
+  animation:shine 6s ease-in-out infinite;
   pointer-events:none;
-  animation:sparkPop 9s ease-out infinite;
 }
-@keyframes sparkPop{
-  0%,54%{transform:translate(-50%,-50%) scale(0);opacity:0}
-  56%{transform:translate(-50%,-50%) scale(10);opacity:1}
-  60%{transform:translate(-50%,-50%) scale(24);opacity:0}
-  100%{opacity:0}
+@keyframes shine{
+  0%,100%{left:-40%;}
+  50%{left:110%;}
 }
 
-/* ============ HERO MINI ============ */
-.hero-mini{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px 26px;justify-content:center;color:#9fb0cb;font-size:14px;font-weight:600}
-.hero-mini span{display:inline-flex;align-items:center;gap:7px}
-.hero-mini .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
-
-/* ================= COUNTER ================= */
-.counter-band{padding:0 0 10px;margin-top:-30px;position:relative;z-index:5}
-.counter-card{
-  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px 46px;
-  background:linear-gradient(135deg,rgba(18,43,82,.9),rgba(8,20,40,.9));
-  border:1px solid var(--line);border-radius:22px;padding:26px 34px;
-  backdrop-filter:blur(14px);
-  box-shadow:0 22px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.06);
+.commission-num{
+  font-size:clamp(4.6rem,22vw,8.5rem);
+  font-weight:900;
+  line-height:1;
+  letter-spacing:-2px;
+  background:linear-gradient(180deg,#fff8dd 0%,#f2dc8a 40%,#d4af37 70%,#a8842a 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 10px 30px rgba(212,175,55,.5));
+  margin-bottom:6px;
+  animation:numPulse 2.6s ease-in-out infinite;
+  direction:ltr;
 }
-.counter-item{text-align:center;min-width:150px}
-.counter-num{font-size:clamp(36px,6vw,56px);font-weight:900;line-height:1;background:linear-gradient(180deg,#fdf0c4,#d4af37 55%,#a8801f);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 18px rgba(212,175,55,.35));font-variant-numeric:tabular-nums}
-.counter-label{color:#c4d2e8;font-size:15px;font-weight:700;margin-top:8px}
-.counter-sep{width:1px;height:54px;background:linear-gradient(180deg,transparent,var(--line),transparent)}
-.counter-note{width:100%;text-align:center;color:#6e809c;font-size:11.5px;margin-top:4px;font-weight:400}
-
-/* ================= SECTIONS ================= */
-section{padding:80px 0;position:relative}
-.sec-head{text-align:center;margin-bottom:48px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-
-/* ================= CARDS ================= */
-.card{
-  background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.02));
-  border:1px solid var(--line);border-radius:20px;overflow:hidden;
-  backdrop-filter:blur(10px);
-  transition:transform .35s cubic-bezier(.2,.8,.3,1),box-shadow .35s,border-color .35s;
-  box-shadow:0 14px 40px rgba(0,0,0,.35);
+@keyframes numPulse{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.045);}
 }
-.card:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.55);box-shadow:0 26px 60px rgba(0,0,0,.55),0 0 0 1px rgba(212,175,55,.18)}
-.card-img{height:190px;position:relative;overflow:hidden;background:linear-gradient(135deg,#122b52,#0a1730)}
-.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease;opacity:.92}
-.card:hover .card-img img{transform:scale(1.08)}
-.card-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(8,20,40,.85))}
-.card-body{padding:24px 22px 26px}
-.card-body h3{font-size:19px;font-weight:800;color:var(--goldL);margin-bottom:10px}
-.card-body p{color:#b7c5dc;font-size:14.5px;line-height:1.85}
-.card-icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(180deg,rgba(212,175,55,.22),rgba(212,175,55,.06));border:1px solid var(--line);font-size:24px;margin-bottom:16px}
 
-/* ================= WHATSAPP GROUP ================= */
-.wa-section{padding:20px 0 90px}
-.wa-box{
-  position:relative;overflow:hidden;
-  background:linear-gradient(135deg,rgba(18,43,82,.9),rgba(8,20,40,.95));
-  border:1.5px solid rgba(212,175,55,.35);border-radius:26px;padding:52px 32px;text-align:center;
-  box-shadow:0 26px 70px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.07);
+.commission-text{
+  font-size:clamp(1.05rem,4.2vw,1.4rem);
+  font-weight:800;
+  color:#fff;
+  line-height:1.7;
 }
-.wa-box::before{content:"";position:absolute;top:-60%;right:-10%;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(212,175,55,.2),transparent 65%);pointer-events:none}
-.wa-box::after{content:"";position:absolute;bottom:-60%;left:-10%;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(37,211,102,.14),transparent 65%);pointer-events:none}
-.wa-box>*{position:relative;z-index:2}
-.wa-icon{width:82px;height:82px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;font-size:40px;background:linear-gradient(180deg,#25D366,#128C7E);box-shadow:0 12px 34px rgba(37,211,102,.4);animation:pulseWA 2.4s infinite}
-@keyframes pulseWA{0%,100%{box-shadow:0 12px 34px rgba(37,211,102,.35)}50%{box-shadow:0 12px 46px rgba(37,211,102,.65)}}
-.wa-box h2{font-size:clamp(23px,4vw,38px);font-weight:900;margin-bottom:14px}
-.wa-box p{color:#c4d2e8;max-width:640px;margin:0 auto 28px;font-size:clamp(15px,1.9vw,17px);line-height:1.9}
-.wa-click{display:inline-block;margin-top:16px;color:var(--goldL);font-weight:800;font-size:16px;border-bottom:1.5px dashed rgba(212,175,55,.6);padding-bottom:3px;transition:.25s;cursor:pointer}
-.wa-click:hover{color:#fff;border-color:#fff;letter-spacing:.3px}
-
-/* ================= FORM ================= */
-.form-section{padding:20px 0 90px}
-.form-wrap{
-  max-width:920px;margin:0 auto;
-  background:linear-gradient(160deg,rgba(255,255,255,.055),rgba(255,255,255,.015));
-  border:1.5px solid var(--line);border-radius:26px;padding:clamp(24px,4vw,50px);
-  backdrop-filter:blur(14px);
-  box-shadow:0 30px 80px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.06);
-  position:relative;overflow:hidden;
+.commission-text strong{
+  color:var(--gold-light);
+  font-weight:900;
+  font-size:1.12em;
 }
-.form-wrap::before{content:"";position:absolute;top:0;right:0;left:0;height:4px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.form-head{text-align:center;margin-bottom:36px}
-.form-head h2{font-size:clamp(23px,3.6vw,36px);font-weight:900;margin-bottom:12px}
-.form-head p{color:var(--muted);font-size:15.5px}
 
-.f-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 22px}
-.field{display:flex;flex-direction:column;gap:8px}
-.field.full{grid-column:1/-1}
-.field label{font-size:14.5px;font-weight:700;color:#dfe8f6;display:flex;align-items:center;gap:6px}
-.req{color:var(--gold);font-size:16px;line-height:1}
-.field input[type=text],.field input[type=tel],.field select,.field textarea{
-  width:100%;padding:14px 16px;border-radius:13px;
-  background:rgba(6,15,32,.72);
-  border:1.5px solid rgba(255,255,255,.1);
-  color:#fff;font-size:15.5px;font-weight:600;
-  transition:border-color .25s,box-shadow .25s,background .25s;
+/* ============================================================
+   مسرح زر التسجيل + العملاق الأخضر + الخبرة
+   ============================================================ */
+.cta-section{
+  padding:56px 0 40px;
 }
-.field textarea{resize:vertical;min-height:110px;line-height:1.8}
-.field input::placeholder,.field textarea::placeholder{color:#6e809c;font-weight:400}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);background:rgba(6,15,32,.95);box-shadow:0 0 0 4px rgba(212,175,55,.14)}
-.field select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 14px center;background-size:22px;padding-left:44px}
-.field select option{background:#0c1e3a;color:#fff;font-weight:600}
-.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#ff5f6d;box-shadow:0 0 0 4px rgba(255,95,109,.13)}
-.err-msg{color:#ff8b95;font-size:13px;font-weight:700;display:none;align-items:center;gap:5px}
-.field.invalid .err-msg{display:flex}
 
-.pills{display:flex;gap:10px;flex-wrap:wrap}
-.pill{position:relative;flex:1;min-width:88px}
-.pill input{position:absolute;opacity:0;width:0;height:0}
-.pill span{display:flex;align-items:center;justify-content:center;gap:6px;padding:12px 10px;border-radius:12px;cursor:pointer;background:rgba(6,15,32,.72);border:1.5px solid rgba(255,255,255,.1);color:#c4d2e8;font-weight:700;font-size:14.5px;transition:.25s;user-select:none;text-align:center}
-.pill span:hover{border-color:rgba(212,175,55,.5);color:#fff}
-.pill input:checked+span{background:linear-gradient(180deg,rgba(212,175,55,.95),rgba(168,128,31,.95));color:#081428;border-color:var(--gold);font-weight:900;box-shadow:0 6px 18px rgba(212,175,55,.35)}
-
-.form-actions{margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:14px}
-.form-note{color:#7d8fa8;font-size:13px;text-align:center}
-
-.success{display:none;text-align:center;padding:34px 20px;border:1.5px solid rgba(37,211,102,.4);border-radius:22px;background:linear-gradient(160deg,rgba(37,211,102,.1),rgba(8,20,40,.5));animation:popIn .5s cubic-bezier(.2,.9,.3,1.3)}
-.success.show{display:block}
-@keyframes popIn{from{opacity:0;transform:scale(.94) translateY(14px)}to{opacity:1;transform:none}}
-.success .check{width:86px;height:86px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;font-size:44px;background:linear-gradient(180deg,#2ee06f,#128C7E);box-shadow:0 14px 40px rgba(37,211,102,.4)}
-.success h3{font-size:clamp(22px,3.4vw,32px);font-weight:900;color:#fff;margin-bottom:14px}
-.success p{color:#cfe0d6;font-size:16px;margin-bottom:8px}
-.success .req-id{display:inline-block;margin-top:16px;padding:10px 20px;border-radius:12px;border:1px dashed var(--line);color:var(--goldL);font-weight:800;letter-spacing:1px;background:rgba(212,175,55,.07)}
-.success .btn-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px}
-
-/* ================= CONTACT ================= */
-.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.contact-card{background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:20px;padding:30px 22px;text-align:center;transition:.35s;backdrop-filter:blur(10px)}
-.contact-card:hover{transform:translateY(-6px);border-color:rgba(212,175,55,.55);box-shadow:0 22px 50px rgba(0,0,0,.5)}
-.contact-card .ico{width:62px;height:62px;margin:0 auto 16px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:linear-gradient(180deg,rgba(212,175,55,.22),rgba(212,175,55,.05));border:1px solid var(--line)}
-.contact-card h3{font-size:16px;font-weight:800;color:var(--gold);margin-bottom:10px}
-.contact-card a,.contact-card p{color:#e2eaf6;font-size:17px;font-weight:700;direction:ltr;display:inline-block;transition:.25s}
-.contact-card p.rtl-txt,.contact-card a.rtl-txt{direction:rtl}
-.contact-card a:hover{color:var(--goldL)}
-
-/* ================= FOOTER ================= */
-footer{background:linear-gradient(180deg,rgba(6,15,32,.4),rgba(4,10,22,.95));border-top:1px solid var(--line);padding:60px 0 0;margin-top:20px}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;padding-bottom:44px}
-.foot-brand{display:flex;align-items:center;gap:14px;margin-bottom:16px}
-.foot-brand .brand-logo{width:56px;height:56px}
-.foot-brand b{font-size:19px;font-weight:900;display:block}
-.foot-brand span{font-size:12.5px;color:var(--gold);font-weight:700}
-.foot-about{color:#93a5bf;font-size:14.5px;line-height:1.9;max-width:380px}
-.foot-col h4{font-size:16px;font-weight:900;color:var(--gold);margin-bottom:16px;position:relative;padding-bottom:10px}
-.foot-col h4::after{content:"";position:absolute;bottom:0;right:0;width:42px;height:2px;background:var(--gold);border-radius:2px}
-.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
-.foot-col li,.foot-col a{color:#a9b8d0;font-size:14.5px;font-weight:600;transition:.25s;display:flex;align-items:center;gap:9px}
-.foot-col a:hover{color:var(--goldL);transform:translateX(-4px)}
-.foot-col a.ltr{direction:ltr}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.07);padding:22px 0;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;color:#71829c;font-size:13.5px}
-.foot-bottom .made b{color:var(--gold)}
-
-/* ================= FLOAT ================= */
-.float-wa{position:fixed;bottom:22px;left:22px;z-index:300;display:flex;align-items:center;gap:10px;background:linear-gradient(180deg,#25D366,#128C7E);color:#fff!important;font-weight:900;font-size:15px;padding:14px 20px;border-radius:50px;box-shadow:0 10px 30px rgba(37,211,102,.45);transition:transform .25s,box-shadow .25s}
-.float-wa:hover{transform:translateY(-4px) scale(1.03);box-shadow:0 16px 40px rgba(37,211,102,.6)}
-.float-wa .ic{font-size:20px}
-.float-top{position:fixed;bottom:22px;right:22px;z-index:300;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#f9e9b6,#d4af37 55%,#a8801f);color:#081428;font-size:20px;font-weight:900;cursor:pointer;border:none;box-shadow:0 6px 0 #6f5510,0 12px 26px rgba(212,175,55,.35);transition:.25s;opacity:0;pointer-events:none}
-.float-top.show{opacity:1;pointer-events:auto}
-.float-top:hover{transform:translateY(-3px)}
-.float-top:active{transform:translateY(3px);box-shadow:0 2px 0 #6f5510}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width:980px){
-  .nav-links{display:none}
-  .grid-3{grid-template-columns:1fr 1fr}
-  .contact-grid{grid-template-columns:1fr 1fr}
-  .foot-grid{grid-template-columns:1fr 1fr}
+.cta-stage{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:30px;
+  align-items:center;
+  justify-items:center;
 }
-@media (max-width:760px){
-  section{padding:60px 0}
-  .nav-inner{height:68px}
-  .brand-logo{width:42px;height:42px}
-  .brand-text b{font-size:14.5px}
-  .brand-text span{font-size:10px}
-  .nav .btn-gold{padding:10px 14px;font-size:12.5px;border-radius:10px}
-  .hero{padding:100px 0 50px;min-height:auto}
-  .hero-logo{width:86px;height:86px}
-  .grid-3,.grid-2,.contact-grid{grid-template-columns:1fr}
-  .f-grid{grid-template-columns:1fr;gap:18px}
-  .counter-card{padding:22px 18px;gap:16px 22px;border-radius:18px}
-  .counter-sep{display:none}
-  .counter-item{min-width:44%}
-  .foot-grid{grid-template-columns:1fr;gap:30px;padding-bottom:34px}
-  .foot-bottom{flex-direction:column;text-align:center;justify-content:center}
-  .wa-box{padding:38px 20px;border-radius:22px}
-  .form-wrap{border-radius:20px}
-  .btn-gold{width:100%;padding:16px 22px;font-size:16px}
-  .btn-gold.big{font-size:17px;padding:18px 24px}
-  .float-wa{padding:12px 16px;font-size:13px;bottom:14px;left:14px}
-  .float-top{bottom:14px;right:14px;width:44px;height:44px}
-  .pills .pill{min-width:calc(33.333% - 7px);flex:1 1 auto}
-  .pill span{font-size:13px;padding:10px 6px}
-  .success .btn-row .btn-gold,.success .btn-row .btn-ghost{width:100%}
 
-  /* Scene on mobile */
-  .scene{padding:16px 12px;gap:6px;border-radius:22px}
-  .giant{width:min(62vw,220px);height:min(78vw,275px)}
-  .action{flex:1 1 100%;min-width:0}
-  .big-text{font-size:clamp(22px,6.8vw,32px)}
-  .arrow-down{font-size:30px}
+/* --- العملاق --- */
+.giant-col{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  order:1;
+  width:100%;
 }
-@media (max-width:400px){
-  .brand-text span{display:none}
-  .counter-item{min-width:100%}
-  .hero h1{font-size:26px}
+.giant-svg{
+  width:clamp(150px,44vw,270px);
+  height:auto;
+  overflow:visible;
+  filter:drop-shadow(0 26px 44px rgba(0,0,0,.6)) drop-shadow(0 0 32px rgba(94,196,106,.28));
+}
+
+#armPoint{
+  transform-box:view-box;
+  transform-origin:80px 218px;
+  animation:pointPulse 2.2s ease-in-out infinite;
+}
+@keyframes pointPulse{
+  0%,100%{transform:rotate(0deg) translateX(0);}
+  50%{transform:rotate(-7deg) translateX(-8px);}
+}
+
+#armHammer{
+  transform-box:view-box;
+  transform-origin:258px 218px;
+  animation:hammerSwing 3.5s cubic-bezier(.5,0,.5,1) infinite;
+}
+@keyframes hammerSwing{
+  0%,42%{transform:rotate(-16deg);}
+  55%{transform:rotate(17deg);}
+  62%{transform:rotate(11deg);}
+  78%,100%{transform:rotate(-16deg);}
+}
+
+/* --- مركز الزر --- */
+.cta-center{
+  order:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  width:100%;
+}
+
+.arrow-down{
+  width:clamp(70px,20vw,104px);
+  height:auto;
+  animation:arrowBob 1.5s ease-in-out infinite;
+  filter:drop-shadow(0 8px 18px rgba(212,175,55,.55));
+}
+@keyframes arrowBob{
+  0%,100%{transform:translateY(-8px);}
+  50%{transform:translateY(8px);}
+}
+
+/* الزر الأحمر الدائري */
+.cta-btn{
+  width:min(310px,80vw);
+  height:min(310px,80vw);
+  border-radius:50%;
+  border:none;
+  cursor:pointer;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:26px;
+  font-family:inherit;
+  color:#fff;
+  background:
+    radial-gradient(circle at 32% 24%, #ff6d78 0%, #e11d2e 38%, #b3121f 68%, #7c0a15 100%);
+  box-shadow:
+    0 0 0 0 rgba(225,29,46,.75),
+    0 20px 44px rgba(225,29,46,.5),
+    0 8px 0 rgba(124,10,21,.95),
+    inset 0 -12px 26px rgba(0,0,0,.4),
+    inset 0 12px 22px rgba(255,255,255,.28);
+  animation:btnPulse 2.2s ease-in-out infinite;
+  transition:filter .2s;
+  z-index:3;
+  text-align:center;
+  line-height:1.5;
+}
+@keyframes btnPulse{
+  0%,100%{
+    box-shadow:
+      0 0 0 0 rgba(225,29,46,.75),
+      0 20px 44px rgba(225,29,46,.5),
+      0 8px 0 rgba(124,10,21,.95),
+      inset 0 -12px 26px rgba(0,0,0,.4),
+      inset 0 12px 22px rgba(255,255,255,.28);
+  }
+  50%{
+    box-shadow:
+      0 0 0 30px rgba(225,29,46,0),
+      0 20px 54px rgba(225,29,46,.68),
+      0 8px 0 rgba(124,10,21,.95),
+      inset 0 -12px 26px rgba(0,0,0,.4),
+      inset 0 12px 22px rgba(255,255,255,.28);
+  }
+}
+.cta-btn:active{
+  filter:brightness(1.14);
+}
+.cta-btn.hit{
+  animation:btnHit .72s cubic-bezier(.36,1.6,.4,1);
+}
+@keyframes btnHit{
+  0%{transform:scale(1) translateY(0) rotate(0deg);}
+  14%{transform:scale(.9) translateY(8px) rotate(-1.5deg);}
+  34%{transform:scale(1.08) translateY(-6px) rotate(1.5deg);}
+  54%{transform:scale(.97) translateY(2px) rotate(-.6deg);}
+  76%{transform:scale(1.03) translateY(-2px) rotate(.3deg);}
+  100%{transform:scale(1) translateY(0) rotate(0deg);}
+}
+
+.cta-btn .btn-icon{
+  width:clamp(48px,12vw,64px);
+  height:clamp(48px,12vw,64px);
+  flex:0 0 auto;
+  filter:drop-shadow(0 4px 8px rgba(0,0,0,.4));
+}
+.cta-btn .btn-text{
+  font-size:clamp(1.12rem,4.6vw,1.6rem);
+  font-weight:900;
+  text-shadow:0 3px 10px rgba(0,0,0,.55);
+  letter-spacing:.3px;
+  max-width:92%;
+}
+.cta-btn .btn-sub{
+  font-size:clamp(.85rem,3.2vw,1rem);
+  font-weight:800;
+  color:#ffe1e4;
+  opacity:.95;
+}
+
+.cta-caption{
+  font-size:clamp(1.05rem,4.2vw,1.4rem);
+  font-weight:900;
+  color:var(--gold-light);
+  text-align:center;
+  text-shadow:0 4px 18px rgba(212,175,55,.4);
+  max-width:420px;
+}
+
+/* --- بطاقة الخبرة --- */
+.exp-card{
+  order:3;
+  width:100%;
+  max-width:460px;
+  background:linear-gradient(160deg,rgba(255,255,255,.075),rgba(255,255,255,.02));
+  border:1.5px solid var(--glass-border);
+  border-radius:var(--radius);
+  padding:26px 22px;
+  box-shadow:var(--shadow-soft), inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+.exp-card h2{
+  font-size:clamp(1.35rem,5vw,1.7rem);
+  font-weight:900;
+  color:var(--gold-light);
+  margin-bottom:14px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.exp-card h2::before{
+  content:"";
+  width:6px;
+  height:28px;
+  border-radius:4px;
+  background:linear-gradient(180deg,var(--gold-light),var(--gold-dark));
+  box-shadow:0 0 14px rgba(212,175,55,.6);
+  flex:0 0 auto;
+}
+.exp-card p{
+  font-size:clamp(.98rem,3.7vw,1.1rem);
+  color:var(--muted);
+  line-height:2;
+  font-weight:600;
+  margin-bottom:12px;
+}
+.exp-card p:last-child{margin-bottom:0;}
+
+.exp-list{
+  list-style:none;
+  margin-top:14px;
+  display:grid;
+  gap:10px;
+}
+.exp-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:clamp(.95rem,3.6vw,1.06rem);
+  font-weight:700;
+  color:#e8eefc;
+}
+.exp-list li::before{
+  content:"◆";
+  color:var(--gold);
+  font-size:.85rem;
+  line-height:2;
+  flex:0 0 auto;
+}
+
+/* ============================================================
+   العداد
+   ============================================================ */
+.counter-box{
+  order:4;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+  background:linear-gradient(160deg,rgba(212,175,55,.14),rgba(212,175,55,.03));
+  border:1.5px solid rgba(212,175,55,.4);
+  border-radius:20px;
+  padding:16px 34px;
+  box-shadow:0 14px 34px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.1);
+  min-width:200px;
+}
+.counter-num{
+  font-size:clamp(2.2rem,9vw,3.2rem);
+  font-weight:900;
+  line-height:1;
+  direction:ltr;
+  background:linear-gradient(180deg,#fff8dd,#f2dc8a,#d4af37);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 6px 18px rgba(212,175,55,.45));
+  transition:.3s;
+}
+.counter-num.bump{
+  animation:countBump .6s cubic-bezier(.3,1.7,.5,1);
+}
+@keyframes countBump{
+  0%{transform:scale(1);}
+  40%{transform:scale(1.35);}
+  100%{transform:scale(1);}
+}
+.counter-dot{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.counter-dot i{
+  width:10px;height:10px;
+  border-radius:50%;
+  background:#4ade80;
+  box-shadow:0 0 0 0 rgba(74,222,128,.7);
+  animation:liveDot 1.8s infinite;
+}
+@keyframes liveDot{
+  0%{box-shadow:0 0 0 0 rgba(74,222,128,.7);}
+  70%{box-shadow:0 0 0 12px rgba(74,222,128,0);}
+  100%{box-shadow:0 0 0 0 rgba(74,222,128,0);}
+}
+
+/* ============================================================
+   قسم النموذج
+   ============================================================ */
+.form-section{
+  padding:56px 0 40px;
+  scroll-margin-top:90px;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:34px;
+}
+.section-title h2{
+  font-size:clamp(1.6rem,6.6vw,2.6rem);
+  font-weight:900;
+  color:#fff;
+  margin-bottom:10px;
+}
+.section-title h2 span{
+  background:linear-gradient(180deg,#fff6d8,#f2dc8a,#d4af37);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+}
+.section-title p{
+  font-size:clamp(1rem,4vw,1.2rem);
+  font-weight:700;
+  color:var(--muted);
+  max-width:720px;
+  margin:0 auto;
+}
+
+.form-shell{
+  max-width:960px;
+  margin:0 auto;
+  background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.018));
+  border:2px solid rgba(212,175,55,.32);
+  border-radius:26px;
+  padding:clamp(20px,5vw,40px);
+  box-shadow:var(--shadow-soft), inset 0 1px 0 rgba(255,255,255,.08);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:18px;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.field label{
+  font-size:clamp(.98rem,3.8vw,1.1rem);
+  font-weight:800;
+  color:var(--gold-light);
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+}
+.field label .hint{
+  font-size:.82em;
+  font-weight:600;
+  color:var(--muted);
+}
+
+.req{
+  color:#ff3b4d;
+  font-weight:900;
+  font-size:1.25em;
+  line-height:1;
+  text-shadow:0 0 10px rgba(255,59,77,.6);
+}
+
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  font-family:inherit;
+  font-size:clamp(1rem,3.9vw,1.1rem);
+  font-weight:700;
+  color:#fff;
+  background:rgba(255,255,255,.055);
+  border:2px solid rgba(212,175,55,.25);
+  border-radius:14px;
+  padding:15px 16px;
+  outline:none;
+  transition:border-color .22s, background .22s, box-shadow .22s;
+  -webkit-appearance:none;
+  appearance:none;
+}
+.field select{
+  background-image:url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:left 14px center;
+  background-size:24px;
+  padding-left:46px;
+}
+.field select option{
+  background:#0c1a38;
+  color:#fff;
+  font-weight:700;
+}
+.field textarea{
+  min-height:110px;
+  resize:vertical;
+  line-height:1.9;
+}
+.field input::placeholder,
+.field textarea::placeholder{
+  color:rgba(195,207,232,.5);
+  font-weight:600;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  border-color:var(--gold);
+  background:rgba(212,175,55,.09);
+  box-shadow:0 0 0 4px rgba(212,175,55,.14);
+}
+.field input.invalid,
+.field select.invalid,
+.field textarea.invalid{
+  border-color:#ff3b4d;
+  background:rgba(255,59,77,.1);
+  box-shadow:0 0 0 4px rgba(255,59,77,.14);
+}
+.field input[dir="ltr"]{
+  text-align:left;
+  direction:ltr;
+}
+
+/* شبكة الحقول على الشاشات الكبيرة */
+@media (min-width:700px){
+  .form-grid{grid-template-columns:1fr 1fr;gap:20px;}
+  .field.full{grid-column:1 / -1;}
+}
+
+/* ============================================================
+   أقسام داخل النموذج
+   ============================================================ */
+.form-block{
+  margin-top:30px;
+  padding-top:26px;
+  border-top:1px solid rgba(212,175,55,.2);
+}
+.form-block-title{
+  font-size:clamp(1.15rem,4.4vw,1.4rem);
+  font-weight:900;
+  color:var(--gold-light);
+  margin-bottom:18px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.form-block-title::before{
+  content:"";
+  width:6px;height:26px;
+  border-radius:4px;
+  background:linear-gradient(180deg,var(--gold-light),var(--gold-dark));
+  box-shadow:0 0 14px rgba(212,175,55,.6);
+  flex:0 0 auto;
+}
+
+/* Checkboxes */
+.check-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:12px;
+}
+@media (min-width:560px){
+  .check-grid{grid-template-columns:repeat(3,1fr);}
+}
+
+.check-card{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:15px 16px;
+  border-radius:16px;
+  border:2px solid rgba(212,175,55,.25);
+  background:rgba(255,255,255,.04);
+  cursor:pointer;
+  transition:.22s;
+  position:relative;
+  user-select:none;
+  min-height:62px;
+}
+.check-card:hover{
+  border-color:rgba(212,175,55,.55);
+  background:rgba(212,175,55,.07);
+}
+.check-card input{
+  position:absolute;
+  opacity:0;
+  width:1px;height:1px;
+  pointer-events:none;
+}
+.check-visual{
+  width:28px;height:28px;
+  flex:0 0 auto;
+  border-radius:9px;
+  border:2.5px solid rgba(212,175,55,.55);
+  background:rgba(255,255,255,.05);
+  display:grid;
+  place-items:center;
+  transition:.2s;
+  position:relative;
+}
+.check-visual::after{
+  content:"";
+  width:14px;height:8px;
+  border-left:4px solid #081226;
+  border-bottom:4px solid #081226;
+  transform:rotate(-45deg) scale(0);
+  transition:transform .18s cubic-bezier(.3,1.6,.5,1);
+  margin-top:-3px;
+  border-radius:1px;
+}
+.check-card input:checked ~ .check-visual{
+  background:linear-gradient(145deg,#f2dc8a,#d4af37);
+  border-color:#f2dc8a;
+  box-shadow:0 0 16px rgba(212,175,55,.65);
+}
+.check-card input:checked ~ .check-visual::after{
+  transform:rotate(-45deg) scale(1);
+}
+.check-text{
+  font-size:clamp(.98rem,3.8vw,1.08rem);
+  font-weight:800;
+  color:#fff;
+  line-height:1.5;
+}
+.check-card:has(input:checked){
+  border-color:var(--gold);
+  background:rgba(212,175,55,.13);
+  box-shadow:0 8px 24px rgba(212,175,55,.2);
+}
+
+/* بطاقة الموافقة */
+.agree-card{
+  margin-top:26px;
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  padding:18px 18px;
+  border-radius:18px;
+  border:2px solid rgba(212,175,55,.45);
+  background:linear-gradient(150deg,rgba(212,175,55,.14),rgba(212,175,55,.04));
+  cursor:pointer;
+  transition:.22s;
+  position:relative;
+}
+.agree-card input{
+  position:absolute;
+  opacity:0;
+  width:1px;height:1px;
+  pointer-events:none;
+}
+.agree-card .check-visual{
+  margin-top:3px;
+}
+.agree-card .agree-text{
+  font-size:clamp(1rem,3.9vw,1.15rem);
+  font-weight:800;
+  color:#fff;
+  line-height:1.8;
+}
+.agree-card .agree-text strong{
+  color:var(--gold-light);
+  font-weight:900;
+  font-size:1.3em;
+  text-shadow:0 0 18px rgba(212,175,55,.6);
+}
+.agree-card:has(input:checked){
+  border-color:var(--gold);
+  background:linear-gradient(150deg,rgba(212,175,55,.24),rgba(212,175,55,.08));
+  box-shadow:0 10px 30px rgba(212,175,55,.25);
+}
+.agree-card.invalid{
+  border-color:#ff3b4d;
+  background:rgba(255,59,77,.12);
+  animation:shakeErr .45s;
+}
+@keyframes shakeErr{
+  0%,100%{transform:translateX(0);}
+  20%{transform:translateX(-8px);}
+  40%{transform:translateX(8px);}
+  60%{transform:translateX(-5px);}
+  80%{transform:translateX(5px);}
+}
+
+/* ملاحظة الصور */
+.photo-note{
+  margin-top:26px;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding:16px 18px;
+  border-radius:16px;
+  background:rgba(37,211,102,.08);
+  border:1.5px dashed rgba(37,211,102,.45);
+  font-size:clamp(.95rem,3.6vw,1.05rem);
+  font-weight:700;
+  color:#d6ffe4;
+  line-height:1.9;
+}
+.photo-note .ico{
+  font-size:1.4rem;
+  line-height:1.5;
+  flex:0 0 auto;
+}
+
+/* زر الإرسال */
+.submit-btn{
+  margin-top:30px;
+  width:100%;
+  border:none;
+  cursor:pointer;
+  font-family:inherit;
+  font-size:clamp(1.15rem,4.6vw,1.5rem);
+  font-weight:900;
+  color:#081226;
+  padding:22px 24px;
+  border-radius:20px;
+  background:linear-gradient(180deg,#fff6d8 0%,#f2dc8a 22%,#d4af37 58%,#a8842a 100%);
+  box-shadow:
+    0 9px 0 #7a5f18,
+    0 18px 40px rgba(212,175,55,.42),
+    inset 0 2px 0 rgba(255,255,255,.75);
+  transition:transform .12s, box-shadow .12s, filter .2s;
+  letter-spacing:.5px;
+  position:relative;
+  overflow:hidden;
+}
+.submit-btn:hover{filter:brightness(1.06);}
+.submit-btn:active{
+  transform:translateY(7px);
+  box-shadow:0 2px 0 #7a5f18, 0 8px 20px rgba(212,175,55,.35), inset 0 2px 0 rgba(255,255,255,.7);
+}
+
+/* ============================================================
+   رسالة النجاح
+   ============================================================ */
+.success-box{
+  display:none;
+  text-align:center;
+  padding:clamp(24px,6vw,44px) clamp(18px,5vw,34px);
+  border-radius:26px;
+  background:linear-gradient(160deg,rgba(37,211,102,.14),rgba(212,175,55,.07));
+  border:2px solid rgba(37,211,102,.5);
+  box-shadow:0 20px 50px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.1);
+  animation:successIn .55s cubic-bezier(.2,1.4,.4,1);
+}
+.success-box.show{display:block;}
+@keyframes successIn{
+  0%{opacity:0;transform:translateY(24px) scale(.95);}
+  100%{opacity:1;transform:translateY(0) scale(1);}
+}
+.success-icon{
+  font-size:clamp(3.2rem,14vw,4.6rem);
+  line-height:1;
+  margin-bottom:12px;
+  filter:drop-shadow(0 8px 24px rgba(37,211,102,.5));
+  animation:pop 1.4s ease-in-out infinite;
+}
+@keyframes pop{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.09);}
+}
+.success-box h3{
+  font-size:clamp(1.5rem,6vw,2.1rem);
+  font-weight:900;
+  color:#8affb0;
+  margin-bottom:14px;
+}
+.success-box p{
+  font-size:clamp(1rem,4vw,1.2rem);
+  font-weight:700;
+  color:#e9f2ff;
+  margin-bottom:10px;
+  line-height:2;
+}
+.success-box .req-id{
+  display:inline-block;
+  direction:ltr;
+  margin-top:10px;
+  font-weight:900;
+  font-size:clamp(1rem,4vw,1.2rem);
+  color:#081226;
+  background:linear-gradient(145deg,#f2dc8a,#d4af37);
+  border-radius:12px;
+  padding:8px 20px;
+  letter-spacing:1px;
+  box-shadow:0 8px 22px rgba(212,175,55,.4);
+}
+
+.wa-photo-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin-top:22px;
+  width:100%;
+  max-width:460px;
+  font-family:inherit;
+  font-size:clamp(1.05rem,4.2vw,1.3rem);
+  font-weight:900;
+  color:#fff;
+  background:linear-gradient(180deg,#3ddc72,#25D366 45%,#128C7E 100%);
+  border:none;
+  border-radius:18px;
+  padding:18px 22px;
+  cursor:pointer;
+  box-shadow:0 8px 0 #0d6b5f, 0 16px 36px rgba(37,211,102,.4), inset 0 2px 0 rgba(255,255,255,.35);
+  transition:transform .12s, box-shadow .12s;
+}
+.wa-photo-btn:active{
+  transform:translateY(6px);
+  box-shadow:0 2px 0 #0d6b5f, 0 8px 18px rgba(37,211,102,.35), inset 0 2px 0 rgba(255,255,255,.3);
+}
+
+/* ============================================================
+   معرض الصور
+   ============================================================ */
+.gallery-section{
+  padding:52px 0 40px;
+}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+@media (min-width:820px){
+  .gallery-grid{grid-template-columns:repeat(3,1fr);gap:18px;}
+}
+.gallery-item{
+  position:relative;
+  border-radius:18px;
+  overflow:hidden;
+  border:1.5px solid rgba(212,175,55,.3);
+  box-shadow:0 14px 34px rgba(0,0,0,.45);
+  aspect-ratio:4/3;
+  background:linear-gradient(145deg,#0c1a38,#122450);
+}
+.gallery-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:transform .6s ease;
+  opacity:.94;
+}
+.gallery-item:hover img{transform:scale(1.08);}
+.gallery-item::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,transparent 45%,rgba(8,18,38,.75));
+  pointer-events:none;
+}
+.gallery-item:nth-child(5),
+.gallery-item:nth-child(6){display:none;}
+@media (min-width:820px){
+  .gallery-item:nth-child(5),
+  .gallery-item:nth-child(6){display:block;}
+}
+
+/* ============================================================
+   الفوتر
+   ============================================================ */
+footer.site-footer{
+  margin-top:40px;
+  padding:48px 0 110px;
+  background:linear-gradient(180deg,rgba(4,9,26,.5),rgba(4,9,26,.95));
+  border-top:2px solid rgba(212,175,55,.35);
+  text-align:center;
+  position:relative;
+}
+footer.site-footer::before{
+  content:"";
+  position:absolute;
+  top:0;left:50%;
+  transform:translateX(-50%);
+  width:min(420px,80vw);
+  height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  box-shadow:0 0 22px rgba(212,175,55,.75);
+}
+
+.footer-brand{
+  font-family:'Amiri',serif;
+  font-weight:700;
+  font-size:clamp(1.9rem,8vw,3rem);
+  line-height:1.3;
+  background:linear-gradient(180deg,#fff6d8,#f2dc8a,#d4af37,#a8842a);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  -webkit-text-fill-color:transparent;
+  margin-bottom:6px;
+}
+.footer-tag{
+  font-size:clamp(1rem,4vw,1.25rem);
+  font-weight:800;
+  color:var(--gold-light);
+  margin-bottom:20px;
+}
+.footer-address{
+  font-size:clamp(.98rem,3.8vw,1.15rem);
+  font-weight:700;
+  color:var(--muted);
+  margin-bottom:20px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.footer-phones{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:12px;
+  margin-bottom:24px;
+}
+.footer-phone{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  direction:ltr;
+  font-size:clamp(1rem,3.9vw,1.22rem);
+  font-weight:900;
+  color:#fff;
+  border:1.5px solid rgba(212,175,55,.5);
+  background:rgba(212,175,55,.08);
+  border-radius:999px;
+  padding:10px 22px;
+  transition:.25s;
+}
+.footer-phone:hover{
+  background:linear-gradient(145deg,#f2dc8a,#d4af37);
+  color:#081226;
+  transform:translateY(-3px);
+  box-shadow:0 10px 24px rgba(212,175,55,.4);
+}
+.footer-copy{
+  font-size:clamp(.85rem,3.3vw,.98rem);
+  font-weight:700;
+  color:rgba(195,207,232,.65);
+  border-top:1px solid rgba(212,175,55,.18);
+  padding-top:20px;
+  max-width:640px;
+  margin:0 auto;
+  line-height:2;
+}
+
+/* ============================================================
+   زر واتساب العائم
+   ============================================================ */
+.wa-float{
+  position:fixed;
+  bottom:20px;
+  left:16px;
+  z-index:120;
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  background:linear-gradient(145deg,#3ddc72,#25D366 50%,#128C7E);
+  color:#fff;
+  font-weight:900;
+  font-size:clamp(.92rem,3.6vw,1.08rem);
+  padding:13px 20px;
+  border-radius:999px;
+  box-shadow:0 10px 30px rgba(37,211,102,.5), 0 4px 0 rgba(13,107,95,.9);
+  transition:.22s;
+  text-decoration:none;
+  animation:floatGlow 2.6s ease-in-out infinite;
+}
+@keyframes floatGlow{
+  0%,100%{box-shadow:0 10px 30px rgba(37,211,102,.5), 0 4px 0 rgba(13,107,95,.9);}
+  50%{box-shadow:0 10px 42px rgba(37,211,102,.85), 0 4px 0 rgba(13,107,95,.9);}
+}
+.wa-float:active{transform:translateY(3px);}
+.wa-float svg{width:24px;height:24px;flex:0 0 auto;}
+
+/* ============================================================
+   استجابة الشاشات الكبيرة
+   ============================================================ */
+@media (min-width:960px){
+  body{font-size:18px;}
+
+  .cta-stage{
+    grid-template-columns:minmax(240px,1fr) minmax(320px,1.15fr) minmax(260px,1fr);
+    gap:26px;
+    align-items:center;
+  }
+  .giant-col{order:1;align-items:center;}
+  .cta-center{order:2;}
+  .exp-card{order:3;max-width:100%;}
+  .counter-box{
+    order:5;
+    grid-column:1 / -1;
+    justify-self:center;
+    flex-direction:row;
+    gap:16px;
+    padding:18px 46px;
+  }
+  .counter-num{font-size:3.4rem;}
+
+  .cta-btn{
+    width:min(330px,26vw);
+    height:min(330px,26vw);
+  }
+  .giant-svg{width:clamp(230px,20vw,300px);}
+
+  .hero{padding:70px 0 34px;}
+  .form-section{padding:70px 0 50px;}
+}
+
+@media (min-width:1200px){
+  .giant-svg{width:310px;}
+}
+
+/* منع أي تمرير أفقي */
+html,body{max-width:100%;overflow-x:hidden;}
+
+/* تقليل الحركة لمن يفضّل ذلك */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+  html{scroll-behavior:auto;}
 }
 </style>
 </head>
+
 <body>
 
-<!-- ================= NAV ================= -->
-<header class="nav" id="nav">
-  <div class="container nav-inner">
-    <a href="#home" class="brand" aria-label="قصر الخطيب للتسويق العقاري">
-      <div class="brand-logo">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="لوجو قصر الخطيب">
-          <defs>
-            <linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#fdf0c4"/>
-              <stop offset="45%" stop-color="#d4af37"/>
-              <stop offset="100%" stop-color="#9c7714"/>
-            </linearGradient>
-          </defs>
-          <path d="M32 3 L59 18 V42 C59 52 46 58.5 32 61.5 C18 58.5 5 52 5 42 V18 Z" fill="rgba(212,175,55,0.08)" stroke="url(#lg1)" stroke-width="2.2" stroke-linejoin="round"/>
-          <path d="M32 15 C24.5 15 20 21 20 27.5 V34 H44 V27.5 C44 21 39.5 15 32 15 Z" fill="url(#lg1)"/>
-          <circle cx="32" cy="10.5" r="2.6" fill="url(#lg1)"/>
-          <rect x="17.5" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg1)"/>
-          <rect x="29.9" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg1)"/>
-          <rect x="42.3" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg1)"/>
-          <rect x="15.5" y="51.5" width="33" height="3.2" rx="1.6" fill="url(#lg1)"/>
-        </svg>
-      </div>
-      <div class="brand-text">
-        <b>قصر الخطيب</b>
-        <span>للتسويق العقاري</span>
-      </div>
-    </a>
+<!-- ============================================================
+     الهيدر: اللوجو + الاسم
+     ============================================================ -->
+<header class="site-header">
+  <div class="wrap">
 
-    <nav class="nav-links">
-      <a href="#home">الرئيسية</a>
-      <a href="#why">لماذا نحن</a>
-      <a href="#group">جروب الواتساب</a>
-      <a href="#request">طلب شراء</a>
-      <a href="#contact">تواصل معنا</a>
-    </nav>
+    <div class="logo-wrap">
+      <!-- اللوجو الرسمي: استبدل الملف logo.png باللوجو الخاص بك بنفس الاسم -->
+      <img id="brandLogo" src="logo.png" alt="لوجو قصر الخطيب للتسويق العقاري">
+      <div class="logo-fallback" id="logoFallback" hidden>🏛️</div>
+    </div>
 
-    <button class="btn-gold" onclick="goToForm()">🏠 سجّل طلب شراء</button>
+    <div class="brand-name">قصر الخطيب</div>
+    <div class="brand-sub">للتسويق العقاري</div>
+    <div class="brand-line"></div>
+
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero" id="home">
-  <div class="hero-bg" aria-hidden="true"></div>
-  <div class="container hero-inner">
-
-    <div class="hero-logo">
-      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="لوجو قصر الخطيب">
-        <defs>
-          <linearGradient id="lg2" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#fdf0c4"/>
-            <stop offset="45%" stop-color="#d4af37"/>
-            <stop offset="100%" stop-color="#9c7714"/>
-          </linearGradient>
-        </defs>
-        <path d="M32 3 L59 18 V42 C59 52 46 58.5 32 61.5 C18 58.5 5 52 5 42 V18 Z" fill="rgba(212,175,55,0.08)" stroke="url(#lg2)" stroke-width="2.2" stroke-linejoin="round"/>
-        <path d="M32 15 C24.5 15 20 21 20 27.5 V34 H44 V27.5 C44 21 39.5 15 32 15 Z" fill="url(#lg2)"/>
-        <circle cx="32" cy="10.5" r="2.6" fill="url(#lg2)"/>
-        <rect x="17.5" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg2)"/>
-        <rect x="29.9" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg2)"/>
-        <rect x="42.3" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg2)"/>
-        <rect x="15.5" y="51.5" width="33" height="3.2" rx="1.6" fill="url(#lg2)"/>
-      </svg>
-    </div>
-
-    <h1>تسويق الشقق في <span class="alex">الإسكندرية</span></h1>
-    <h2>عايز تشتري شقة؟</h2>
-    <div class="lead-action">ادخل واملأ بياناتك هنا</div>
-    <p class="hero-desc">سجّل مواصفات الشقة التي تبحث عنها، وسنتواصل معك عند توفر العقار المناسب لطلبك.</p>
-
-    <!-- ============ GIANT SCENE ============ -->
-    <div class="scene">
-
-      <!-- ====== العملاق الأخضر ====== -->
-      <div class="giant" aria-hidden="true">
-        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="skin" cx="0.35" cy="0.3" r="0.85">
-              <stop offset="0%" stop-color="#5bbf4a"/>
-              <stop offset="60%" stop-color="#3d8c33"/>
-              <stop offset="100%" stop-color="#245a1c"/>
-            </radialGradient>
-            <linearGradient id="pants" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#2a3a5c"/>
-              <stop offset="100%" stop-color="#121b32"/>
-            </linearGradient>
-            <linearGradient id="hHead" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#b8b8b8"/>
-              <stop offset="55%" stop-color="#7a7a7a"/>
-              <stop offset="100%" stop-color="#4a4a4a"/>
-            </linearGradient>
-            <linearGradient id="hHandle" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#8a5a2b"/>
-              <stop offset="50%" stop-color="#a87238"/>
-              <stop offset="100%" stop-color="#5a3a1b"/>
-            </linearGradient>
-            <linearGradient id="hairG" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#2a1f10"/>
-              <stop offset="100%" stop-color="#0a0603"/>
-            </linearGradient>
-          </defs>
-
-          <!-- Ground shadow -->
-          <ellipse cx="200" cy="478" rx="150" ry="16" fill="rgba(0,0,0,0.5)"/>
-
-          <!-- ===== Back leg ===== -->
-          <path d="M162 340 L150 460 Q148 470 160 472 L188 472 Q198 470 196 458 L204 348 Z" fill="#1a2540"/>
-          <ellipse cx="176" cy="470" rx="30" ry="13" fill="#0a0603"/>
-
-          <!-- ===== Front leg ===== -->
-          <path d="M226 348 L216 460 Q214 470 226 472 L254 472 Q264 470 262 458 L266 340 Z" fill="url(#pants)"/>
-          <ellipse cx="240" cy="470" rx="30" ry="13" fill="#1a1208"/>
-          <!-- Belt -->
-          <rect x="155" y="336" width="110" height="14" rx="4" fill="#0e1424"/>
-          <rect x="205" y="336" width="16" height="14" rx="2" fill="#d4af37"/>
-
-          <!-- ===== Torso ===== -->
-          <path d="M128 180 Q138 148 200 143 Q262 148 272 180 L278 300 Q272 340 250 350 L150 350 Q128 340 122 300 Z" fill="url(#skin)"/>
-
-          <!-- Ab definition -->
-          <ellipse cx="170" cy="232" rx="24" ry="16" fill="#1f5018" opacity="0.45"/>
-          <ellipse cx="230" cy="232" rx="24" ry="16" fill="#1f5018" opacity="0.45"/>
-          <ellipse cx="170" cy="272" rx="21" ry="14" fill="#1f5018" opacity="0.4"/>
-          <ellipse cx="230" cy="272" rx="21" ry="14" fill="#1f5018" opacity="0.4"/>
-          <path d="M200 200 L200 330" stroke="#1f5018" stroke-width="3" opacity="0.45" stroke-linecap="round"/>
-
-          <!-- Pecs -->
-          <ellipse cx="164" cy="196" rx="40" ry="30" fill="#4aa33c" opacity="0.85"/>
-          <ellipse cx="236" cy="196" rx="40" ry="30" fill="#4aa33c" opacity="0.85"/>
-          <path d="M160 200 Q200 214 240 200" stroke="#245a1c" stroke-width="3" fill="none" opacity="0.6"/>
-
-          <!-- ===== Left arm (behind, static, hangs at side) ===== -->
-          <path d="M132 188 Q96 232 108 302 Q112 320 130 322 L146 306 Q130 246 152 210 Z" fill="#245a1c"/>
-          <circle cx="122" cy="316" r="22" fill="#2f7323"/>
-          <!-- knuckles -->
-          <path d="M108 310 L134 310" stroke="#173d12" stroke-width="2" opacity="0.5"/>
-
-          <!-- ===== Head ===== -->
-          <g>
-            <!-- Neck -->
-            <path d="M178 128 L222 128 L226 162 L174 162 Z" fill="#245a1c"/>
-            <path d="M180 140 L220 140" stroke="#173d12" stroke-width="2" opacity="0.5"/>
-
-            <!-- Face -->
-            <ellipse cx="200" cy="98" rx="54" ry="60" fill="url(#skin)"/>
-
-            <!-- Hair -->
-            <path d="M146 88 Q152 42 200 38 Q248 42 254 88 Q246 68 200 62 Q154 68 146 88 Z" fill="url(#hairG)"/>
-            <path d="M150 88 Q158 55 200 52 Q242 55 250 88" stroke="#3a2a14" stroke-width="2" fill="none" opacity="0.7"/>
-
-            <!-- Eyebrows -->
-            <path d="M168 82 Q182 76 196 80" stroke="#0a0603" stroke-width="7" fill="none" stroke-linecap="round"/>
-            <path d="M204 80 Q218 76 232 82" stroke="#0a0603" stroke-width="7" fill="none" stroke-linecap="round"/>
-
-            <!-- Eyes -->
-            <ellipse cx="180" cy="100" rx="7" ry="8" fill="#f0f0f0"/>
-            <ellipse cx="220" cy="100" rx="7" ry="8" fill="#f0f0f0"/>
-            <circle cx="181" cy="101" r="4.5" fill="#0a0603"/>
-            <circle cx="221" cy="101" r="4.5" fill="#0a0603"/>
-            <circle cx="182.5" cy="99" r="1.6" fill="#fff"/>
-            <circle cx="222.5" cy="99" r="1.6" fill="#fff"/>
-
-            <!-- Nose -->
-            <path d="M200 105 L197 118 Q200 121 203 118 Z" fill="#1f5018" opacity="0.55"/>
-
-            <!-- Mouth -->
-            <path d="M180 128 Q200 140 220 128" stroke="#0a0603" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-            <path d="M180 128 Q200 132 220 128" stroke="#fff" stroke-width="2" fill="none" opacity="0.35"/>
-
-            <!-- Chin shadow -->
-            <ellipse cx="200" cy="146" rx="22" ry="6" fill="#1f5018" opacity="0.35"/>
-          </g>
-
-          <!-- ===== Right arm (animated, front) ===== -->
-          <g id="arm">
-            <animateTransform attributeName="transform" type="rotate"
-              values="5 260 190; 5 260 190; 20 260 190; 20 260 190; -85 260 190; -85 260 190; 40 260 190; 40 260 190; 5 260 190; 5 260 190"
-              keyTimes="0; 0.12; 0.22; 0.3; 0.45; 0.52; 0.58; 0.65; 0.78; 1"
-              dur="9s" repeatCount="indefinite"/>
-
-            <!-- Shoulder -->
-            <circle cx="260" cy="190" r="34" fill="url(#skin)"/>
-            <!-- Upper arm -->
-            <path d="M258 172 Q308 182 330 218 L306 252 Q278 226 246 210 Z" fill="url(#skin)"/>
-            <!-- Bicep bulge -->
-            <ellipse cx="290" cy="205" rx="26" ry="20" fill="#4aa33c" opacity="0.7"/>
-
-            <!-- Forearm -->
-            <path d="M322 214 Q362 226 380 244 L372 272 Q340 258 306 252 Z" fill="#3d8c33"/>
-            <path d="M326 232 Q352 240 372 250" stroke="#245a1c" stroke-width="2" opacity="0.5" fill="none"/>
-
-            <!-- Fist -->
-            <circle cx="380" cy="256" r="24" fill="#2f7323"/>
-            <path d="M362 246 L396 246" stroke="#173d12" stroke-width="2.5" opacity="0.55" stroke-linecap="round"/>
-            <path d="M362 256 L396 256" stroke="#173d12" stroke-width="2.5" opacity="0.55" stroke-linecap="round"/>
-            <path d="M362 266 L396 266" stroke="#173d12" stroke-width="2.5" opacity="0.55" stroke-linecap="round"/>
-
-            <!-- Hammer (fades in/out) -->
-            <g>
-              <animate attributeName="opacity"
-                values="0; 0; 1; 1; 1; 0; 0"
-                keyTimes="0; 0.18; 0.28; 0.55; 0.75; 0.85; 1"
-                dur="9s" repeatCount="indefinite"/>
-
-              <!-- Handle -->
-              <rect x="372" y="160" width="16" height="150" rx="4" fill="url(#hHandle)"/>
-              <rect x="375" y="162" width="4" height="146" fill="#c69358" opacity="0.5"/>
-              <!-- Handle grip lines -->
-              <path d="M372 290 L388 290 M372 298 L388 298 M372 306 L388 306" stroke="#3a2410" stroke-width="1.5" opacity="0.6"/>
-
-              <!-- Head -->
-              <rect x="336" y="140" width="88" height="46" rx="7" fill="url(#hHead)" stroke="#3a3a3a" stroke-width="1.5"/>
-              <rect x="342" y="146" width="76" height="14" rx="3" fill="#d8d8d8" opacity="0.65"/>
-              <rect x="342" y="168" width="76" height="8" rx="2" fill="#2a2a2a" opacity="0.4"/>
-              <!-- Side shine -->
-              <rect x="338" y="144" width="6" height="38" rx="2" fill="#e8e8e8" opacity="0.5"/>
-            </g>
-          </g>
-        </svg>
-      </div>
-
-      <!-- ====== Action side ====== -->
-      <div class="action">
-        <div class="big-text">دوس هنا واملأ بياناتك</div>
-        <div class="arrow-down" aria-hidden="true">👇</div>
-
-        <button class="red-btn" type="button" onclick="goToForm()" aria-label="سجّل بيانات بحثك عن شقة">
-          <span class="spark" aria-hidden="true"></span>
-          <span class="icon">🏠</span>
-          <span class="lbl">دوس هنا</span>
-          <span class="sub">واملأ بياناتك</span>
-        </button>
-
-        <div style="margin-top:14px;font-size:clamp(14px,1.6vw,17px);font-weight:800;color:#f7e3a1;letter-spacing:.3px;">
-          🏠 سجّل بيانات بحثك عن شقة
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-mini" style="margin-top:34px;">
-      <span><i class="dot"></i> بحث مجاني بالكامل</span>
-      <span><i class="dot"></i> تواصل سريع عبر واتساب</span>
-      <span><i class="dot"></i> تغطية كل مناطق الإسكندرية</span>
-    </div>
-  </div>
-</section>
-
-<!-- ================= COUNTER ================= -->
-<div class="counter-band">
-  <div class="container">
-    <div class="counter-card">
-      <div class="counter-item">
-        <div class="counter-num" id="counterNum">99</div>
-        <div class="counter-label">طلبات شراء الشقق</div>
-      </div>
-      <div class="counter-sep" aria-hidden="true"></div>
-      <div class="counter-item">
-        <div class="counter-num">+15</div>
-        <div class="counter-label">منطقة في الإسكندرية</div>
-      </div>
-      <div class="counter-sep" aria-hidden="true"></div>
-      <div class="counter-item">
-        <div class="counter-num">100%</div>
-        <div class="counter-label">متابعة شخصية لطلبك</div>
-      </div>
-      <div class="counter-note">* العدّاد محلي على هذا المتصفح (لا يوجد خادم/قاعدة بيانات). للعداد المشترك الحقيقي يلزم ربط الموقع بقاعدة بيانات.</div>
+<!-- ============================================================
+     شريط المعلومات الثابت
+     ============================================================ -->
+<div class="info-bar">
+  <div class="wrap info-bar-inner">
+    <div class="info-title">قصر الخطيب للتسويق العقاري</div>
+    <div class="info-phones">
+      <a class="info-phone" href="tel:01224324243" aria-label="اتصل على 01224324243">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.3 2.6 3.5 4.8 6.1 6.1l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.7c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2.5 1.8z"/></svg>
+        01224324243
+      </a>
+      <a class="info-phone" href="tel:01124997077" aria-label="اتصل على 01124997077">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.3 2.6 3.5 4.8 6.1 6.1l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.7c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2.5 1.8z"/></svg>
+        01124997077
+      </a>
     </div>
   </div>
 </div>
 
-<!-- ================= WHY ================= -->
-<section id="why">
-  <div class="container">
-    <div class="sec-head">
-      <span class="eyebrow">لماذا قصر الخطيب</span>
-      <h2 class="sec-title">خبرة عقارية في <span class="gold-text">قلب الإسكندرية</span></h2>
-      <p class="sec-sub">نساعدك في الوصول إلى الشقة المناسبة لاحتياجك وميزانيتك، بأسرع وقت وأقل مجهود.</p>
-      <div class="gold-divider"></div>
+<!-- ============================================================
+     الشريط المتحرك
+     ============================================================ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>لو عايز تبيع شقتك في الإسكندرية</span>
+    <span>•</span>
+    <span>قصر الخطيب للتسويق العقاري</span>
+    <span>•</span>
+    <span>عمولة 1% عند إتمام الصفقة</span>
+    <span>•</span>
+    <span>01224324243</span>
+    <span>•</span>
+    <span>01124997077</span>
+    <span>•</span>
+    <span>لو عايز تبيع شقتك في الإسكندرية</span>
+    <span>•</span>
+    <span>قصر الخطيب للتسويق العقاري</span>
+    <span>•</span>
+    <span>عمولة 1% عند إتمام الصفقة</span>
+    <span>•</span>
+    <span>01224324243</span>
+    <span>•</span>
+    <span>01124997077</span>
+    <span>•</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     الهيرو
+     ============================================================ -->
+<section class="hero">
+  <div class="wrap">
+
+    <div class="hero-badge">تسويق وبيع الشقق في الإسكندرية</div>
+
+    <h1>
+      لو عايز تبيع <span class="gold">شقتك</span> في الإسكندرية
+    </h1>
+
+    <p class="lead">
+      إحنا مكتب تسويق عقاري، نساعدك في تسويق شقتك والوصول إلى العملاء الباحثين عن الشراء.
+    </p>
+
+    <div class="commission-card">
+      <div class="commission-num">1%</div>
+      <p class="commission-text">
+        عمولة التسويق العقاري: <strong>1%</strong> عند إتمام الصفقة
+      </p>
     </div>
 
-    <div class="grid-3">
-      <article class="card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=70" alt="شقة فاخرة في الإسكندرية" loading="lazy" onerror="this.style.opacity=0">
-        </div>
-        <div class="card-body">
-          <div class="card-icon">🏙️</div>
-          <h3>تغطية كل مناطق الإسكندرية</h3>
-          <p>سيدي بشر، ميامي، العصافرة، فيكتوريا، جليم، لوران، سان ستيفانو، رشدي، سبورتنج، الإبراهيمية، محطة الرمل، كفر عبده وغيرها.</p>
-        </div>
-      </article>
+  </div>
+</section>
 
-      <article class="card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=70" alt="تشطيب شقة فاخرة" loading="lazy" onerror="this.style.opacity=0">
-        </div>
-        <div class="card-body">
-          <div class="card-icon">🎯</div>
-          <h3>بحث مبني على مواصفاتك</h3>
-          <p>أنت تحدد المنطقة والسعر والمساحة وعدد الغرف، ونحن نبحث عن العقار المطابق لطلبك بدلًا من عرض عشوائي.</p>
-        </div>
-      </article>
+<!-- ============================================================
+     مسرح الزر الأحمر + العملاق الأخضر + الخبرة
+     ============================================================ -->
+<section class="cta-section">
+  <div class="wrap">
+    <div class="cta-stage">
 
-      <article class="card">
-        <div class="card-img">
-          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=70" alt="عقار راقٍ في الإسكندرية" loading="lazy" onerror="this.style.opacity=0">
-        </div>
-        <div class="card-body">
-          <div class="card-icon">⚡</div>
-          <h3>تواصل سريع ومباشر</h3>
-          <p>بمجرد إرسال طلبك، يصل إلينا فورًا على واتساب بكل التفاصيل، ونتواصل معك عند توفر الشقة المناسبة.</p>
-        </div>
-      </article>
+      <!-- ===== العملاق الأخضر الأصلي ===== -->
+      <div class="giant-col" aria-hidden="true">
+        <svg class="giant-svg" viewBox="0 0 340 550" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#66cf72"/>
+              <stop offset="45%" stop-color="#43a851"/>
+              <stop offset="100%" stop-color="#2b7a37"/>
+            </linearGradient>
+            <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1d5c28"/>
+              <stop offset="100%" stop-color="#0f3416"/>
+            </linearGradient>
+            <linearGradient id="metalGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#eef3f9"/>
+              <stop offset="45%" stop-color="#b9c4d1"/>
+              <stop offset="100%" stop-color="#7d8794"/>
+            </linearGradient>
+            <radialGradient id="groundGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(0,0,0,.55)"/>
+              <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+            </radialGradient>
+          </defs>
+
+          <!-- الظل الأرضي -->
+          <ellipse cx="170" cy="524" rx="118" ry="16" fill="url(#groundGrad)"/>
+
+          <!-- الساقان -->
+          <rect x="110" y="368" width="52" height="122" rx="26" fill="url(#skinGrad)"/>
+          <rect x="178" y="368" width="52" height="122" rx="26" fill="url(#skinGrad)"/>
+          <!-- القدمان -->
+          <rect x="100" y="476" width="70" height="36" rx="18" fill="#235f2c"/>
+          <rect x="170" y="476" width="70" height="36" rx="18" fill="#235f2c"/>
+
+          <!-- الجسم -->
+          <path d="M 62 246 Q 66 196 104 188 L 236 188 Q 274 196 278 246 L 270 364 Q 266 394 234 398 L 106 398 Q 74 394 70 364 Z"
+                fill="url(#skinGrad)"/>
+
+          <!-- الصدر -->
+          <path d="M 96 254 Q 122 233 152 251 Q 132 282 100 276 Z" fill="rgba(0,0,0,.15)"/>
+          <path d="M 244 254 Q 218 233 188 251 Q 208 282 240 276 Z" fill="rgba(0,0,0,.15)"/>
+
+          <!-- عضلات البطن -->
+          <rect x="130" y="290" width="32" height="26" rx="11" fill="rgba(0,0,0,.15)"/>
+          <rect x="178" y="290" width="32" height="26" rx="11" fill="rgba(0,0,0,.15)"/>
+          <rect x="130" y="322" width="32" height="26" rx="11" fill="rgba(0,0,0,.15)"/>
+          <rect x="178" y="322" width="32" height="26" rx="11" fill="rgba(0,0,0,.15)"/>
+          <rect x="130" y="354" width="32" height="24" rx="11" fill="rgba(0,0,0,.12)"/>
+          <rect x="178" y="354" width="32" height="24" rx="11" fill="rgba(0,0,0,.12)"/>
+
+          <!-- الرقبة -->
+          <rect x="146" y="156" width="48" height="48" rx="16" fill="#2b7a37"/>
+
+          <!-- الذراع الحاملة للمطرقة -->
+          <g id="armHammer">
+            <path d="M 258 220 Q 288 206 300 168 Q 306 146 308 128"
+                  stroke="url(#skinGrad)" stroke-width="42" fill="none" stroke-linecap="round"/>
+            <circle cx="308" cy="122" r="23" fill="#4bb45a"/>
+            <!-- المطرقة -->
+            <g id="hammerGroup">
+              <rect x="298" y="16" width="17" height="108" rx="8" fill="#8a5a2b"/>
+              <rect x="298" y="16" width="6" height="108" rx="3" fill="#a97338" opacity=".7"/>
+              <rect x="274" y="0" width="62" height="38" rx="10" fill="url(#metalGrad)"/>
+              <rect x="274" y="0" width="62" height="12" rx="6" fill="#f3f7fb" opacity=".85"/>
+            </g>
+          </g>
+
+          <!-- الذراع المشيرة -->
+          <g id="armPoint">
+            <path d="M 80 222 Q 54 232 42 260 Q 34 280 28 290"
+                  stroke="url(#skinGrad)" stroke-width="42" fill="none" stroke-linecap="round"/>
+            <circle cx="28" cy="292" r="23" fill="#4bb45a"/>
+            <!-- إصبع الإشارة -->
+            <rect x="0" y="284" width="32" height="17" rx="8.5" fill="#4bb45a"/>
+          </g>
+
+          <!-- الرأس -->
+          <ellipse cx="170" cy="126" rx="54" ry="60" fill="url(#skinGrad)"/>
+
+          <!-- الشعر -->
+          <path d="M 116 122 Q 110 62 170 58 Q 230 62 224 122 Q 214 86 170 82 Q 126 86 116 122 Z"
+                fill="url(#hairGrad)"/>
+
+          <!-- الحواجب -->
+          <path d="M 124 100 L 160 112" stroke="#123a19" stroke-width="11" stroke-linecap="round"/>
+          <path d="M 216 100 L 180 112" stroke="#123a19" stroke-width="11" stroke-linecap="round"/>
+
+          <!-- العيون -->
+          <ellipse cx="146" cy="126" rx="16" ry="12" fill="#ffffff"/>
+          <ellipse cx="194" cy="126" rx="16" ry="12" fill="#ffffff"/>
+          <circle cx="148" cy="127" r="7" fill="#0d2b12"/>
+          <circle cx="192" cy="127" r="7" fill="#0d2b12"/>
+          <circle cx="150.5" cy="124.5" r="2.4" fill="#ffffff"/>
+          <circle cx="194.5" cy="124.5" r="2.4" fill="#ffffff"/>
+
+          <!-- الأنف -->
+          <path d="M 170 136 L 165 150 L 177 150" stroke="rgba(0,0,0,.22)" stroke-width="4.5"
+                fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <!-- الفم -->
+          <path d="M 146 164 Q 170 152 194 164" stroke="#123a19" stroke-width="8"
+                fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <!-- ===== الزر الأحمر + السهم ===== -->
+      <div class="cta-center">
+
+        <!-- السهم العريض -->
+        <svg class="arrow-down" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="arrowGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fff6d8"/>
+              <stop offset="45%" stop-color="#f2dc8a"/>
+              <stop offset="100%" stop-color="#d4af37"/>
+            </linearGradient>
+          </defs>
+          <path d="M 32 4 L 68 4 L 68 52 L 94 52 L 50 106 L 6 52 L 32 52 Z"
+                fill="url(#arrowGrad)" stroke="#a8842a" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+
+        <button type="button" class="cta-btn" id="goToFormBtn"
+                aria-label="دوس هنا واملأ بيانات شقتك">
+          <svg class="btn-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M32 6 L58 27 L50 27 L50 56 L38 56 L38 40 L26 40 L26 56 L14 56 L14 27 L6 27 Z"
+                  fill="#ffffff" stroke="rgba(0,0,0,.25)" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <span class="btn-text">دوس هنا واملأ بيانات شقتك</span>
+          <span class="btn-sub">تسجيل شقة للبيع</span>
+        </button>
+
+        <p class="cta-caption">دوس هنا واملأ بيانات شقتك</p>
+
+      </div>
+
+      <!-- ===== بطاقة الخبرة ===== -->
+      <aside class="exp-card">
+        <h2>خبراتنا</h2>
+        <p>
+          نعمل على تسويق الشقق في الإسكندرية ونركز على الوصول إلى العملاء الباحثين عن عقارات مناسبة،
+          مع متابعة طلبات الملاك والتواصل معهم بشكل مباشر.
+        </p>
+        <p>
+          بنستقبل بيانات الشقة كاملة، ونعرضها على العملاء الجاهزين للشراء، ونتابع مع المالك خطوة بخطوة
+          لحد إتمام الصفقة.
+        </p>
+        <ul class="exp-list">
+          <li>تسويق الشقق داخل الإسكندرية</li>
+          <li>الوصول إلى عملاء جاهزين للشراء</li>
+          <li>متابعة مباشرة مع المالك</li>
+          <li>خدمة عملاء واضحة وسريعة</li>
+        </ul>
+      </aside>
+
+      <!-- ===== العداد ===== -->
+      <div class="counter-box" title="عدد طلبات تسجيل الشقق للبيع">
+        <div class="counter-num" id="ordersCount">128</div>
+        <div class="counter-dot"><i></i></div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- ================= WHATSAPP GROUP ================= -->
-<section class="wa-section" id="group">
-  <div class="container">
-    <div class="wa-box">
-      <div class="wa-icon">📱</div>
-      <h2>انضم إلى جروب <span class="gold-text">الواتساب</span></h2>
-      <p>انضم إلى جروب قصر الخطيب للتسويق العقاري ليصلك كل جديد من الشقق والعروض العقارية.</p>
+<!-- ============================================================
+     قسم تسجيل بيانات الشقة
+     ============================================================ -->
+<section class="form-section" id="formSection">
+  <div class="wrap">
 
-      <a class="btn-gold big" href="https://chat.whatsapp.com/FYxOogAjbV32Xl96R3DKmY?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener noreferrer">
-        📱 انضم للجروب الآن
-      </a>
-
-      <div>
-        <a class="wa-click" href="https://chat.whatsapp.com/FYxOogAjbV32Xl96R3DKmY?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener noreferrer">اضغط هنا وانضم للجروب الآن</a>
-      </div>
+    <div class="section-title">
+      <h2>سجّل <span>بيانات شقتك</span></h2>
+      <p>املأ البيانات التالية وسنتواصل معك في أقرب وقت.</p>
     </div>
-  </div>
-</section>
 
-<!-- ================= FORM ================= -->
-<section class="form-section" id="request">
-  <div class="container">
-    <div class="form-wrap">
+    <div class="form-shell">
 
-      <div class="form-head">
-        <span class="eyebrow">طلب شراء شقة</span>
-        <h2>سجّل بيانات الشقة التي تبحث عنها</h2>
-        <p>كلما كانت بياناتك واضحة، استطعنا البحث لك عن العقار المناسب بشكل أفضل.</p>
-      </div>
+      <!-- ===== النموذج ===== -->
+      <form id="propertyForm" novalidate autocomplete="on">
 
-      <form id="buyForm" novalidate autocomplete="on">
-        <div class="f-grid">
+        <!-- بيانات العميل -->
+        <div class="form-grid">
 
-          <div class="field" id="f-name">
-            <label for="name">الاسم <span class="req">*</span></label>
-            <input type="text" id="name" name="name" placeholder="اكتب اسمك بالكامل" autocomplete="name">
-            <span class="err-msg">⚠ من فضلك اكتب الاسم</span>
+          <div class="field full">
+            <label for="fullName">الاسم <span class="req">*</span></label>
+            <input type="text" id="fullName" name="fullName" placeholder="اكتب اسمك بالكامل" required>
           </div>
 
-          <div class="field" id="f-phone">
+          <div class="field full">
             <label for="phone">رقم التليفون <span class="req">*</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="مثال: 01012345678" inputmode="tel" autocomplete="tel" dir="ltr" style="text-align:right">
-            <span class="err-msg">⚠ من فضلك اكتب رقم تليفون صحيح (11 رقم يبدأ بـ 01)</span>
-          </div>
-
-          <div class="field" id="f-area">
-            <label for="area">المنطقة المطلوبة في الإسكندرية <span class="req">*</span></label>
-            <select id="area" name="area">
-              <option value="">— اختر المنطقة —</option>
-              <option value="كل مناطق الإسكندرية">كل مناطق الإسكندرية</option>
-              <option value="سيدي بشر">سيدي بشر</option>
-              <option value="ميامي">ميامي</option>
-              <option value="العصافرة">العصافرة</option>
-              <option value="فيكتوريا">فيكتوريا</option>
-              <option value="جليم">جليم</option>
-              <option value="لوران">لوران</option>
-              <option value="سان ستيفانو">سان ستيفانو</option>
-              <option value="رشدي">رشدي</option>
-              <option value="سبورتنج">سبورتنج</option>
-              <option value="الإبراهيمية">الإبراهيمية</option>
-              <option value="محطة الرمل">محطة الرمل</option>
-              <option value="كفر عبده">كفر عبده</option>
-              <option value="أخرى">منطقة أخرى</option>
-            </select>
-            <span class="err-msg">⚠ من فضلك اختر المنطقة المطلوبة</span>
-          </div>
-
-          <div class="field" id="f-areaOther" style="display:none">
-            <label for="areaOther">اكتب المنطقة المطلوبة <span class="req">*</span></label>
-            <input type="text" id="areaOther" name="areaOther" placeholder="مثال: سموحة، سيدي جابر...">
-            <span class="err-msg">⚠ من فضلك اكتب اسم المنطقة</span>
-          </div>
-
-          <div class="field" id="f-price">
-            <label for="price">السعر المناسب <span class="req">*</span></label>
-            <select id="price" name="price">
-              <option value="">— اختر نطاق السعر —</option>
-              <option value="أقل من 1 مليون جنيه">أقل من 1 مليون جنيه</option>
-              <option value="من 1 إلى 2 مليون جنيه">من 1 إلى 2 مليون جنيه</option>
-              <option value="من 2 إلى 3 مليون جنيه">من 2 إلى 3 مليون جنيه</option>
-              <option value="من 3 إلى 5 مليون جنيه">من 3 إلى 5 مليون جنيه</option>
-              <option value="من 5 إلى 8 مليون جنيه">من 5 إلى 8 مليون جنيه</option>
-              <option value="من 8 إلى 12 مليون جنيه">من 8 إلى 12 مليون جنيه</option>
-              <option value="أكثر من 12 مليون جنيه">أكثر من 12 مليون جنيه</option>
-              <option value="لا يهم / حسب المعروض">لا يهم / حسب المعروض</option>
-            </select>
-            <span class="err-msg">⚠ من فضلك اختر السعر المناسب</span>
-          </div>
-
-          <div class="field" id="f-space">
-            <label for="space">مساحة الشقة المطلوبة بالمتر <span class="req">*</span></label>
-            <select id="space" name="space">
-              <option value="">— اختر المساحة —</option>
-              <option value="أقل من 80 متر">أقل من 80 متر</option>
-              <option value="من 80 إلى 120 متر">من 80 إلى 120 متر</option>
-              <option value="من 120 إلى 160 متر">من 120 إلى 160 متر</option>
-              <option value="من 160 إلى 200 متر">من 160 إلى 200 متر</option>
-              <option value="من 200 إلى 300 متر">من 200 إلى 300 متر</option>
-              <option value="أكثر من 300 متر">أكثر من 300 متر</option>
-            </select>
-            <span class="err-msg">⚠ من فضلك اختر المساحة المطلوبة</span>
-          </div>
-
-          <div class="field" id="f-rooms">
-            <label for="rooms">عدد الغرف <span class="req">*</span></label>
-            <select id="rooms" name="rooms">
-              <option value="">— اختر عدد الغرف —</option>
-              <option value="غرفة واحدة">غرفة واحدة</option>
-              <option value="غرفتين">غرفتين</option>
-              <option value="3 غرف">3 غرف</option>
-              <option value="4 غرف">4 غرف</option>
-              <option value="5 غرف">5 غرف</option>
-              <option value="أكثر من 5 غرف">أكثر من 5 غرف</option>
-            </select>
-            <span class="err-msg">⚠ من فضلك اختر عدد الغرف</span>
-          </div>
-
-          <div class="field" id="f-floor">
-            <label for="floor">الدور المطلوب</label>
-            <select id="floor" name="floor">
-              <option value="">— اختر الدور —</option>
-              <option value="لا يهم">لا يهم</option>
-              <option value="أرضي">أرضي</option>
-              <option value="الدور الأول">الدور الأول</option>
-              <option value="الدور الثاني">الدور الثاني</option>
-              <option value="الدور الثالث">الدور الثالث</option>
-              <option value="الدور الرابع">الدور الرابع</option>
-              <option value="الدور الخامس">الدور الخامس</option>
-              <option value="الدور السادس">الدور السادس</option>
-              <option value="الدور السابع">الدور السابع</option>
-              <option value="الدور الثامن">الدور الثامن</option>
-              <option value="الدور التاسع">الدور التاسع</option>
-              <option value="الدور العاشر أو أعلى">الدور العاشر أو أعلى</option>
-              <option value="الدور الأخير">الدور الأخير</option>
-            </select>
-          </div>
-
-          <div class="field" id="f-baths">
-            <label for="baths">عدد الحمامات</label>
-            <select id="baths" name="baths">
-              <option value="">— اختر عدد الحمامات —</option>
-              <option value="حمام واحد">حمام واحد</option>
-              <option value="حمامان">حمامان</option>
-              <option value="3 حمامات">3 حمامات</option>
-              <option value="أكثر من 3">أكثر من 3</option>
-            </select>
-          </div>
-
-          <div class="field full">
-            <label>هل تريد الشقة مفروشة أم غير مفروشة؟</label>
-            <div class="pills">
-              <label class="pill"><input type="radio" name="furnished" value="نعم" checked><span>مفروشة</span></label>
-              <label class="pill"><input type="radio" name="furnished" value="لا"><span>غير مفروشة</span></label>
-              <label class="pill"><input type="radio" name="furnished" value="لا يهم"><span>لا يهم</span></label>
-            </div>
-          </div>
-
-          <div class="field full">
-            <label>هل تريدها على البحر؟</label>
-            <div class="pills">
-              <label class="pill"><input type="radio" name="sea" value="نعم" checked><span>نعم</span></label>
-              <label class="pill"><input type="radio" name="sea" value="لا"><span>لا</span></label>
-              <label class="pill"><input type="radio" name="sea" value="لا يهم"><span>لا يهم</span></label>
-            </div>
-          </div>
-
-          <div class="field full">
-            <label>هل تريدها جاهزة للسكن؟</label>
-            <div class="pills">
-              <label class="pill"><input type="radio" name="ready" value="نعم" checked><span>نعم</span></label>
-              <label class="pill"><input type="radio" name="ready" value="لا"><span>لا</span></label>
-              <label class="pill"><input type="radio" name="ready" value="لا يهم"><span>لا يهم</span></label>
-            </div>
-          </div>
-
-          <div class="field full">
-            <label for="notes">أي تفاصيل أو مواصفات إضافية</label>
-            <textarea id="notes" name="notes" placeholder="مثال: يفضل واجهة بحرية، الدور عالي، تشطيب سوبر لوكس، قريبة من المترو..."></textarea>
+            <input type="tel" id="phone" name="phone" dir="ltr" inputmode="tel"
+                   placeholder="01xxxxxxxxx" required>
           </div>
 
         </div>
 
-        <div class="form-actions">
-          <button type="submit" class="btn-gold big full" id="submitBtn">إتمام طلب البحث عن شقة</button>
-          <div class="form-note">الحقول المعلَّمة بـ <span style="color:#d4af37">*</span> مطلوبة. سيتم إرسال بياناتك مباشرة إلى واتساب الشركة.</div>
+        <!-- بيانات الشقة -->
+        <div class="form-block">
+          <div class="form-block-title">بيانات الشقة</div>
+
+          <div class="form-grid">
+
+            <div class="field full">
+              <label for="address">
+                عنوان الشقة بالتفصيل <span class="req">*</span>
+                <span class="hint">(الشارع + رقم العقار + المنطقة + أي تفاصيل تساعد في تحديد المكان)</span>
+              </label>
+              <textarea id="address" name="address"
+                        placeholder="مثال: شارع محمد نجيب - عمارة رقم 12 - الدور الثالث - بجوار صيدلية ..."
+                        required></textarea>
+            </div>
+
+            <div class="field">
+              <label for="area">المنطقة <span class="req">*</span></label>
+              <input type="text" id="area" name="area" placeholder="مثال: سموحة - سيدي جابر" required>
+            </div>
+
+            <div class="field">
+              <label for="floor">الدور <span class="req">*</span></label>
+              <input type="text" id="floor" name="floor" placeholder="مثال: الثالث - أرضي" required>
+            </div>
+
+            <div class="field">
+              <label for="size">مساحة الشقة بالمتر <span class="req">*</span></label>
+              <input type="number" id="size" name="size" min="1" step="1"
+                     placeholder="مثال: 120" required>
+            </div>
+
+            <div class="field">
+              <label for="rooms">عدد الغرف <span class="req">*</span></label>
+              <select id="rooms" name="rooms" required>
+                <option value="">اختر عدد الغرف</option>
+                <option value="1">غرفة واحدة</option>
+                <option value="2">غرفتان</option>
+                <option value="3">3 غرف</option>
+                <option value="4">4 غرف</option>
+                <option value="5">5 غرف</option>
+                <option value="أكثر من 5">أكثر من 5 غرف</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="price">السعر المطلوب <span class="req">*</span></label>
+              <input type="text" id="price" name="price" inputmode="numeric"
+                     placeholder="مثال: 1500000 جنيه" required>
+            </div>
+
+          </div>
         </div>
+
+        <!-- المرافق والعدادات -->
+        <div class="form-block">
+          <div class="form-block-title">المرافق والعدادات</div>
+
+          <div class="check-grid" style="margin-bottom:20px;">
+            <label class="check-card">
+              <input type="checkbox" name="utilities" value="كهرباء">
+              <span class="check-visual"></span>
+              <span class="check-text">كهرباء</span>
+            </label>
+            <label class="check-card">
+              <input type="checkbox" name="utilities" value="مياه">
+              <span class="check-visual"></span>
+              <span class="check-text">مياه</span>
+            </label>
+            <label class="check-card">
+              <input type="checkbox" name="utilities" value="غاز طبيعي">
+              <span class="check-visual"></span>
+              <span class="check-text">غاز طبيعي</span>
+            </label>
+          </div>
+
+          <div class="form-block-title" style="font-size:clamp(1.05rem,4vw,1.22rem);">
+            العدادت المستقلة
+          </div>
+
+          <div class="check-grid">
+            <label class="check-card">
+              <input type="checkbox" name="meters" value="عداد كهرباء مستقل">
+              <span class="check-visual"></span>
+              <span class="check-text">عداد كهرباء مستقل</span>
+            </label>
+            <label class="check-card">
+              <input type="checkbox" name="meters" value="عداد مياه مستقل">
+              <span class="check-visual"></span>
+              <span class="check-text">عداد مياه مستقل</span>
+            </label>
+            <label class="check-card">
+              <input type="checkbox" name="meters" value="عداد غاز مستقل">
+              <span class="check-visual"></span>
+              <span class="check-text">عداد غاز مستقل</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- ملاحظة الصور -->
+        <div class="photo-note">
+          <span class="ico">📷</span>
+          <span>إذا كانت لديك صور للشقة، يمكنك إرسالها بعد تسجيل الطلب عبر WhatsApp.</span>
+        </div>
+
+        <!-- الموافقة على العمولة -->
+        <label class="agree-card" id="agreeCard">
+          <input type="checkbox" id="agreeCommission" name="agreeCommission">
+          <span class="check-visual"></span>
+          <span class="agree-text">
+            أوافق على عمولة التسويق العقاري بنسبة <strong>1%</strong> عند إتمام الصفقة.
+          </span>
+        </label>
+
+        <!-- زر الإرسال -->
+        <button type="submit" class="submit-btn" id="submitBtn">
+          إتمام طلب تسجيل الشقة
+        </button>
+
       </form>
 
-      <div class="success" id="successBox" role="status" aria-live="polite">
-        <div class="check">✅</div>
+      <!-- ===== رسالة النجاح ===== -->
+      <div class="success-box" id="successBox" role="status" aria-live="polite">
+        <div class="success-icon">✅</div>
         <h3>تم استلام طلبك بنجاح ✅</h3>
         <p>شكرًا لتواصلك مع قصر الخطيب للتسويق العقاري.</p>
-        <p>سنراجع طلبك ونتواصل معك عند توفر شقة مناسبة لمواصفاتك.</p>
-        <div class="req-id" id="successReqId">رقم الطلب: —</div>
-
-        <div class="btn-row">
-          <a class="btn-gold" id="waFallbackBtn" href="#" target="_blank" rel="noopener noreferrer">📲 فتح واتساب مرة أخرى</a>
-          <button type="button" class="btn-ghost" onclick="resetForm()">➕ إرسال طلب آخر</button>
-          <a class="btn-ghost" href="https://chat.whatsapp.com/FYxOogAjbV32Xl96R3DKmY?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener noreferrer">📱 انضم لجروب الواتساب</a>
+        <p>سيتم التواصل معك في أقرب وقت.</p>
+        <div class="req-id" id="reqIdBox">—</div>
+        <div>
+          <button type="button" class="wa-photo-btn" id="sendPhotosBtn">
+            📱 إرسال صور الشقة على WhatsApp
+          </button>
         </div>
       </div>
 
@@ -950,427 +1754,416 @@ footer{background:linear-gradient(180deg,rgba(6,15,32,.4),rgba(4,10,22,.95));bor
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-  <div class="container">
-    <div class="sec-head">
-      <span class="eyebrow">بيانات الشركة</span>
-      <h2 class="sec-title">تواصل <span class="gold-text">معنا</span></h2>
-      <p class="sec-sub">فريق قصر الخطيب للتسويق العقاري في خدمتك للرد على استفساراتك.</p>
-      <div class="gold-divider"></div>
+<!-- ============================================================
+     معرض صور العقارات
+     ============================================================ -->
+<section class="gallery-section">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>نماذج من <span>العقارات</span></h2>
+      <p>صور توضيحية لشقق وعقارات فاخرة.</p>
     </div>
 
-    <div class="contact-grid">
-      <div class="contact-card">
-        <div class="ico">📞</div>
-        <h3>الهاتف</h3>
-        <a href="tel:01224324243" class="ltr">01224324243</a>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&q=70&auto=format&fit=crop"
+             alt="شقة فاخرة للإسكان" loading="lazy">
       </div>
-
-      <div class="contact-card">
-        <div class="ico">💬</div>
-        <h3>واتساب</h3>
-        <a href="https://wa.me/201124997077" target="_blank" rel="noopener noreferrer" class="ltr">01124997077</a>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=70&auto=format&fit=crop"
+             alt="عقار سكني فاخر" loading="lazy">
       </div>
-
-      <div class="contact-card">
-        <div class="ico">📍</div>
-        <h3>العنوان</h3>
-        <p class="rtl-txt">شارع محمد نجيب، الإسكندرية</p>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=70&auto=format&fit=crop"
+             alt="صالة شقة فاخرة" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&q=70&auto=format&fit=crop"
+             alt="غرفة معيشة عصرية" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=700&q=70&auto=format&fit=crop"
+             alt="مطبخ شقة حديثة" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=700&q=70&auto=format&fit=crop"
+             alt="عمارة سكنية راقية" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="container">
-    <div class="foot-grid">
+<!-- ============================================================
+     الفوتر
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="wrap">
 
-      <div>
-        <div class="foot-brand">
-          <div class="brand-logo">
-            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="lg3" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#fdf0c4"/>
-                  <stop offset="45%" stop-color="#d4af37"/>
-                  <stop offset="100%" stop-color="#9c7714"/>
-                </linearGradient>
-              </defs>
-              <path d="M32 3 L59 18 V42 C59 52 46 58.5 32 61.5 C18 58.5 5 52 5 42 V18 Z" fill="rgba(212,175,55,0.08)" stroke="url(#lg3)" stroke-width="2.2" stroke-linejoin="round"/>
-              <path d="M32 15 C24.5 15 20 21 20 27.5 V34 H44 V27.5 C44 21 39.5 15 32 15 Z" fill="url(#lg3)"/>
-              <circle cx="32" cy="10.5" r="2.6" fill="url(#lg3)"/>
-              <rect x="17.5" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg3)"/>
-              <rect x="29.9" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg3)"/>
-              <rect x="42.3" y="36.5" width="4.2" height="13.5" rx="1" fill="url(#lg3)"/>
-              <rect x="15.5" y="51.5" width="33" height="3.2" rx="1.6" fill="url(#lg3)"/>
-            </svg>
-          </div>
-          <div>
-            <b>قصر الخطيب للتسويق العقاري</b>
-            <span>تسويق الشقق في الإسكندرية</span>
-          </div>
-        </div>
-        <p class="foot-about">نساعدك في العثور على الشقة المناسبة في الإسكندرية — سجّل مواصفاتك وسنتواصل معك عند توفر العقار المطابق لطلبك.</p>
-      </div>
+    <div class="footer-brand">قصر الخطيب للتسويق العقاري</div>
+    <div class="footer-tag">تسويق الشقق في الإسكندرية</div>
 
-      <div class="foot-col">
-        <h4>تواصل معنا</h4>
-        <ul>
-          <li>📍 شارع محمد نجيب، الإسكندرية</li>
-          <li>📞 <a href="tel:01224324243" class="ltr">01224324243</a></li>
-          <li>💬 <a href="https://wa.me/201124997077" target="_blank" rel="noopener noreferrer" class="ltr">01124997077</a></li>
-        </ul>
-      </div>
-
-      <div class="foot-col">
-        <h4>روابط سريعة</h4>
-        <ul>
-          <li><a href="#request">🏠 سجّل طلب شراء شقة</a></li>
-          <li><a href="#why">لماذا قصر الخطيب</a></li>
-          <li><a href="https://chat.whatsapp.com/FYxOogAjbV32Xl96R3DKmY?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener noreferrer">📱 انضم إلى جروب الواتساب</a></li>
-        </ul>
-      </div>
-
+    <div class="footer-address">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="#d4af37" aria-hidden="true">
+        <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+      </svg>
+      شارع محمد نجيب، الإسكندرية
     </div>
 
-    <div class="foot-bottom">
-      <div>© <span id="year"></span> قصر الخطيب للتسويق العقاري — جميع الحقوق محفوظة.</div>
-      <div class="made">تسويق الشقق في <b>الإسكندرية</b></div>
+    <div class="footer-phones">
+      <a class="footer-phone" href="tel:01224324243">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.6 10.8c1.3 2.6 3.5 4.8 6.1 6.1l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.7c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2.5 1.8z"/>
+        </svg>
+        01224324243
+      </a>
+      <a class="footer-phone" href="tel:01124997077">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6.6 10.8c1.3 2.6 3.5 4.8 6.1 6.1l2-2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.4 21 3 13.6 3 4.5c0-.6.4-1 1-1h3.7c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2.5 1.8z"/>
+        </svg>
+        01124997077
+      </a>
     </div>
+
+    <div class="footer-copy">
+      © <span id="yearSpan">2025</span> قصر الخطيب للتسويق العقاري — جميع الحقوق محفوظة.
+    </div>
+
   </div>
 </footer>
 
-<!-- ================= FLOAT ================= -->
-<a class="float-wa" href="https://chat.whatsapp.com/FYxOogAjbV32Xl96R3DKmY?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener noreferrer" aria-label="انضم إلى جروب الواتساب">
-  <span class="ic">📱</span><span>انضم للجروب</span>
+<!-- ============================================================
+     زر واتساب العائم
+     ============================================================ -->
+<a class="wa-float" id="waFloat"
+   href="https://wa.me/201124997077?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B3%D9%88%D9%8A%D9%82%20%D8%B4%D9%82%D8%AA%D9%8A%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="تواصل معنا على واتساب 01124997077">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.5 14.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 15 3.6 13.5 3.6 12 3.6 7.4 7.4 3.6 12 3.6S20.4 7.4 20.4 12 16.6 20.2 12 20.2z"/>
+  </svg>
+  01124997077
 </a>
-<button class="float-top" id="floatTop" aria-label="العودة للأعلى">↑</button>
 
+<!-- ============================================================
+     JavaScript
+     ============================================================ -->
 <script>
-/* ================================================
-   قصر الخطيب للتسويق العقاري — JavaScript
-   ================================================ */
-(function () {
-  "use strict";
+(function(){
+  'use strict';
 
-  var GROUP_URL  = "https://chat.whatsapp.com/FYxOogAjbV32Xl96R3DKmY?s=cl&p=a&mlu=4&ilr=4";
-  var COMPANY_WA = "201124997077";
-  var BASE_COUNT = 99;
-  var LS_KEY     = "qk_purchase_requests_v1";
+  /* ==========================================================
+     إعدادات
+     ========================================================== */
+  var WA_INTL   = '201124997077';       // رقم واتساب بالصيغة الدولية
+  var START_CT  = 128;                  // بداية العداد
+  var STORAGE_K = 'qk_orders_count_local';
 
-  function $(s, c) { return (c || document).querySelector(s); }
-  function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
-  function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-  function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
-
-  function getExtra() {
-    var v = parseInt(lsGet(LS_KEY) || "0", 10);
-    if (isNaN(v) || v < 0) v = 0;
-    return v;
+  /* ==========================================================
+     اللوجو: في حال عدم وجود ملف logo.png يتم عرض بديل
+     ========================================================== */
+  var brandLogo = document.getElementById('brandLogo');
+  var logoFallback = document.getElementById('logoFallback');
+  if (brandLogo){
+    brandLogo.addEventListener('error', function(){
+      brandLogo.style.display = 'none';
+      if (logoFallback) logoFallback.hidden = false;
+    });
   }
-  function getTotal() { return BASE_COUNT + getExtra(); }
-  function incrementCount() {
-    var v = getExtra() + 1;
-    lsSet(LS_KEY, String(v));
-    return BASE_COUNT + v;
-  }
-  function animateCounter(el, target) {
-    if (!el) return;
-    var start = parseInt(el.textContent, 10) || 0;
-    var dur = 900, t0 = null;
-    function step(ts) {
-      if (!t0) t0 = ts;
-      var p = Math.min((ts - t0) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(start + (target - start) * eased);
-      if (p < 1) requestAnimationFrame(step);
-      else el.textContent = target;
+
+  /* ==========================================================
+     سنة الفوتر
+     ========================================================== */
+  var yearSpan = document.getElementById('yearSpan');
+  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+  /* ==========================================================
+     العداد
+     ========================================================== */
+  var counterEl = document.getElementById('ordersCount');
+  var ordersCount = START_CT;
+
+  try {
+    var saved = parseInt(localStorage.getItem(STORAGE_K), 10);
+    if (!isNaN(saved) && saved >= START_CT) ordersCount = saved;
+  } catch(e){ /* التخزين غير متاح — تجاهل */ }
+
+  function paintCounter(bump){
+    if (!counterEl) return;
+    counterEl.textContent = String(ordersCount);
+    if (bump){
+      counterEl.classList.remove('bump');
+      void counterEl.offsetWidth;
+      counterEl.classList.add('bump');
     }
-    requestAnimationFrame(step);
+  }
+  paintCounter(false);
+
+  function saveCounter(){
+    try { localStorage.setItem(STORAGE_K, String(ordersCount)); } catch(e){}
   }
 
-  var nav = $("#nav");
-  var floatTop = $("#floatTop");
-  var form = $("#buyForm");
-  var successBox = $("#successBox");
-  var counterEl = $("#counterNum");
-  var areaSelect = $("#area");
-  var areaOther = $("#f-areaOther");
+  /* ==========================================================
+     تأثير ضربة المطرقة على الزر الأحمر
+     (متزامن مع حركة hammerSwing)
+     ========================================================== */
+  var ctaBtn = document.getElementById('goToFormBtn');
 
-  $("#year").textContent = new Date().getFullYear();
-  animateCounter(counterEl, getTotal());
+  function triggerHit(){
+    if (!ctaBtn) return;
+    ctaBtn.classList.remove('hit');
+    void ctaBtn.offsetWidth;
+    ctaBtn.classList.add('hit');
+    window.setTimeout(function(){
+      ctaBtn.classList.remove('hit');
+    }, 760);
+  }
 
-  /* -------- Scroll to form -------- */
-  window.goToForm = function () {
-    var t = document.getElementById("request");
-    if (!t) return;
-    var y = t.getBoundingClientRect().top + window.pageYOffset - 84;
-    window.scrollTo({ top: y, behavior: "smooth" });
-    setTimeout(function () {
-      var f = document.getElementById("name");
-      if (f && !successBox.classList.contains("show")) {
-        try { f.focus({ preventScroll: true }); } catch (e) { f.focus(); }
+  if (ctaBtn){
+    window.setInterval(function(){
+      window.setTimeout(triggerHit, 1925);
+    }, 3500);
+  }
+
+  /* ==========================================================
+     التمرير إلى النموذج عند الضغط على الزر
+     ========================================================== */
+  if (ctaBtn){
+    ctaBtn.addEventListener('click', function(){
+      var target = document.getElementById('formSection');
+      if (target){
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        window.setTimeout(function(){
+          var first = document.getElementById('fullName');
+          if (first && !formHidden) {
+            /* لا نضع focus تلقائي على الموبايل لتجنب فتح الكيبورد فجأة */
+          }
+        }, 700);
       }
-    }, 650);
-  };
-
-  /* -------- Scroll effects -------- */
-  function onScroll() {
-    var y = window.pageYOffset || document.documentElement.scrollTop;
-    if (y > 30) nav.classList.add("scrolled");
-    else nav.classList.remove("scrolled");
-    if (y > 500) floatTop.classList.add("show");
-    else floatTop.classList.remove("show");
+    });
   }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
 
-  floatTop.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+  /* ==========================================================
+     أدوات مساعدة
+     ========================================================== */
+  var form = document.getElementById('propertyForm');
+  var successBox = document.getElementById('successBox');
+  var reqIdBox = document.getElementById('reqIdBox');
+  var formHidden = false;
 
-  /* -------- Area "أخرى" toggle -------- */
-  areaSelect.addEventListener("change", function () {
-    if (areaSelect.value === "أخرى") {
-      areaOther.style.display = "flex";
-      var i = document.getElementById("areaOther");
-      if (i) i.focus();
-    } else {
-      areaOther.style.display = "none";
-      areaOther.classList.remove("invalid");
+  function val(id){
+    var el = document.getElementById(id);
+    return el ? String(el.value || '').trim() : '';
+  }
+
+  function getCheckedValues(name){
+    var nodes = document.querySelectorAll('input[name="' + name + '"]:checked');
+    var out = [];
+    for (var i = 0; i < nodes.length; i++) out.push(nodes[i].value);
+    return out;
+  }
+
+  function yesNo(arr, keyword){
+    for (var i = 0; i < arr.length; i++){
+      if (arr[i].indexOf(keyword) !== -1) return 'نعم';
     }
-  });
-
-  /* -------- Validation helpers -------- */
-  function setInvalid(id, msg) {
-    var f = document.getElementById(id);
-    if (!f) return;
-    f.classList.add("invalid");
-    if (msg) {
-      var e = f.querySelector(".err-msg");
-      if (e) e.textContent = msg;
-    }
-  }
-  function clearAllInvalid() {
-    $$(".field.invalid").forEach(function (f) { f.classList.remove("invalid"); });
+    return 'لا';
   }
 
-  $$("#buyForm input, #buyForm select, #buyForm textarea").forEach(function (el) {
-    var h = function () {
-      var w = el.closest(".field");
-      if (w) w.classList.remove("invalid");
-    };
-    el.addEventListener("input", h);
-    el.addEventListener("change", h);
-  });
-
-  function normalizePhone(v) {
-    return String(v || "")
-      .replace(/[\s\-\(\)\.]/g, "")
-      .replace(/^\+?20/, "0")
-      .replace(/^0020/, "0");
-  }
-  function radioVal(name) {
-    var el = form.querySelector('input[name="' + name + '"]:checked');
-    return el ? el.value : "";
+  function makeRequestId(){
+    var t = Date.now().toString(36).toUpperCase();
+    var r = Math.floor(Math.random() * 46656).toString(36).toUpperCase();
+    while (r.length < 3) r = '0' + r;
+    return 'QK-' + t.slice(-5) + '-' + r;
   }
 
-  /* -------- WhatsApp message -------- */
-  function buildMessage(d, reqId, timeStr) {
-    return [
-      "طلب جديد للبحث عن شقة",
-      "قصر الخطيب للتسويق العقاري",
-      "———————————————",
-      "",
-      "الاسم: " + d.name,
-      "",
-      "رقم التليفون: " + d.phone,
-      "",
-      "المنطقة المطلوبة: " + d.area,
-      "",
-      "السعر المناسب: " + d.price,
-      "",
-      "المساحة المطلوبة: " + d.space,
-      "",
-      "عدد الغرف: " + d.rooms,
-      "",
-      "الدور المطلوب: " + (d.floor || "غير محدد"),
-      "",
-      "عدد الحمامات: " + (d.baths || "غير محدد"),
-      "",
-      "مفروشة: " + (d.furnished || "لا يهم"),
-      "",
-      "على البحر: " + (d.sea || "لا يهم"),
-      "",
-      "جاهزة للسكن: " + (d.ready || "لا يهم"),
-      "",
-      "تفاصيل إضافية:",
-      (d.notes && d.notes.trim()) ? d.notes.trim() : "لا يوجد",
-      "",
-      "وقت إرسال الطلب:",
-      timeStr,
-      "",
-      "رقم الطلب:",
-      reqId
-    ].join("\n");
+  function formatDateTime(d){
+    var pad = function(n){ return n < 10 ? '0' + n : String(n); };
+    return pad(d.getDate()) + '/' + pad(d.getMonth() + 1) + '/' + d.getFullYear() +
+           ' - ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
   }
 
-  function makeRequestId() {
-    var d = new Date();
-    var pad = function (n, l) { return String(n).padStart(l || 2, "0"); };
-    var stamp = d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) + "-" +
-                pad(d.getHours()) + pad(d.getMinutes()) + pad(d.getSeconds());
-    var rnd = Math.floor(1000 + Math.random() * 9000);
-    return "QK-" + stamp + "-" + rnd;
+  function openWhatsApp(text){
+    var url = 'https://wa.me/' + WA_INTL + '?text=' + encodeURIComponent(text);
+    var w = window.open(url, '_blank');
+    if (!w) { window.location.href = url; }
   }
 
-  function formatDateTime(d) {
-    try {
-      return d.toLocaleString("ar-EG", {
-        year: "numeric", month: "2-digit", day: "2-digit",
-        hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true
-      });
-    } catch (e) { return d.toISOString(); }
+  /* ==========================================================
+     التحقق من صحة النموذج
+     ========================================================== */
+  var requiredFields = ['fullName','phone','address','area','floor','size','rooms','price'];
+
+  function clearInvalid(){
+    var nodes = form.querySelectorAll('.invalid');
+    for (var i = 0; i < nodes.length; i++) nodes[i].classList.remove('invalid');
+    var agreeCard = document.getElementById('agreeCard');
+    if (agreeCard) agreeCard.classList.remove('invalid');
   }
 
-  /* -------- Submit -------- */
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    clearAllInvalid();
-
-    var name = ($("#name").value || "").trim();
-    var phoneRaw = ($("#phone").value || "").trim();
-    var phone = normalizePhone(phoneRaw);
-    var area = areaSelect.value;
-    var areaTxt = area;
-    var price = $("#price").value;
-    var space = $("#space").value;
-    var rooms = $("#rooms").value;
-    var floor = $("#floor").value;
-    var baths = $("#baths").value;
-    var notes = ($("#notes").value || "").trim();
-
-    var furnished = radioVal("furnished");
-    var sea = radioVal("sea");
-    var ready = radioVal("ready");
-
-    var errors = [];
+  function validateForm(){
+    clearInvalid();
+    var ok = true;
     var firstInvalid = null;
 
-    if (name.length < 2) {
-      setInvalid("f-name", "⚠ من فضلك اكتب الاسم (حرفين على الأقل)");
-      errors.push("name");
-      if (!firstInvalid) firstInvalid = "f-name";
-    }
-    if (!/^01[0-9]{9}$/.test(phone)) {
-      setInvalid("f-phone", "⚠ من فضلك اكتب رقم تليفون صحيح (11 رقم يبدأ بـ 01)");
-      errors.push("phone");
-      if (!firstInvalid) firstInvalid = "f-phone";
-    }
-    if (!area) {
-      setInvalid("f-area", "⚠ من فضلك اختر المنطقة المطلوبة");
-      errors.push("area");
-      if (!firstInvalid) firstInvalid = "f-area";
-    } else if (area === "أخرى") {
-      var o = ($("#areaOther").value || "").trim();
-      if (o.length < 2) {
-        setInvalid("f-areaOther", "⚠ من فضلك اكتب اسم المنطقة");
-        errors.push("areaOther");
-        if (!firstInvalid) firstInvalid = "f-areaOther";
-      } else {
-        areaTxt = o;
+    for (var i = 0; i < requiredFields.length; i++){
+      var el = document.getElementById(requiredFields[i]);
+      if (!el) continue;
+      var v = String(el.value || '').trim();
+      if (!v){
+        el.classList.add('invalid');
+        ok = false;
+        if (!firstInvalid) firstInvalid = el;
       }
     }
-    if (!price) {
-      setInvalid("f-price", "⚠ من فضلك اختر السعر المناسب");
-      errors.push("price");
-      if (!firstInvalid) firstInvalid = "f-price";
-    }
-    if (!space) {
-      setInvalid("f-space", "⚠ من فضلك اختر المساحة المطلوبة");
-      errors.push("space");
-      if (!firstInvalid) firstInvalid = "f-space";
-    }
-    if (!rooms) {
-      setInvalid("f-rooms", "⚠ من فضلك اختر عدد الغرف");
-      errors.push("rooms");
-      if (!firstInvalid) firstInvalid = "f-rooms";
+
+    // تحقق بسيط من رقم التليفون
+    var phoneEl = document.getElementById('phone');
+    if (phoneEl && String(phoneEl.value || '').trim()){
+      var digits = String(phoneEl.value).replace(/\D/g, '');
+      if (digits.length < 10){
+        phoneEl.classList.add('invalid');
+        ok = false;
+        if (!firstInvalid) firstInvalid = phoneEl;
+      }
     }
 
-    if (errors.length > 0) {
-      if (firstInvalid) {
-        var el = document.getElementById(firstInvalid);
-        if (el) {
-          var y = el.getBoundingClientRect().top + window.pageYOffset - 110;
-          window.scrollTo({ top: y, behavior: "smooth" });
+    // تحقق من الموافقة على العمولة
+    var agree = document.getElementById('agreeCommission');
+    var agreeCard = document.getElementById('agreeCard');
+    if (!agree || !agree.checked){
+      if (agreeCard) agreeCard.classList.add('invalid');
+      ok = false;
+      if (!firstInvalid && agreeCard) firstInvalid = agreeCard;
+    }
+
+    if (!ok && firstInvalid){
+      firstInvalid.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+
+    return ok;
+  }
+
+  /* ==========================================================
+     إرسال النموذج
+     ========================================================== */
+  if (form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      if (!validateForm()) return;
+
+      var utilities = getCheckedValues('utilities');
+      var meters    = getCheckedValues('meters');
+
+      var data = {
+        name:    val('fullName'),
+        phone:   val('phone'),
+        address: val('address'),
+        area:    val('area'),
+        floor:   val('floor'),
+        size:    val('size'),
+        rooms:   val('rooms'),
+        price:   val('price'),
+        elec:    yesNo(utilities, 'كهرباء'),
+        water:   yesNo(utilities, 'مياه'),
+        gas:     yesNo(utilities, 'غاز'),
+        mElec:   yesNo(meters, 'كهرباء'),
+        mWater:  yesNo(meters, 'مياه'),
+        mGas:    yesNo(meters, 'غاز')
+      };
+
+      var requestId = makeRequestId();
+      var now = new Date();
+      var timeStr = formatDateTime(now);
+
+      var lines = [
+        'طلب جديد لتسجيل شقة للبيع',
+        'قصر الخطيب للتسويق العقاري',
+        '',
+        'الاسم: ' + data.name,
+        'رقم التليفون: ' + data.phone,
+        'عنوان الشقة بالتفصيل: ' + data.address,
+        'المنطقة: ' + data.area,
+        'الدور: ' + data.floor,
+        'مساحة الشقة: ' + data.size + ' متر',
+        'عدد الغرف: ' + data.rooms,
+        'السعر المطلوب: ' + data.price,
+        'الكهرباء: ' + data.elec,
+        'المياه: ' + data.water,
+        'الغاز الطبيعي: ' + data.gas,
+        'عداد كهرباء مستقل: ' + data.mElec,
+        'عداد مياه مستقل: ' + data.mWater,
+        'عداد غاز مستقل: ' + data.mGas,
+        'العمولة: 1%',
+        'موافقة العميل على العمولة: نعم',
+        'وقت إرسال الطلب: ' + timeStr,
+        'رقم الطلب: ' + requestId
+      ];
+
+      var message = lines.join('\n');
+
+      // فتح واتساب
+      openWhatsApp(message);
+
+      // زيادة العداد
+      ordersCount = ordersCount + 1;
+      paintCounter(true);
+      saveCounter();
+
+      // إظهار رسالة النجاح
+      if (reqIdBox) reqIdBox.textContent = 'رقم الطلب: ' + requestId;
+
+      if (form) form.style.display = 'none';
+      if (successBox) {
+        successBox.classList.add('show');
+        successBox.scrollIntoView({behavior:'smooth', block:'center'});
+      }
+      formHidden = true;
+
+      // زر إرسال الصور
+      var photosBtn = document.getElementById('sendPhotosBtn');
+      if (photosBtn){
+        photosBtn.onclick = function(){
+          var photoMsg = [
+            'مرحبًا، أنا ' + data.name,
+            'أرسلت طلب تسجيل شقة للبيع على موقع قصر الخطيب للتسويق العقاري.',
+            'رقم الطلب: ' + requestId,
+            'رقم التليفون: ' + data.phone,
+            '',
+            'وهذه صور الشقة 👇'
+          ].join('\n');
+          openWhatsApp(photoMsg);
+        };
+      }
+    });
+
+    // إزالة علامة الخطأ عند الكتابة
+    var inputs = form.querySelectorAll('input, select, textarea');
+    for (var i = 0; i < inputs.length; i++){
+      inputs[i].addEventListener('input', function(){
+        this.classList.remove('invalid');
+      });
+      inputs[i].addEventListener('change', function(){
+        this.classList.remove('invalid');
+        if (this.id === 'agreeCommission'){
+          var ac = document.getElementById('agreeCard');
+          if (ac && this.checked) ac.classList.remove('invalid');
         }
-      }
-      return;
+      });
     }
+  }
 
-    var data = {
-      name: name, phone: phone, area: areaTxt,
-      price: price, space: space, rooms: rooms,
-      floor: floor, baths: baths,
-      furnished: furnished, sea: sea, ready: ready,
-      notes: notes
-    };
-
-    var now = new Date();
-    var reqId = makeRequestId();
-    var timeStr = formatDateTime(now);
-
-    var newCount = incrementCount();
-    animateCounter(counterEl, newCount);
-
-    var message = buildMessage(data, reqId, timeStr);
-    var waURL = "https://wa.me/" + COMPANY_WA + "?text=" + encodeURIComponent(message);
-
-    $("#successReqId").textContent = "رقم الطلب: " + reqId;
-    $("#waFallbackBtn").setAttribute("href", waURL);
-    form.style.display = "none";
-    successBox.classList.add("show");
-
-    try {
-      var win = window.open(waURL, "_blank", "noopener,noreferrer");
-      if (!win) {
-        setTimeout(function () {
-          try { window.location.href = waURL; } catch (e) {}
-        }, 400);
-      }
-    } catch (e) {
-      try { window.location.href = waURL; } catch (e2) {}
-    }
-
-    setTimeout(function () {
-      var y = successBox.getBoundingClientRect().top + window.pageYOffset - 110;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }, 220);
-  });
-
-  window.resetForm = function () {
-    try { form.reset(); } catch (e) {}
-    clearAllInvalid();
-    areaOther.style.display = "none";
-    successBox.classList.remove("show");
-    form.style.display = "";
-    var y = document.getElementById("request").getBoundingClientRect().top + window.pageYOffset - 84;
-    window.scrollTo({ top: y, behavior: "smooth" });
-    setTimeout(function () {
-      var f = document.getElementById("name");
-      if (f) { try { f.focus({ preventScroll: true }); } catch (e) { f.focus(); } }
-    }, 600);
-  };
-
-  /* -------- Ensure group links open in new tab -------- */
-  $$('a[href*="chat.whatsapp.com"]').forEach(function (a) {
-    a.setAttribute("target", "_blank");
-    a.setAttribute("rel", "noopener noreferrer");
-  });
+  /* ==========================================================
+     الشريط المتحرك — ضمان عدم وجود فراغ
+     ========================================================== */
+  var track = document.getElementById('marqueeTrack');
+  if (track){
+    var original = track.innerHTML;
+    track.innerHTML = original + original;
+  }
 
 })();
 </script>
+
 </body>
 </html>
