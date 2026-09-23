@@ -10,7 +10,6 @@
 <meta name="author" content="قصر الخطيب للتسويق العقاري">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#081226">
-<meta name="format-detection" content="telephone=yes">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="قصر الخطيب للتسويق العقاري | تسويق وبيع الشقق في الإسكندرية">
@@ -23,27 +22,21 @@
 
 <style>
 /* ============================================================
-   المتغيرات العامة
+   المتغيرات
    ============================================================ */
 :root{
   --navy-900:#04091a;
   --navy-800:#081226;
   --navy-700:#0c1a38;
   --navy-600:#122450;
-  --navy-500:#1a3168;
-
   --gold:#d4af37;
   --gold-light:#f2dc8a;
   --gold-soft:#e8c766;
   --gold-dark:#a8842a;
-
   --white:#ffffff;
   --muted:#c3cfe8;
-
   --red:#e11d2e;
   --red-dark:#9c0c1a;
-  --red-light:#ff4d5e;
-
   --radius:20px;
   --shadow-soft:0 18px 50px rgba(0,0,0,.45);
   --glass-border:rgba(212,175,55,.22);
@@ -96,9 +89,6 @@ body::after{
 img{max-width:100%;display:block;}
 a{text-decoration:none;color:inherit;}
 
-/* ============================================================
-   الحاوية العامة
-   ============================================================ */
 .wrap{
   width:100%;
   max-width:1240px;
@@ -107,7 +97,7 @@ a{text-decoration:none;color:inherit;}
 }
 
 /* ============================================================
-   الهيدر + اللوجو
+   الهيدر + الشعار
    ============================================================ */
 header.site-header{
   padding:26px 0 10px;
@@ -123,7 +113,7 @@ header.site-header{
 }
 
 #brandLogo{
-  width:clamp(110px,26vw,165px);
+  width:clamp(120px,28vw,180px);
   height:auto;
   object-fit:contain;
   filter:drop-shadow(0 10px 28px rgba(212,175,55,.42));
@@ -184,7 +174,7 @@ header.site-header{
 }
 
 /* ============================================================
-   شريط المعلومات الثابت
+   شريط المعلومات
    ============================================================ */
 .info-bar{
   position:sticky;
@@ -279,7 +269,7 @@ header.site-header{
 }
 
 /* ============================================================
-   قسم الهيرو
+   الهيرو
    ============================================================ */
 .hero{
   padding:52px 0 26px;
@@ -300,9 +290,9 @@ header.site-header{
 }
 
 .hero h1{
-  font-size:clamp(1.75rem,7.4vw,3.1rem);
+  font-size:clamp(1.85rem,8vw,3.4rem);
   font-weight:900;
-  line-height:1.5;
+  line-height:1.45;
   color:#fff;
   margin-bottom:18px;
   text-shadow:0 6px 30px rgba(0,0,0,.5);
@@ -313,6 +303,15 @@ header.site-header{
   background-clip:text;
   color:transparent;
   -webkit-text-fill-color:transparent;
+}
+
+.hero h2.sub{
+  font-size:clamp(1.35rem,5.6vw,2.1rem);
+  font-weight:900;
+  color:var(--gold-light);
+  line-height:1.55;
+  margin-bottom:18px;
+  text-shadow:0 4px 24px rgba(212,175,55,.35);
 }
 
 .hero p.lead{
@@ -385,7 +384,7 @@ header.site-header{
 }
 
 /* ============================================================
-   مسرح زر التسجيل + العملاق + الخبرة
+   مسرح الزر الأحمر + العملاق + الخبرة + العداد
    ============================================================ */
 .cta-section{
   padding:56px 0 40px;
@@ -399,7 +398,6 @@ header.site-header{
   justify-items:center;
 }
 
-/* --- عمود العملاق --- */
 .giant-col{
   display:flex;
   justify-content:center;
@@ -436,7 +434,6 @@ header.site-header{
   78%,100%{transform:rotate(-16deg);}
 }
 
-/* --- مركز الزر --- */
 .cta-center{
   order:2;
   display:flex;
@@ -458,7 +455,6 @@ header.site-header{
   50%{transform:translateY(8px);}
 }
 
-/* الزر الأحمر الدائري */
 .cta-btn{
   width:min(310px,80vw);
   height:min(310px,80vw);
@@ -546,7 +542,6 @@ header.site-header{
   max-width:420px;
 }
 
-/* --- بطاقة الخبرة --- */
 .exp-card{
   order:3;
   width:100%;
@@ -608,9 +603,6 @@ header.site-header{
   flex:0 0 auto;
 }
 
-/* ============================================================
-   العداد
-   ============================================================ */
 .counter-box{
   order:4;
   display:flex;
@@ -658,7 +650,7 @@ header.site-header{
 }
 
 /* ============================================================
-   قسم النموذج
+   النموذج
    ============================================================ */
 .form-section{
   padding:56px 0 40px;
@@ -954,9 +946,6 @@ header.site-header{
   box-shadow:0 2px 0 #7a5f18, 0 8px 20px rgba(212,175,55,.35), inset 0 2px 0 rgba(255,255,255,.7);
 }
 
-/* ============================================================
-   رسالة النجاح
-   ============================================================ */
 .success-box{
   display:none;
   text-align:center;
@@ -1061,12 +1050,6 @@ header.site-header{
   content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,transparent 45%,rgba(8,18,38,.75));
   pointer-events:none;
-}
-.gallery-item:nth-child(5),
-.gallery-item:nth-child(6){display:none;}
-@media (min-width:820px){
-  .gallery-item:nth-child(5),
-  .gallery-item:nth-child(6){display:block;}
 }
 
 /* ============================================================
@@ -1287,10 +1270,11 @@ html,body{max-width:100%;overflow-x:hidden;}
      ============================================================ -->
 <section class="hero">
   <div class="wrap">
-    <div class="hero-badge">تسويق وبيع الشقق في الإسكندرية</div>
-    <h1>لو عايز تبيع <span class="gold">شقتك</span> في الإسكندرية</h1>
+    <div class="hero-badge">تسويق الشقق في الإسكندرية</div>
+    <h1>تسويق الشقق في <span class="gold">الإسكندرية</span></h1>
+    <h2 class="sub">لو عايز تبيع شقتك في الإسكندرية</h2>
     <p class="lead">
-      إحنا مكتب تسويق عقاري، نساعدك في تسويق شقتك والوصول إلى العملاء الباحثين عن الشراء.
+      سجّل بيانات شقتك الآن ودع قصر الخطيب للتسويق العقاري يتواصل معك.
     </p>
 
     <div class="commission-card">
@@ -1309,11 +1293,9 @@ html,body{max-width:100%;overflow-x:hidden;}
   <div class="wrap">
     <div class="cta-stage">
 
-      <!-- ============ العملاق الأخضر الأصلي ============ -->
       <div class="giant-col" aria-hidden="true">
         <svg class="giant-svg" viewBox="0 0 360 560" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <!-- تدرجات البشرة الخضراء -->
             <radialGradient id="skinBody" cx="42%" cy="30%" r="75%">
               <stop offset="0%" stop-color="#7fe08a"/>
               <stop offset="35%" stop-color="#5cbe66"/>
@@ -1333,12 +1315,10 @@ html,body{max-width:100%;overflow-x:hidden;}
               <stop offset="0%" stop-color="#4faa58"/>
               <stop offset="100%" stop-color="#1f5626"/>
             </linearGradient>
-            <!-- الشعر -->
             <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#1f5f28"/>
               <stop offset="100%" stop-color="#0c2e12"/>
             </linearGradient>
-            <!-- المطرقة -->
             <linearGradient id="metalHead" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#f6f9fc"/>
               <stop offset="35%" stop-color="#d5dde6"/>
@@ -1350,205 +1330,121 @@ html,body{max-width:100%;overflow-x:hidden;}
               <stop offset="50%" stop-color="#8d5a2d"/>
               <stop offset="100%" stop-color="#5c3617"/>
             </linearGradient>
-            <!-- الظل الأرضي -->
             <radialGradient id="groundShadow" cx="50%" cy="50%" r="50%">
               <stop offset="0%" stop-color="rgba(0,0,0,.6)"/>
               <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
             </radialGradient>
-            <!-- إضاءة خلفية -->
             <radialGradient id="backGlow" cx="50%" cy="40%" r="55%">
               <stop offset="0%" stop-color="rgba(94,196,106,.35)"/>
               <stop offset="100%" stop-color="rgba(94,196,106,0)"/>
             </radialGradient>
           </defs>
 
-          <!-- هالة خلفية -->
           <ellipse cx="180" cy="300" rx="150" ry="220" fill="url(#backGlow)"/>
-
-          <!-- الظل الأرضي -->
           <ellipse cx="180" cy="536" rx="130" ry="18" fill="url(#groundShadow)"/>
 
-          <!-- ============ الساقان ============ -->
           <g id="legs">
-            <!-- الفخذ والساق اليمنى (منظر المشاهد) -->
-            <path d="M 118 372 Q 108 440 112 500 L 148 500 Q 152 440 148 372 Z"
-                  fill="url(#skinLeg)"/>
-            <!-- عضلات الفخذ -->
+            <path d="M 118 372 Q 108 440 112 500 L 148 500 Q 152 440 148 372 Z" fill="url(#skinLeg)"/>
             <ellipse cx="134" cy="410" rx="20" ry="30" fill="rgba(255,255,255,.08)"/>
-            <!-- الركبة -->
             <ellipse cx="134" cy="450" rx="15" ry="11" fill="rgba(0,0,0,.16)"/>
-            <!-- القدم اليمنى -->
-            <path d="M 100 496 Q 96 528 116 530 L 156 530 Q 162 522 156 500 L 148 500 Z"
-                  fill="#1c4d22"/>
-            <path d="M 100 512 Q 100 528 116 530 L 156 530 Q 160 524 156 516 Z"
-                  fill="#143a19"/>
+            <path d="M 100 496 Q 96 528 116 530 L 156 530 Q 162 522 156 500 L 148 500 Z" fill="#1c4d22"/>
+            <path d="M 100 512 Q 100 528 116 530 L 156 530 Q 160 524 156 516 Z" fill="#143a19"/>
 
-            <!-- الفخذ والساق اليسرى -->
-            <path d="M 212 372 Q 220 440 216 500 L 252 500 Q 256 440 244 372 Z"
-                  fill="url(#skinLeg)"/>
+            <path d="M 212 372 Q 220 440 216 500 L 252 500 Q 256 440 244 372 Z" fill="url(#skinLeg)"/>
             <ellipse cx="230" cy="410" rx="20" ry="30" fill="rgba(255,255,255,.08)"/>
             <ellipse cx="228" cy="450" rx="15" ry="11" fill="rgba(0,0,0,.16)"/>
-            <path d="M 204 496 Q 200 528 220 530 L 260 530 Q 268 522 262 500 L 252 500 Z"
-                  fill="#1c4d22"/>
-            <path d="M 204 512 Q 204 528 220 530 L 260 530 Q 264 524 260 516 Z"
-                  fill="#143a19"/>
+            <path d="M 204 496 Q 200 528 220 530 L 260 530 Q 268 522 262 500 L 252 500 Z" fill="#1c4d22"/>
+            <path d="M 204 512 Q 204 528 220 530 L 260 530 Q 264 524 260 516 Z" fill="#143a19"/>
           </g>
 
-          <!-- ============ الجسم / الجذع ============ -->
           <g id="torso">
-            <!-- الجذع الرئيسي -->
             <path d="M 68 248 Q 62 200 100 188 L 260 188 Q 298 200 292 248
                      L 286 372 Q 284 402 250 406 L 110 406 Q 76 402 74 372 Z"
                   fill="url(#skinBody)"/>
-
-            <!-- عضلات الصدر الضخمة -->
             <path d="M 92 254 Q 118 226 152 248 Q 138 292 96 286 Z" fill="rgba(0,0,0,.18)"/>
             <path d="M 268 254 Q 242 226 208 248 Q 222 292 264 286 Z" fill="rgba(0,0,0,.18)"/>
-            <!-- خط منتصف الصدر -->
             <path d="M 180 236 L 180 292" stroke="rgba(0,0,0,.28)" stroke-width="4" stroke-linecap="round"/>
-
-            <!-- عضلات البطن (6 pack) -->
             <rect x="152" y="302" width="26" height="22" rx="9" fill="rgba(0,0,0,.18)"/>
             <rect x="184" y="302" width="26" height="22" rx="9" fill="rgba(0,0,0,.18)"/>
             <rect x="152" y="330" width="26" height="22" rx="9" fill="rgba(0,0,0,.18)"/>
             <rect x="184" y="330" width="26" height="22" rx="9" fill="rgba(0,0,0,.18)"/>
             <rect x="152" y="358" width="26" height="20" rx="9" fill="rgba(0,0,0,.14)"/>
             <rect x="184" y="358" width="26" height="20" rx="9" fill="rgba(0,0,0,.14)"/>
-
-            <!-- أضلاع جانبية -->
             <path d="M 96 300 Q 108 320 104 346" stroke="rgba(0,0,0,.2)" stroke-width="3" fill="none" stroke-linecap="round"/>
             <path d="M 264 300 Q 252 320 256 346" stroke="rgba(0,0,0,.2)" stroke-width="3" fill="none" stroke-linecap="round"/>
           </g>
 
-          <!-- ============ الرقبة ============ -->
           <path d="M 148 168 L 212 168 L 208 208 L 152 208 Z" fill="#2b7433"/>
           <path d="M 148 168 L 160 190 L 152 208 Z" fill="rgba(0,0,0,.2)"/>
 
-          <!-- ============ الذراع الحاملة للمطرقة ============ -->
           <g id="armHammer">
-            <!-- الكتف العضلي -->
             <ellipse cx="268" cy="222" rx="42" ry="40" fill="url(#skinArm)"/>
             <ellipse cx="268" cy="210" rx="30" ry="22" fill="rgba(255,255,255,.1)"/>
-
-            <!-- العضد (الفخذ العلوي للذراع) -->
             <path d="M 288 226 Q 314 208 322 172 Q 328 148 328 128"
                   stroke="url(#skinArm)" stroke-width="46" fill="none" stroke-linecap="round"/>
-
-            <!-- الساعد (منحدر نحو الأسفل) -->
             <path d="M 322 172 Q 318 148 312 122"
                   stroke="url(#skinArm)" stroke-width="40" fill="none" stroke-linecap="round"/>
-
-            <!-- القبضة على مقبض المطرقة -->
             <circle cx="312" cy="118" r="26" fill="#4faa58"/>
             <circle cx="312" cy="118" r="26" fill="none" stroke="rgba(0,0,0,.2)" stroke-width="2"/>
-
-            <!-- ===== المطرقة ===== -->
             <g id="hammerGroup">
-              <!-- المقبض الخشبي -->
               <rect x="304" y="8" width="17" height="118" rx="8" fill="url(#woodHandle)"/>
-              <!-- لمعة على المقبض -->
               <rect x="307" y="14" width="4" height="106" rx="2" fill="rgba(255,255,255,.2)"/>
-
-              <!-- رأس المطرقة المعدني -->
               <rect x="272" y="-6" width="72" height="42" rx="10" fill="url(#metalHead)"
                     stroke="#3c4550" stroke-width="2"/>
-              <!-- لمعة علوية -->
               <rect x="276" y="-2" width="64" height="12" rx="6" fill="#fbfdff" opacity=".9"/>
-              <!-- خط فاصل منتصف الرأس -->
               <rect x="304" y="0" width="4" height="30" fill="rgba(0,0,0,.22)"/>
             </g>
           </g>
 
-          <!-- ============ الذراع المشيرة ============ -->
           <g id="armPoint">
-            <!-- الكتف -->
             <ellipse cx="92" cy="222" rx="40" ry="38" fill="url(#skinArm)"/>
             <ellipse cx="92" cy="210" rx="28" ry="20" fill="rgba(255,255,255,.1)"/>
-
-            <!-- الذراع كاملة منحدرة نحو الأسفل ثم للأمام -->
             <path d="M 76 226 Q 48 240 34 268 Q 24 288 18 302"
                   stroke="url(#skinArm)" stroke-width="44" fill="none" stroke-linecap="round"/>
             <path d="M 34 268 Q 24 288 18 302"
                   stroke="url(#skinArm)" stroke-width="40" fill="none" stroke-linecap="round"/>
-
-            <!-- قبضة اليد -->
             <circle cx="18" cy="306" r="26" fill="#4faa58"/>
             <circle cx="18" cy="306" r="26" fill="none" stroke="rgba(0,0,0,.2)" stroke-width="2"/>
-
-            <!-- إصبع السبابة الممدود يشير إلى الزر -->
             <path d="M -8 306 L 20 306" stroke="#4faa58" stroke-width="18" stroke-linecap="round"/>
             <path d="M -8 306 L 20 306" stroke="rgba(255,255,255,.15)" stroke-width="6" stroke-linecap="round"/>
-            <!-- إظفر الإصبع -->
             <ellipse cx="-10" cy="306" rx="5" ry="7" fill="#2b7433"/>
-
-            <!-- باقي الأصابع مطوية -->
             <rect x="10" y="324" width="20" height="14" rx="7" fill="#43964c"/>
             <rect x="10" y="342" width="18" height="13" rx="6.5" fill="#3f8f47"/>
           </g>
 
-          <!-- ============ الرأس ============ -->
           <g id="head">
-            <!-- الرأس نفسه (شكل بيضاوي عريض) -->
             <ellipse cx="180" cy="126" rx="58" ry="64" fill="url(#skinFace)"/>
-
-            <!-- خدود / فك عريض -->
             <path d="M 124 138 Q 130 176 180 184 Q 230 176 236 138
                      Q 228 158 180 162 Q 132 158 124 138 Z"
                   fill="rgba(0,0,0,.14)"/>
-
-            <!-- الشعر -->
             <path d="M 116 118 Q 108 56 180 50 Q 252 56 244 118
                      Q 234 80 180 74 Q 126 80 116 118 Z"
                   fill="url(#hairGrad)"/>
-            <!-- خصلات الشعر الأمامية -->
             <path d="M 118 110 Q 132 78 160 74 Q 148 92 130 116 Z" fill="#173f1d"/>
             <path d="M 242 110 Q 228 78 200 74 Q 212 92 230 116 Z" fill="#173f1d"/>
-
-            <!-- الحواجب العريضة الغاضبة -->
             <path d="M 122 98 L 162 112" stroke="#123a19" stroke-width="13" stroke-linecap="round"/>
             <path d="M 238 98 L 198 112" stroke="#123a19" stroke-width="13" stroke-linecap="round"/>
-
-            <!-- الجبهة المقطبة -->
             <path d="M 158 88 Q 180 84 202 88" stroke="rgba(0,0,0,.25)" stroke-width="3" fill="none"/>
             <path d="M 160 78 Q 180 74 200 78" stroke="rgba(0,0,0,.18)" stroke-width="2.5" fill="none"/>
-
-            <!-- العيون -->
-            <!-- بياض العيون -->
             <ellipse cx="148" cy="126" rx="18" ry="14" fill="#ffffff"/>
             <ellipse cx="212" cy="126" rx="18" ry="14" fill="#ffffff"/>
-            <!-- القزحية الخضراء -->
             <circle cx="150" cy="127" r="9" fill="#3c8a44"/>
             <circle cx="210" cy="127" r="9" fill="#3c8a44"/>
-            <!-- البؤبؤ -->
             <circle cx="151" cy="128" r="5" fill="#0a1f0d"/>
             <circle cx="209" cy="128" r="5" fill="#0a1f0d"/>
-            <!-- لمعة العين -->
             <circle cx="153" cy="124" r="2.6" fill="#ffffff"/>
             <circle cx="211" cy="124" r="2.6" fill="#ffffff"/>
-
-            <!-- الجفن العلوي (نظرة غاضبة) -->
             <path d="M 130 118 Q 148 108 166 116" stroke="#123a19" stroke-width="4" fill="none" stroke-linecap="round"/>
             <path d="M 230 118 Q 212 108 194 116" stroke="#123a19" stroke-width="4" fill="none" stroke-linecap="round"/>
-
-            <!-- الأنف -->
-            <path d="M 180 138 L 172 156 Q 180 160 188 156 Z"
-                  fill="rgba(0,0,0,.22)"/>
+            <path d="M 180 138 L 172 156 Q 180 160 188 156 Z" fill="rgba(0,0,0,.22)"/>
             <path d="M 180 138 L 180 154" stroke="rgba(0,0,0,.3)" stroke-width="2"/>
-
-            <!-- الفم / الفك المشدود -->
             <path d="M 152 168 Q 180 158 208 168" stroke="#123a19" stroke-width="7" fill="none" stroke-linecap="round"/>
             <path d="M 156 172 Q 180 182 204 172" stroke="rgba(0,0,0,.2)" stroke-width="3" fill="none"/>
           </g>
-
-          <!-- ============ تفاصيل إضافية: تمزق الملابس ============ -->
-          <path d="M 108 396 Q 118 380 132 396 L 140 406 L 126 404 Z" fill="#1e5a26" opacity=".75"/>
-          <path d="M 226 396 Q 240 380 252 396 L 246 404 L 234 406 Z" fill="#1e5a26" opacity=".75"/>
         </svg>
       </div>
 
-      <!-- ============ الزر الأحمر + السهم ============ -->
       <div class="cta-center">
-
         <svg class="arrow-down" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
             <linearGradient id="arrowGrad" x1="0" y1="0" x2="0" y2="1">
@@ -1561,8 +1457,7 @@ html,body{max-width:100%;overflow-x:hidden;}
                 fill="url(#arrowGrad)" stroke="#a8842a" stroke-width="3" stroke-linejoin="round"/>
         </svg>
 
-        <button type="button" class="cta-btn" id="goToFormBtn"
-                aria-label="دوس هنا واملأ بيانات شقتك">
+        <button type="button" class="cta-btn" id="goToFormBtn" aria-label="دوس هنا واملأ بيانات شقتك">
           <svg class="btn-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M32 6 L58 27 L50 27 L50 56 L38 56 L38 40 L26 40 L26 56 L14 56 L14 27 L6 27 Z"
                   fill="#ffffff" stroke="rgba(0,0,0,.25)" stroke-width="2" stroke-linejoin="round"/>
@@ -1572,10 +1467,8 @@ html,body{max-width:100%;overflow-x:hidden;}
         </button>
 
         <p class="cta-caption">دوس هنا واملأ بيانات شقتك</p>
-
       </div>
 
-      <!-- ============ بطاقة الخبرة ============ -->
       <aside class="exp-card">
         <h2>خبراتنا</h2>
         <p>
@@ -1594,7 +1487,6 @@ html,body{max-width:100%;overflow-x:hidden;}
         </ul>
       </aside>
 
-      <!-- ============ العداد ============ -->
       <div class="counter-box" title="عدد طلبات تسجيل الشقق للبيع">
         <div class="counter-num" id="ordersCount">128</div>
         <div class="counter-dot"><i></i></div>
@@ -1861,16 +1753,10 @@ html,body{max-width:100%;overflow-x:hidden;}
 (function(){
   'use strict';
 
-  /* ==========================================================
-     الإعدادات
-     ========================================================== */
   var WA_INTL   = '201124997077';
   var START_CT  = 128;
   var STORAGE_K = 'qk_orders_count_local';
 
-  /* ==========================================================
-     اللوجو
-     ========================================================== */
   var brandLogo = document.getElementById('brandLogo');
   var logoFallback = document.getElementById('logoFallback');
   if (brandLogo){
@@ -1880,15 +1766,9 @@ html,body{max-width:100%;overflow-x:hidden;}
     });
   }
 
-  /* ==========================================================
-     سنة الفوتر
-     ========================================================== */
   var yearSpan = document.getElementById('yearSpan');
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-  /* ==========================================================
-     العداد
-     ========================================================== */
   var counterEl = document.getElementById('ordersCount');
   var ordersCount = START_CT;
 
@@ -1912,9 +1792,6 @@ html,body{max-width:100%;overflow-x:hidden;}
     try { localStorage.setItem(STORAGE_K, String(ordersCount)); } catch(e){}
   }
 
-  /* ==========================================================
-     تأثير ضربة المطرقة على الزر
-     ========================================================== */
   var ctaBtn = document.getElementById('goToFormBtn');
 
   function triggerHit(){
@@ -1931,14 +1808,7 @@ html,body{max-width:100%;overflow-x:hidden;}
     window.setInterval(function(){
       window.setTimeout(triggerHit, 1925);
     }, 3500);
-  }
 
-  /* ==========================================================
-     التمرير إلى النموذج
-     ========================================================== */
-  var formHidden = false;
-
-  if (ctaBtn){
     ctaBtn.addEventListener('click', function(){
       var target = document.getElementById('formSection');
       if (target){
@@ -1947,9 +1817,6 @@ html,body{max-width:100%;overflow-x:hidden;}
     });
   }
 
-  /* ==========================================================
-     أدوات مساعدة
-     ========================================================== */
   var form = document.getElementById('propertyForm');
   var successBox = document.getElementById('successBox');
   var reqIdBox = document.getElementById('reqIdBox');
@@ -1992,9 +1859,6 @@ html,body{max-width:100%;overflow-x:hidden;}
     if (!w) { window.location.href = url; }
   }
 
-  /* ==========================================================
-     التحقق
-     ========================================================== */
   var requiredFields = ['fullName','phone','address','area','floor','size','rooms','price'];
 
   function clearInvalid(){
@@ -2045,9 +1909,6 @@ html,body{max-width:100%;overflow-x:hidden;}
     return ok;
   }
 
-  /* ==========================================================
-     إرسال النموذج
-     ========================================================== */
   if (form){
     form.addEventListener('submit', function(e){
       e.preventDefault();
@@ -2117,7 +1978,6 @@ html,body{max-width:100%;overflow-x:hidden;}
         successBox.classList.add('show');
         successBox.scrollIntoView({behavior:'smooth', block:'center'});
       }
-      formHidden = true;
 
       var photosBtn = document.getElementById('sendPhotosBtn');
       if (photosBtn){
@@ -2150,9 +2010,6 @@ html,body{max-width:100%;overflow-x:hidden;}
     }
   }
 
-  /* ==========================================================
-     الشريط المتحرك
-     ========================================================== */
   var track = document.getElementById('marqueeTrack');
   if (track){
     var original = track.innerHTML;
