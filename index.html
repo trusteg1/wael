@@ -44,13 +44,8 @@
   --red-dark:#9c0c1a;
   --red-light:#ff4d5e;
 
-  --green-1:#5ec46a;
-  --green-2:#2f8b3c;
-  --green-3:#17471f;
-
   --radius:20px;
   --shadow-soft:0 18px 50px rgba(0,0,0,.45);
-  --glass:rgba(255,255,255,.045);
   --glass-border:rgba(212,175,55,.22);
 }
 
@@ -74,7 +69,6 @@ body{
   position:relative;
 }
 
-/* خلفية فاخرة */
 body::before{
   content:"";
   position:fixed;
@@ -330,7 +324,6 @@ header.site-header{
   line-height:1.95;
 }
 
-/* بطاقة العمولة */
 .commission-card{
   max-width:640px;
   margin:0 auto;
@@ -392,7 +385,7 @@ header.site-header{
 }
 
 /* ============================================================
-   مسرح زر التسجيل + العملاق الأخضر + الخبرة
+   مسرح زر التسجيل + العملاق + الخبرة
    ============================================================ */
 .cta-section{
   padding:56px 0 40px;
@@ -406,7 +399,7 @@ header.site-header{
   justify-items:center;
 }
 
-/* --- العملاق --- */
+/* --- عمود العملاق --- */
 .giant-col{
   display:flex;
   justify-content:center;
@@ -415,25 +408,25 @@ header.site-header{
   width:100%;
 }
 .giant-svg{
-  width:clamp(150px,44vw,270px);
+  width:clamp(160px,46vw,290px);
   height:auto;
   overflow:visible;
-  filter:drop-shadow(0 26px 44px rgba(0,0,0,.6)) drop-shadow(0 0 32px rgba(94,196,106,.28));
+  filter:drop-shadow(0 26px 44px rgba(0,0,0,.6)) drop-shadow(0 0 34px rgba(94,196,106,.3));
 }
 
 #armPoint{
   transform-box:view-box;
-  transform-origin:80px 218px;
+  transform-origin:82px 218px;
   animation:pointPulse 2.2s ease-in-out infinite;
 }
 @keyframes pointPulse{
   0%,100%{transform:rotate(0deg) translateX(0);}
-  50%{transform:rotate(-7deg) translateX(-8px);}
+  50%{transform:rotate(-7deg) translateX(-9px);}
 }
 
 #armHammer{
   transform-box:view-box;
-  transform-origin:258px 218px;
+  transform-origin:262px 218px;
   animation:hammerSwing 3.5s cubic-bezier(.5,0,.5,1) infinite;
 }
 @keyframes hammerSwing{
@@ -513,12 +506,8 @@ header.site-header{
       inset 0 12px 22px rgba(255,255,255,.28);
   }
 }
-.cta-btn:active{
-  filter:brightness(1.14);
-}
-.cta-btn.hit{
-  animation:btnHit .72s cubic-bezier(.36,1.6,.4,1);
-}
+.cta-btn:active{filter:brightness(1.14);}
+.cta-btn.hit{animation:btnHit .72s cubic-bezier(.36,1.6,.4,1);}
 @keyframes btnHit{
   0%{transform:scale(1) translateY(0) rotate(0deg);}
   14%{transform:scale(.9) translateY(8px) rotate(-1.5deg);}
@@ -648,19 +637,13 @@ header.site-header{
   filter:drop-shadow(0 6px 18px rgba(212,175,55,.45));
   transition:.3s;
 }
-.counter-num.bump{
-  animation:countBump .6s cubic-bezier(.3,1.7,.5,1);
-}
+.counter-num.bump{animation:countBump .6s cubic-bezier(.3,1.7,.5,1);}
 @keyframes countBump{
   0%{transform:scale(1);}
   40%{transform:scale(1.35);}
   100%{transform:scale(1);}
 }
-.counter-dot{
-  display:flex;
-  align-items:center;
-  gap:8px;
-}
+.counter-dot{display:flex;align-items:center;gap:8px;}
 .counter-dot i{
   width:10px;height:10px;
   border-radius:50%;
@@ -725,11 +708,7 @@ header.site-header{
   gap:18px;
 }
 
-.field{
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-}
+.field{display:flex;flex-direction:column;gap:8px;}
 
 .field label{
   font-size:clamp(.98rem,3.8vw,1.1rem);
@@ -778,21 +757,10 @@ header.site-header{
   background-size:24px;
   padding-left:46px;
 }
-.field select option{
-  background:#0c1a38;
-  color:#fff;
-  font-weight:700;
-}
-.field textarea{
-  min-height:110px;
-  resize:vertical;
-  line-height:1.9;
-}
+.field select option{background:#0c1a38;color:#fff;font-weight:700;}
+.field textarea{min-height:110px;resize:vertical;line-height:1.9;}
 .field input::placeholder,
-.field textarea::placeholder{
-  color:rgba(195,207,232,.5);
-  font-weight:600;
-}
+.field textarea::placeholder{color:rgba(195,207,232,.5);font-weight:600;}
 .field input:focus,
 .field select:focus,
 .field textarea:focus{
@@ -807,20 +775,13 @@ header.site-header{
   background:rgba(255,59,77,.1);
   box-shadow:0 0 0 4px rgba(255,59,77,.14);
 }
-.field input[dir="ltr"]{
-  text-align:left;
-  direction:ltr;
-}
+.field input[dir="ltr"]{text-align:left;direction:ltr;}
 
-/* شبكة الحقول على الشاشات الكبيرة */
 @media (min-width:700px){
   .form-grid{grid-template-columns:1fr 1fr;gap:20px;}
   .field.full{grid-column:1 / -1;}
 }
 
-/* ============================================================
-   أقسام داخل النموذج
-   ============================================================ */
 .form-block{
   margin-top:30px;
   padding-top:26px;
@@ -844,15 +805,8 @@ header.site-header{
   flex:0 0 auto;
 }
 
-/* Checkboxes */
-.check-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:12px;
-}
-@media (min-width:560px){
-  .check-grid{grid-template-columns:repeat(3,1fr);}
-}
+.check-grid{display:grid;grid-template-columns:1fr;gap:12px;}
+@media (min-width:560px){.check-grid{grid-template-columns:repeat(3,1fr);}}
 
 .check-card{
   display:flex;
@@ -872,12 +826,7 @@ header.site-header{
   border-color:rgba(212,175,55,.55);
   background:rgba(212,175,55,.07);
 }
-.check-card input{
-  position:absolute;
-  opacity:0;
-  width:1px;height:1px;
-  pointer-events:none;
-}
+.check-card input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none;}
 .check-visual{
   width:28px;height:28px;
   flex:0 0 auto;
@@ -904,9 +853,7 @@ header.site-header{
   border-color:#f2dc8a;
   box-shadow:0 0 16px rgba(212,175,55,.65);
 }
-.check-card input:checked ~ .check-visual::after{
-  transform:rotate(-45deg) scale(1);
-}
+.check-card input:checked ~ .check-visual::after{transform:rotate(-45deg) scale(1);}
 .check-text{
   font-size:clamp(.98rem,3.8vw,1.08rem);
   font-weight:800;
@@ -919,7 +866,6 @@ header.site-header{
   box-shadow:0 8px 24px rgba(212,175,55,.2);
 }
 
-/* بطاقة الموافقة */
 .agree-card{
   margin-top:26px;
   display:flex;
@@ -933,15 +879,8 @@ header.site-header{
   transition:.22s;
   position:relative;
 }
-.agree-card input{
-  position:absolute;
-  opacity:0;
-  width:1px;height:1px;
-  pointer-events:none;
-}
-.agree-card .check-visual{
-  margin-top:3px;
-}
+.agree-card input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none;}
+.agree-card .check-visual{margin-top:3px;}
 .agree-card .agree-text{
   font-size:clamp(1rem,3.9vw,1.15rem);
   font-weight:800;
@@ -972,7 +911,6 @@ header.site-header{
   80%{transform:translateX(5px);}
 }
 
-/* ملاحظة الصور */
 .photo-note{
   margin-top:26px;
   display:flex;
@@ -987,13 +925,8 @@ header.site-header{
   color:#d6ffe4;
   line-height:1.9;
 }
-.photo-note .ico{
-  font-size:1.4rem;
-  line-height:1.5;
-  flex:0 0 auto;
-}
+.photo-note .ico{font-size:1.4rem;line-height:1.5;flex:0 0 auto;}
 
-/* زر الإرسال */
 .submit-btn{
   margin-top:30px;
   width:100%;
@@ -1105,14 +1038,8 @@ header.site-header{
 /* ============================================================
    معرض الصور
    ============================================================ */
-.gallery-section{
-  padding:52px 0 40px;
-}
-.gallery-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:14px;
-}
+.gallery-section{padding:52px 0 40px;}
+.gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
 @media (min-width:820px){
   .gallery-grid{grid-template-columns:repeat(3,1fr);gap:18px;}
 }
@@ -1126,17 +1053,12 @@ header.site-header{
   background:linear-gradient(145deg,#0c1a38,#122450);
 }
 .gallery-item img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:transform .6s ease;
-  opacity:.94;
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease;opacity:.94;
 }
 .gallery-item:hover img{transform:scale(1.08);}
 .gallery-item::after{
-  content:"";
-  position:absolute;
-  inset:0;
+  content:"";position:absolute;inset:0;
   background:linear-gradient(180deg,transparent 45%,rgba(8,18,38,.75));
   pointer-events:none;
 }
@@ -1168,7 +1090,6 @@ footer.site-footer::before{
   background:linear-gradient(90deg,transparent,var(--gold),transparent);
   box-shadow:0 0 22px rgba(212,175,55,.75);
 }
-
 .footer-brand{
   font-family:'Amiri',serif;
   font-weight:700;
@@ -1199,41 +1120,26 @@ footer.site-footer::before{
   flex-wrap:wrap;
 }
 .footer-phones{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:12px;
-  margin-bottom:24px;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:24px;
 }
 .footer-phone{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  direction:ltr;
+  display:inline-flex;align-items:center;gap:8px;direction:ltr;
   font-size:clamp(1rem,3.9vw,1.22rem);
-  font-weight:900;
-  color:#fff;
+  font-weight:900;color:#fff;
   border:1.5px solid rgba(212,175,55,.5);
   background:rgba(212,175,55,.08);
-  border-radius:999px;
-  padding:10px 22px;
-  transition:.25s;
+  border-radius:999px;padding:10px 22px;transition:.25s;
 }
 .footer-phone:hover{
   background:linear-gradient(145deg,#f2dc8a,#d4af37);
-  color:#081226;
-  transform:translateY(-3px);
+  color:#081226;transform:translateY(-3px);
   box-shadow:0 10px 24px rgba(212,175,55,.4);
 }
 .footer-copy{
   font-size:clamp(.85rem,3.3vw,.98rem);
-  font-weight:700;
-  color:rgba(195,207,232,.65);
+  font-weight:700;color:rgba(195,207,232,.65);
   border-top:1px solid rgba(212,175,55,.18);
-  padding-top:20px;
-  max-width:640px;
-  margin:0 auto;
-  line-height:2;
+  padding-top:20px;max-width:640px;margin:0 auto;line-height:2;
 }
 
 /* ============================================================
@@ -1241,21 +1147,14 @@ footer.site-footer::before{
    ============================================================ */
 .wa-float{
   position:fixed;
-  bottom:20px;
-  left:16px;
-  z-index:120;
-  display:inline-flex;
-  align-items:center;
-  gap:9px;
+  bottom:20px;left:16px;z-index:120;
+  display:inline-flex;align-items:center;gap:9px;
   background:linear-gradient(145deg,#3ddc72,#25D366 50%,#128C7E);
-  color:#fff;
-  font-weight:900;
+  color:#fff;font-weight:900;
   font-size:clamp(.92rem,3.6vw,1.08rem);
-  padding:13px 20px;
-  border-radius:999px;
+  padding:13px 20px;border-radius:999px;
   box-shadow:0 10px 30px rgba(37,211,102,.5), 0 4px 0 rgba(13,107,95,.9);
-  transition:.22s;
-  text-decoration:none;
+  transition:.22s;text-decoration:none;
   animation:floatGlow 2.6s ease-in-out infinite;
 }
 @keyframes floatGlow{
@@ -1293,20 +1192,18 @@ footer.site-footer::before{
     width:min(330px,26vw);
     height:min(330px,26vw);
   }
-  .giant-svg{width:clamp(230px,20vw,300px);}
+  .giant-svg{width:clamp(240px,21vw,320px);}
 
   .hero{padding:70px 0 34px;}
   .form-section{padding:70px 0 50px;}
 }
 
 @media (min-width:1200px){
-  .giant-svg{width:310px;}
+  .giant-svg{width:330px;}
 }
 
-/* منع أي تمرير أفقي */
 html,body{max-width:100%;overflow-x:hidden;}
 
-/* تقليل الحركة لمن يفضّل ذلك */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{
     animation-duration:.001ms !important;
@@ -1321,13 +1218,12 @@ html,body{max-width:100%;overflow-x:hidden;}
 <body>
 
 <!-- ============================================================
-     الهيدر: اللوجو + الاسم
+     الهيدر
      ============================================================ -->
 <header class="site-header">
   <div class="wrap">
 
     <div class="logo-wrap">
-      <!-- اللوجو الرسمي: استبدل الملف logo.png باللوجو الخاص بك بنفس الاسم -->
       <img id="brandLogo" src="logo.png" alt="لوجو قصر الخطيب للتسويق العقاري">
       <div class="logo-fallback" id="logoFallback" hidden>🏛️</div>
     </div>
@@ -1340,7 +1236,7 @@ html,body{max-width:100%;overflow-x:hidden;}
 </header>
 
 <!-- ============================================================
-     شريط المعلومات الثابت
+     شريط المعلومات
      ============================================================ -->
 <div class="info-bar">
   <div class="wrap info-bar-inner">
@@ -1391,13 +1287,8 @@ html,body{max-width:100%;overflow-x:hidden;}
      ============================================================ -->
 <section class="hero">
   <div class="wrap">
-
     <div class="hero-badge">تسويق وبيع الشقق في الإسكندرية</div>
-
-    <h1>
-      لو عايز تبيع <span class="gold">شقتك</span> في الإسكندرية
-    </h1>
-
+    <h1>لو عايز تبيع <span class="gold">شقتك</span> في الإسكندرية</h1>
     <p class="lead">
       إحنا مكتب تسويق عقاري، نساعدك في تسويق شقتك والوصول إلى العملاء الباحثين عن الشراء.
     </p>
@@ -1408,126 +1299,256 @@ html,body{max-width:100%;overflow-x:hidden;}
         عمولة التسويق العقاري: <strong>1%</strong> عند إتمام الصفقة
       </p>
     </div>
-
   </div>
 </section>
 
 <!-- ============================================================
-     مسرح الزر الأحمر + العملاق الأخضر + الخبرة
+     مسرح الزر الأحمر + العملاق + الخبرة + العداد
      ============================================================ -->
 <section class="cta-section">
   <div class="wrap">
     <div class="cta-stage">
 
-      <!-- ===== العملاق الأخضر الأصلي ===== -->
+      <!-- ============ العملاق الأخضر الأصلي ============ -->
       <div class="giant-col" aria-hidden="true">
-        <svg class="giant-svg" viewBox="0 0 340 550" xmlns="http://www.w3.org/2000/svg">
+        <svg class="giant-svg" viewBox="0 0 360 560" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#66cf72"/>
-              <stop offset="45%" stop-color="#43a851"/>
-              <stop offset="100%" stop-color="#2b7a37"/>
+            <!-- تدرجات البشرة الخضراء -->
+            <radialGradient id="skinBody" cx="42%" cy="30%" r="75%">
+              <stop offset="0%" stop-color="#7fe08a"/>
+              <stop offset="35%" stop-color="#5cbe66"/>
+              <stop offset="70%" stop-color="#3f9649"/>
+              <stop offset="100%" stop-color="#286b31"/>
+            </radialGradient>
+            <radialGradient id="skinFace" cx="40%" cy="32%" r="72%">
+              <stop offset="0%" stop-color="#8ae595"/>
+              <stop offset="42%" stop-color="#5cc266"/>
+              <stop offset="100%" stop-color="#2f7a37"/>
+            </radialGradient>
+            <linearGradient id="skinArm" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#5cbe66"/>
+              <stop offset="100%" stop-color="#2b7433"/>
             </linearGradient>
+            <linearGradient id="skinLeg" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#4faa58"/>
+              <stop offset="100%" stop-color="#1f5626"/>
+            </linearGradient>
+            <!-- الشعر -->
             <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#1d5c28"/>
-              <stop offset="100%" stop-color="#0f3416"/>
+              <stop offset="0%" stop-color="#1f5f28"/>
+              <stop offset="100%" stop-color="#0c2e12"/>
             </linearGradient>
-            <linearGradient id="metalGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="#eef3f9"/>
-              <stop offset="45%" stop-color="#b9c4d1"/>
-              <stop offset="100%" stop-color="#7d8794"/>
+            <!-- المطرقة -->
+            <linearGradient id="metalHead" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f6f9fc"/>
+              <stop offset="35%" stop-color="#d5dde6"/>
+              <stop offset="70%" stop-color="#98a2ae"/>
+              <stop offset="100%" stop-color="#5b646f"/>
             </linearGradient>
-            <radialGradient id="groundGrad" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="rgba(0,0,0,.55)"/>
+            <linearGradient id="woodHandle" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#b78150"/>
+              <stop offset="50%" stop-color="#8d5a2d"/>
+              <stop offset="100%" stop-color="#5c3617"/>
+            </linearGradient>
+            <!-- الظل الأرضي -->
+            <radialGradient id="groundShadow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(0,0,0,.6)"/>
               <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+            </radialGradient>
+            <!-- إضاءة خلفية -->
+            <radialGradient id="backGlow" cx="50%" cy="40%" r="55%">
+              <stop offset="0%" stop-color="rgba(94,196,106,.35)"/>
+              <stop offset="100%" stop-color="rgba(94,196,106,0)"/>
             </radialGradient>
           </defs>
 
+          <!-- هالة خلفية -->
+          <ellipse cx="180" cy="300" rx="150" ry="220" fill="url(#backGlow)"/>
+
           <!-- الظل الأرضي -->
-          <ellipse cx="170" cy="524" rx="118" ry="16" fill="url(#groundGrad)"/>
+          <ellipse cx="180" cy="536" rx="130" ry="18" fill="url(#groundShadow)"/>
 
-          <!-- الساقان -->
-          <rect x="110" y="368" width="52" height="122" rx="26" fill="url(#skinGrad)"/>
-          <rect x="178" y="368" width="52" height="122" rx="26" fill="url(#skinGrad)"/>
-          <!-- القدمان -->
-          <rect x="100" y="476" width="70" height="36" rx="18" fill="#235f2c"/>
-          <rect x="170" y="476" width="70" height="36" rx="18" fill="#235f2c"/>
+          <!-- ============ الساقان ============ -->
+          <g id="legs">
+            <!-- الفخذ والساق اليمنى (منظر المشاهد) -->
+            <path d="M 118 372 Q 108 440 112 500 L 148 500 Q 152 440 148 372 Z"
+                  fill="url(#skinLeg)"/>
+            <!-- عضلات الفخذ -->
+            <ellipse cx="134" cy="410" rx="20" ry="30" fill="rgba(255,255,255,.08)"/>
+            <!-- الركبة -->
+            <ellipse cx="134" cy="450" rx="15" ry="11" fill="rgba(0,0,0,.16)"/>
+            <!-- القدم اليمنى -->
+            <path d="M 100 496 Q 96 528 116 530 L 156 530 Q 162 522 156 500 L 148 500 Z"
+                  fill="#1c4d22"/>
+            <path d="M 100 512 Q 100 528 116 530 L 156 530 Q 160 524 156 516 Z"
+                  fill="#143a19"/>
 
-          <!-- الجسم -->
-          <path d="M 62 246 Q 66 196 104 188 L 236 188 Q 274 196 278 246 L 270 364 Q 266 394 234 398 L 106 398 Q 74 394 70 364 Z"
-                fill="url(#skinGrad)"/>
+            <!-- الفخذ والساق اليسرى -->
+            <path d="M 212 372 Q 220 440 216 500 L 252 500 Q 256 440 244 372 Z"
+                  fill="url(#skinLeg)"/>
+            <ellipse cx="230" cy="410" rx="20" ry="30" fill="rgba(255,255,255,.08)"/>
+            <ellipse cx="228" cy="450" rx="15" ry="11" fill="rgba(0,0,0,.16)"/>
+            <path d="M 204 496 Q 200 528 220 530 L 260 530 Q 268 522 262 500 L 252 500 Z"
+                  fill="#1c4d22"/>
+            <path d="M 204 512 Q 204 528 220 530 L 260 530 Q 264 524 260 516 Z"
+                  fill="#143a19"/>
+          </g>
 
-          <!-- الصدر -->
-          <path d="M 96 254 Q 122 233 152 251 Q 132 282 100 276 Z" fill="rgba(0,0,0,.15)"/>
-          <path d="M 244 254 Q 218 233 188 251 Q 208 282 240 276 Z" fill="rgba(0,0,0,.15)"/>
+          <!-- ============ الجسم / الجذع ============ -->
+          <g id="torso">
+            <!-- الجذع الرئيسي -->
+            <path d="M 68 248 Q 62 200 100 188 L 260 188 Q 298 200 292 248
+                     L 286 372 Q 284 402 250 406 L 110 406 Q 76 402 74 372 Z"
+                  fill="url(#skinBody)"/>
 
-          <!-- عضلات البطن -->
-          <rect x="130" y="290" width="32" height="26" rx="11" fill="rgba(0,0,0,.15)"/>
-          <rect x="178" y="290" width="32" height="26" rx="11" fill="rgba(0,0,0,.15)"/>
-          <rect x="130" y="322" width="32" height="26" rx="11" fill="rgba(0,0,0,.15)"/>
-          <rect x="178" y="322" width="32" height="26" rx="11" fill="rgba(0,0,0,.15)"/>
-          <rect x="130" y="354" width="32" height="24" rx="11" fill="rgba(0,0,0,.12)"/>
-          <rect x="178" y="354" width="32" height="24" rx="11" fill="rgba(0,0,0,.12)"/>
+            <!-- عضلات الصدر الضخمة -->
+            <path d="M 92 254 Q 118 226 152 248 Q 138 292 96 286 Z" fill="rgba(0,0,0,.18)"/>
+            <path d="M 268 254 Q 242 226 208 248 Q 222 292 264 286 Z" fill="rgba(0,0,0,.18)"/>
+            <!-- خط منتصف الصدر -->
+            <path d="M 180 236 L 180 292" stroke="rgba(0,0,0,.28)" stroke-width="4" stroke-linecap="round"/>
 
-          <!-- الرقبة -->
-          <rect x="146" y="156" width="48" height="48" rx="16" fill="#2b7a37"/>
+            <!-- عضلات البطن (6 pack) -->
+            <rect x="152" y="302" width="26" height="22" rx="9" fill="rgba(0,0,0,.18)"/>
+            <rect x="184" y="302" width="26" height="22" rx="9" fill="rgba(0,0,0,.18)"/>
+            <rect x="152" y="330" width="26" height="22" rx="9" fill="rgba(0,0,0,.18)"/>
+            <rect x="184" y="330" width="26" height="22" rx="9" fill="rgba(0,0,0,.18)"/>
+            <rect x="152" y="358" width="26" height="20" rx="9" fill="rgba(0,0,0,.14)"/>
+            <rect x="184" y="358" width="26" height="20" rx="9" fill="rgba(0,0,0,.14)"/>
 
-          <!-- الذراع الحاملة للمطرقة -->
+            <!-- أضلاع جانبية -->
+            <path d="M 96 300 Q 108 320 104 346" stroke="rgba(0,0,0,.2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M 264 300 Q 252 320 256 346" stroke="rgba(0,0,0,.2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <!-- ============ الرقبة ============ -->
+          <path d="M 148 168 L 212 168 L 208 208 L 152 208 Z" fill="#2b7433"/>
+          <path d="M 148 168 L 160 190 L 152 208 Z" fill="rgba(0,0,0,.2)"/>
+
+          <!-- ============ الذراع الحاملة للمطرقة ============ -->
           <g id="armHammer">
-            <path d="M 258 220 Q 288 206 300 168 Q 306 146 308 128"
-                  stroke="url(#skinGrad)" stroke-width="42" fill="none" stroke-linecap="round"/>
-            <circle cx="308" cy="122" r="23" fill="#4bb45a"/>
-            <!-- المطرقة -->
+            <!-- الكتف العضلي -->
+            <ellipse cx="268" cy="222" rx="42" ry="40" fill="url(#skinArm)"/>
+            <ellipse cx="268" cy="210" rx="30" ry="22" fill="rgba(255,255,255,.1)"/>
+
+            <!-- العضد (الفخذ العلوي للذراع) -->
+            <path d="M 288 226 Q 314 208 322 172 Q 328 148 328 128"
+                  stroke="url(#skinArm)" stroke-width="46" fill="none" stroke-linecap="round"/>
+
+            <!-- الساعد (منحدر نحو الأسفل) -->
+            <path d="M 322 172 Q 318 148 312 122"
+                  stroke="url(#skinArm)" stroke-width="40" fill="none" stroke-linecap="round"/>
+
+            <!-- القبضة على مقبض المطرقة -->
+            <circle cx="312" cy="118" r="26" fill="#4faa58"/>
+            <circle cx="312" cy="118" r="26" fill="none" stroke="rgba(0,0,0,.2)" stroke-width="2"/>
+
+            <!-- ===== المطرقة ===== -->
             <g id="hammerGroup">
-              <rect x="298" y="16" width="17" height="108" rx="8" fill="#8a5a2b"/>
-              <rect x="298" y="16" width="6" height="108" rx="3" fill="#a97338" opacity=".7"/>
-              <rect x="274" y="0" width="62" height="38" rx="10" fill="url(#metalGrad)"/>
-              <rect x="274" y="0" width="62" height="12" rx="6" fill="#f3f7fb" opacity=".85"/>
+              <!-- المقبض الخشبي -->
+              <rect x="304" y="8" width="17" height="118" rx="8" fill="url(#woodHandle)"/>
+              <!-- لمعة على المقبض -->
+              <rect x="307" y="14" width="4" height="106" rx="2" fill="rgba(255,255,255,.2)"/>
+
+              <!-- رأس المطرقة المعدني -->
+              <rect x="272" y="-6" width="72" height="42" rx="10" fill="url(#metalHead)"
+                    stroke="#3c4550" stroke-width="2"/>
+              <!-- لمعة علوية -->
+              <rect x="276" y="-2" width="64" height="12" rx="6" fill="#fbfdff" opacity=".9"/>
+              <!-- خط فاصل منتصف الرأس -->
+              <rect x="304" y="0" width="4" height="30" fill="rgba(0,0,0,.22)"/>
             </g>
           </g>
 
-          <!-- الذراع المشيرة -->
+          <!-- ============ الذراع المشيرة ============ -->
           <g id="armPoint">
-            <path d="M 80 222 Q 54 232 42 260 Q 34 280 28 290"
-                  stroke="url(#skinGrad)" stroke-width="42" fill="none" stroke-linecap="round"/>
-            <circle cx="28" cy="292" r="23" fill="#4bb45a"/>
-            <!-- إصبع الإشارة -->
-            <rect x="0" y="284" width="32" height="17" rx="8.5" fill="#4bb45a"/>
+            <!-- الكتف -->
+            <ellipse cx="92" cy="222" rx="40" ry="38" fill="url(#skinArm)"/>
+            <ellipse cx="92" cy="210" rx="28" ry="20" fill="rgba(255,255,255,.1)"/>
+
+            <!-- الذراع كاملة منحدرة نحو الأسفل ثم للأمام -->
+            <path d="M 76 226 Q 48 240 34 268 Q 24 288 18 302"
+                  stroke="url(#skinArm)" stroke-width="44" fill="none" stroke-linecap="round"/>
+            <path d="M 34 268 Q 24 288 18 302"
+                  stroke="url(#skinArm)" stroke-width="40" fill="none" stroke-linecap="round"/>
+
+            <!-- قبضة اليد -->
+            <circle cx="18" cy="306" r="26" fill="#4faa58"/>
+            <circle cx="18" cy="306" r="26" fill="none" stroke="rgba(0,0,0,.2)" stroke-width="2"/>
+
+            <!-- إصبع السبابة الممدود يشير إلى الزر -->
+            <path d="M -8 306 L 20 306" stroke="#4faa58" stroke-width="18" stroke-linecap="round"/>
+            <path d="M -8 306 L 20 306" stroke="rgba(255,255,255,.15)" stroke-width="6" stroke-linecap="round"/>
+            <!-- إظفر الإصبع -->
+            <ellipse cx="-10" cy="306" rx="5" ry="7" fill="#2b7433"/>
+
+            <!-- باقي الأصابع مطوية -->
+            <rect x="10" y="324" width="20" height="14" rx="7" fill="#43964c"/>
+            <rect x="10" y="342" width="18" height="13" rx="6.5" fill="#3f8f47"/>
           </g>
 
-          <!-- الرأس -->
-          <ellipse cx="170" cy="126" rx="54" ry="60" fill="url(#skinGrad)"/>
+          <!-- ============ الرأس ============ -->
+          <g id="head">
+            <!-- الرأس نفسه (شكل بيضاوي عريض) -->
+            <ellipse cx="180" cy="126" rx="58" ry="64" fill="url(#skinFace)"/>
 
-          <!-- الشعر -->
-          <path d="M 116 122 Q 110 62 170 58 Q 230 62 224 122 Q 214 86 170 82 Q 126 86 116 122 Z"
-                fill="url(#hairGrad)"/>
+            <!-- خدود / فك عريض -->
+            <path d="M 124 138 Q 130 176 180 184 Q 230 176 236 138
+                     Q 228 158 180 162 Q 132 158 124 138 Z"
+                  fill="rgba(0,0,0,.14)"/>
 
-          <!-- الحواجب -->
-          <path d="M 124 100 L 160 112" stroke="#123a19" stroke-width="11" stroke-linecap="round"/>
-          <path d="M 216 100 L 180 112" stroke="#123a19" stroke-width="11" stroke-linecap="round"/>
+            <!-- الشعر -->
+            <path d="M 116 118 Q 108 56 180 50 Q 252 56 244 118
+                     Q 234 80 180 74 Q 126 80 116 118 Z"
+                  fill="url(#hairGrad)"/>
+            <!-- خصلات الشعر الأمامية -->
+            <path d="M 118 110 Q 132 78 160 74 Q 148 92 130 116 Z" fill="#173f1d"/>
+            <path d="M 242 110 Q 228 78 200 74 Q 212 92 230 116 Z" fill="#173f1d"/>
 
-          <!-- العيون -->
-          <ellipse cx="146" cy="126" rx="16" ry="12" fill="#ffffff"/>
-          <ellipse cx="194" cy="126" rx="16" ry="12" fill="#ffffff"/>
-          <circle cx="148" cy="127" r="7" fill="#0d2b12"/>
-          <circle cx="192" cy="127" r="7" fill="#0d2b12"/>
-          <circle cx="150.5" cy="124.5" r="2.4" fill="#ffffff"/>
-          <circle cx="194.5" cy="124.5" r="2.4" fill="#ffffff"/>
+            <!-- الحواجب العريضة الغاضبة -->
+            <path d="M 122 98 L 162 112" stroke="#123a19" stroke-width="13" stroke-linecap="round"/>
+            <path d="M 238 98 L 198 112" stroke="#123a19" stroke-width="13" stroke-linecap="round"/>
 
-          <!-- الأنف -->
-          <path d="M 170 136 L 165 150 L 177 150" stroke="rgba(0,0,0,.22)" stroke-width="4.5"
-                fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- الجبهة المقطبة -->
+            <path d="M 158 88 Q 180 84 202 88" stroke="rgba(0,0,0,.25)" stroke-width="3" fill="none"/>
+            <path d="M 160 78 Q 180 74 200 78" stroke="rgba(0,0,0,.18)" stroke-width="2.5" fill="none"/>
 
-          <!-- الفم -->
-          <path d="M 146 164 Q 170 152 194 164" stroke="#123a19" stroke-width="8"
-                fill="none" stroke-linecap="round"/>
+            <!-- العيون -->
+            <!-- بياض العيون -->
+            <ellipse cx="148" cy="126" rx="18" ry="14" fill="#ffffff"/>
+            <ellipse cx="212" cy="126" rx="18" ry="14" fill="#ffffff"/>
+            <!-- القزحية الخضراء -->
+            <circle cx="150" cy="127" r="9" fill="#3c8a44"/>
+            <circle cx="210" cy="127" r="9" fill="#3c8a44"/>
+            <!-- البؤبؤ -->
+            <circle cx="151" cy="128" r="5" fill="#0a1f0d"/>
+            <circle cx="209" cy="128" r="5" fill="#0a1f0d"/>
+            <!-- لمعة العين -->
+            <circle cx="153" cy="124" r="2.6" fill="#ffffff"/>
+            <circle cx="211" cy="124" r="2.6" fill="#ffffff"/>
+
+            <!-- الجفن العلوي (نظرة غاضبة) -->
+            <path d="M 130 118 Q 148 108 166 116" stroke="#123a19" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M 230 118 Q 212 108 194 116" stroke="#123a19" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+            <!-- الأنف -->
+            <path d="M 180 138 L 172 156 Q 180 160 188 156 Z"
+                  fill="rgba(0,0,0,.22)"/>
+            <path d="M 180 138 L 180 154" stroke="rgba(0,0,0,.3)" stroke-width="2"/>
+
+            <!-- الفم / الفك المشدود -->
+            <path d="M 152 168 Q 180 158 208 168" stroke="#123a19" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M 156 172 Q 180 182 204 172" stroke="rgba(0,0,0,.2)" stroke-width="3" fill="none"/>
+          </g>
+
+          <!-- ============ تفاصيل إضافية: تمزق الملابس ============ -->
+          <path d="M 108 396 Q 118 380 132 396 L 140 406 L 126 404 Z" fill="#1e5a26" opacity=".75"/>
+          <path d="M 226 396 Q 240 380 252 396 L 246 404 L 234 406 Z" fill="#1e5a26" opacity=".75"/>
         </svg>
       </div>
 
-      <!-- ===== الزر الأحمر + السهم ===== -->
+      <!-- ============ الزر الأحمر + السهم ============ -->
       <div class="cta-center">
 
-        <!-- السهم العريض -->
         <svg class="arrow-down" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
             <linearGradient id="arrowGrad" x1="0" y1="0" x2="0" y2="1">
@@ -1554,7 +1575,7 @@ html,body{max-width:100%;overflow-x:hidden;}
 
       </div>
 
-      <!-- ===== بطاقة الخبرة ===== -->
+      <!-- ============ بطاقة الخبرة ============ -->
       <aside class="exp-card">
         <h2>خبراتنا</h2>
         <p>
@@ -1573,7 +1594,7 @@ html,body{max-width:100%;overflow-x:hidden;}
         </ul>
       </aside>
 
-      <!-- ===== العداد ===== -->
+      <!-- ============ العداد ============ -->
       <div class="counter-box" title="عدد طلبات تسجيل الشقق للبيع">
         <div class="counter-num" id="ordersCount">128</div>
         <div class="counter-dot"><i></i></div>
@@ -1584,7 +1605,7 @@ html,body{max-width:100%;overflow-x:hidden;}
 </section>
 
 <!-- ============================================================
-     قسم تسجيل بيانات الشقة
+     نموذج تسجيل الشقة
      ============================================================ -->
 <section class="form-section" id="formSection">
   <div class="wrap">
@@ -1596,12 +1617,9 @@ html,body{max-width:100%;overflow-x:hidden;}
 
     <div class="form-shell">
 
-      <!-- ===== النموذج ===== -->
       <form id="propertyForm" novalidate autocomplete="on">
 
-        <!-- بيانات العميل -->
         <div class="form-grid">
-
           <div class="field full">
             <label for="fullName">الاسم <span class="req">*</span></label>
             <input type="text" id="fullName" name="fullName" placeholder="اكتب اسمك بالكامل" required>
@@ -1612,10 +1630,8 @@ html,body{max-width:100%;overflow-x:hidden;}
             <input type="tel" id="phone" name="phone" dir="ltr" inputmode="tel"
                    placeholder="01xxxxxxxxx" required>
           </div>
-
         </div>
 
-        <!-- بيانات الشقة -->
         <div class="form-block">
           <div class="form-block-title">بيانات الشقة</div>
 
@@ -1643,8 +1659,7 @@ html,body{max-width:100%;overflow-x:hidden;}
 
             <div class="field">
               <label for="size">مساحة الشقة بالمتر <span class="req">*</span></label>
-              <input type="number" id="size" name="size" min="1" step="1"
-                     placeholder="مثال: 120" required>
+              <input type="number" id="size" name="size" min="1" step="1" placeholder="مثال: 120" required>
             </div>
 
             <div class="field">
@@ -1669,7 +1684,6 @@ html,body{max-width:100%;overflow-x:hidden;}
           </div>
         </div>
 
-        <!-- المرافق والعدادات -->
         <div class="form-block">
           <div class="form-block-title">المرافق والعدادات</div>
 
@@ -1714,13 +1728,11 @@ html,body{max-width:100%;overflow-x:hidden;}
           </div>
         </div>
 
-        <!-- ملاحظة الصور -->
         <div class="photo-note">
           <span class="ico">📷</span>
           <span>إذا كانت لديك صور للشقة، يمكنك إرسالها بعد تسجيل الطلب عبر WhatsApp.</span>
         </div>
 
-        <!-- الموافقة على العمولة -->
         <label class="agree-card" id="agreeCard">
           <input type="checkbox" id="agreeCommission" name="agreeCommission">
           <span class="check-visual"></span>
@@ -1729,14 +1741,12 @@ html,body{max-width:100%;overflow-x:hidden;}
           </span>
         </label>
 
-        <!-- زر الإرسال -->
         <button type="submit" class="submit-btn" id="submitBtn">
           إتمام طلب تسجيل الشقة
         </button>
 
       </form>
 
-      <!-- ===== رسالة النجاح ===== -->
       <div class="success-box" id="successBox" role="status" aria-live="polite">
         <div class="success-icon">✅</div>
         <h3>تم استلام طلبك بنجاح ✅</h3>
@@ -1755,7 +1765,7 @@ html,body{max-width:100%;overflow-x:hidden;}
 </section>
 
 <!-- ============================================================
-     معرض صور العقارات
+     معرض الصور
      ============================================================ -->
 <section class="gallery-section">
   <div class="wrap">
@@ -1852,14 +1862,14 @@ html,body{max-width:100%;overflow-x:hidden;}
   'use strict';
 
   /* ==========================================================
-     إعدادات
+     الإعدادات
      ========================================================== */
-  var WA_INTL   = '201124997077';       // رقم واتساب بالصيغة الدولية
-  var START_CT  = 128;                  // بداية العداد
+  var WA_INTL   = '201124997077';
+  var START_CT  = 128;
   var STORAGE_K = 'qk_orders_count_local';
 
   /* ==========================================================
-     اللوجو: في حال عدم وجود ملف logo.png يتم عرض بديل
+     اللوجو
      ========================================================== */
   var brandLogo = document.getElementById('brandLogo');
   var logoFallback = document.getElementById('logoFallback');
@@ -1885,7 +1895,7 @@ html,body{max-width:100%;overflow-x:hidden;}
   try {
     var saved = parseInt(localStorage.getItem(STORAGE_K), 10);
     if (!isNaN(saved) && saved >= START_CT) ordersCount = saved;
-  } catch(e){ /* التخزين غير متاح — تجاهل */ }
+  } catch(e){}
 
   function paintCounter(bump){
     if (!counterEl) return;
@@ -1903,8 +1913,7 @@ html,body{max-width:100%;overflow-x:hidden;}
   }
 
   /* ==========================================================
-     تأثير ضربة المطرقة على الزر الأحمر
-     (متزامن مع حركة hammerSwing)
+     تأثير ضربة المطرقة على الزر
      ========================================================== */
   var ctaBtn = document.getElementById('goToFormBtn');
 
@@ -1925,19 +1934,15 @@ html,body{max-width:100%;overflow-x:hidden;}
   }
 
   /* ==========================================================
-     التمرير إلى النموذج عند الضغط على الزر
+     التمرير إلى النموذج
      ========================================================== */
+  var formHidden = false;
+
   if (ctaBtn){
     ctaBtn.addEventListener('click', function(){
       var target = document.getElementById('formSection');
       if (target){
         target.scrollIntoView({behavior:'smooth', block:'start'});
-        window.setTimeout(function(){
-          var first = document.getElementById('fullName');
-          if (first && !formHidden) {
-            /* لا نضع focus تلقائي على الموبايل لتجنب فتح الكيبورد فجأة */
-          }
-        }, 700);
       }
     });
   }
@@ -1948,7 +1953,6 @@ html,body{max-width:100%;overflow-x:hidden;}
   var form = document.getElementById('propertyForm');
   var successBox = document.getElementById('successBox');
   var reqIdBox = document.getElementById('reqIdBox');
-  var formHidden = false;
 
   function val(id){
     var el = document.getElementById(id);
@@ -1989,7 +1993,7 @@ html,body{max-width:100%;overflow-x:hidden;}
   }
 
   /* ==========================================================
-     التحقق من صحة النموذج
+     التحقق
      ========================================================== */
   var requiredFields = ['fullName','phone','address','area','floor','size','rooms','price'];
 
@@ -2016,7 +2020,6 @@ html,body{max-width:100%;overflow-x:hidden;}
       }
     }
 
-    // تحقق بسيط من رقم التليفون
     var phoneEl = document.getElementById('phone');
     if (phoneEl && String(phoneEl.value || '').trim()){
       var digits = String(phoneEl.value).replace(/\D/g, '');
@@ -2027,7 +2030,6 @@ html,body{max-width:100%;overflow-x:hidden;}
       }
     }
 
-    // تحقق من الموافقة على العمولة
     var agree = document.getElementById('agreeCommission');
     var agreeCard = document.getElementById('agreeCard');
     if (!agree || !agree.checked){
@@ -2102,15 +2104,12 @@ html,body{max-width:100%;overflow-x:hidden;}
 
       var message = lines.join('\n');
 
-      // فتح واتساب
       openWhatsApp(message);
 
-      // زيادة العداد
       ordersCount = ordersCount + 1;
       paintCounter(true);
       saveCounter();
 
-      // إظهار رسالة النجاح
       if (reqIdBox) reqIdBox.textContent = 'رقم الطلب: ' + requestId;
 
       if (form) form.style.display = 'none';
@@ -2120,7 +2119,6 @@ html,body{max-width:100%;overflow-x:hidden;}
       }
       formHidden = true;
 
-      // زر إرسال الصور
       var photosBtn = document.getElementById('sendPhotosBtn');
       if (photosBtn){
         photosBtn.onclick = function(){
@@ -2137,7 +2135,6 @@ html,body{max-width:100%;overflow-x:hidden;}
       }
     });
 
-    // إزالة علامة الخطأ عند الكتابة
     var inputs = form.querySelectorAll('input, select, textarea');
     for (var i = 0; i < inputs.length; i++){
       inputs[i].addEventListener('input', function(){
@@ -2154,7 +2151,7 @@ html,body{max-width:100%;overflow-x:hidden;}
   }
 
   /* ==========================================================
-     الشريط المتحرك — ضمان عدم وجود فراغ
+     الشريط المتحرك
      ========================================================== */
   var track = document.getElementById('marqueeTrack');
   if (track){
