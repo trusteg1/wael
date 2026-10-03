@@ -1270,10 +1270,12 @@ html,body{max-width:100%;overflow-x:hidden}
   /* ============ CONFIG ============ */
   var WHATSAPP_NUMBER = "201124997077";
   var GROUP_LINK = "https://chat.whatsapp.com/FYxOogAjbV32Xl96R3DKmY?s=cl&p=a&mlu=4&ilr=4";
-  var WEBHOOK_URL = "https://hook.eu1.make.com/ez3o8i0cecmznmntlp4nakcslj79qwqm";
   var STORAGE_COUNT_KEY = "kh_requests_count";
   var STORAGE_SEQ_KEY = "kh_order_seq";
   var BASE_COUNT = 128;
+
+  /* ============ رابط Make.com Webhook ============ */
+  var WEBHOOK_URL = "https://hook.eu1.make.com/vx8yhyw09w0ozqd2qfaj7cet4ntcche3";
 
   /* ============ HELPERS ============ */
   function $(sel) { return document.querySelector(sel); }
@@ -1476,7 +1478,6 @@ html,body{max-width:100%;overflow-x:hidden}
     }
   }
 
-  /* ============ BUILD MESSAGE (WhatsApp) ============ */
   function buildMessage(orderNumber) {
     var now = new Date();
     var lines = [
@@ -1506,56 +1507,54 @@ html,body{max-width:100%;overflow-x:hidden}
     return lines.join("\n");
   }
 
-  /* ============ BUILD DATA OBJECT (Webhook) ============ */
-  function buildDataObject(orderNumber) {
-    var now = new Date();
+  /* ============ SEND TO WEBHOOK (Excel via Make.com) ============ */
+  function buildWebhookPayload(orderNumber) {
     return {
       order_number: orderNumber,
-      name: getValue("fullName"),
+      full_name: getValue("fullName"),
       phone: getValue("phone"),
       address: getValue("address"),
       area: getValue("area"),
       floor: getValue("floor"),
-      size: getValue("size"),
+      size_m2: getValue("size"),
       rooms: getValue("rooms"),
       price: getValue("price"),
-      electric: yesNo("utilElectric"),
-      water: yesNo("utilWater"),
-      gas: yesNo("utilGas"),
+      util_electric: yesNo("utilElectric"),
+      util_water: yesNo("utilWater"),
+      util_gas: yesNo("utilGas"),
       meter_electric: yesNo("utilMeterElectric"),
       meter_water: yesNo("utilMeterWater"),
       meter_gas: yesNo("utilMeterGas"),
-      commission_pct: "1%",
-      commission_agreed: "نعم",
-      submitted_at: formatDateTime(now),
-      submitted_at_iso: now.toISOString(),
-      source: "website_form"
+      commission_percent: "1%",
+      consent: "نعم",
+      submitted_at: new Date().toISOString(),
+      submitted_at_local: formatDateTime(new Date()),
+      source: "website"
     };
   }
 
-  /* ============ SEND TO WEBHOOK (Make.com → Excel) ============ */
-  function sendToWebhook(data) {
+  function sendToWebhook(payload) {
+    var body = JSON.stringify(payload);
+
+    // نحاول أولاً باستخدام sendBeacon (الأكثر موثوقية عند مغادرة الصفحة)
+    if (navigator.sendBeacon) {
+      try {
+        var blob = new Blob([body], { type: "application/json" });
+        var ok = navigator.sendBeacon(WEBHOOK_URL, blob);
+        if (ok) { return; }
+      } catch (e) { /* المتابعة بـ fetch */ }
+    }
+
+    // احتياطي: fetch مع keepalive
     try {
       fetch(WEBHOOK_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      })
-      .then(function (response) {
-        if (response && response.ok) {
-          console.log("Webhook sent successfully. Status:", response.status);
-        } else {
-          console.warn("Webhook responded with status:", response && response.status);
-        }
-      })
-      .catch(function (err) {
-        console.warn("Webhook send failed:", err && err.message);
-      });
-    } catch (err) {
-      console.warn("Webhook error:", err && err.message);
-    }
+        headers: { "Content-Type": "application/json" },
+        body: body,
+        keepalive: true,
+        mode: "no-cors"
+      }).catch(function () { /* تجاهل */ });
+    } catch (e) { /* تجاهل */ }
   }
 
   function openWhatsApp(text) {
@@ -1615,6 +1614,7 @@ html,body{max-width:100%;overflow-x:hidden}
         return;
       }
 
+      // Lock button while processing
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.dataset.originalText = submitBtn.textContent;
@@ -1623,22 +1623,27 @@ html,body{max-width:100%;overflow-x:hidden}
 
       var orderNumber = nextOrderNumber();
       var message = buildMessage(orderNumber);
-      var dataObject = buildDataObject(orderNumber);
 
-      // 1) إرسال البيانات إلى Webhook (Make.com → Excel) في الخلفية
-      sendToWebhook(dataObject);
+      // 1. إرسال البيانات إلى Excel عبر Make.com Webhook (أولاً لضمان التسجيل)
+      try {
+        var payload = buildWebhookPayload(orderNumber);
+        sendToWebhook(payload);
+      } catch (e) {
+        console.warn("Webhook error:", e);
+      }
 
-      // 2) تحديث العدّاد
+      // 2. تحديث العداد
       currentCount = currentCount + 1;
       safeSet(STORAGE_COUNT_KEY, String(currentCount));
       animateCounterTo(currentCount);
 
-      // 3) فتح واتساب
+      // 3. فتح واتساب (بالتوازي)
       openWhatsApp(message);
 
-      // 4) إعادة تعيين النموذج + إظهار النجاح
+      // 4. إعادة ضبط النموذج
       form.reset();
 
+      // 5. عرض رسالة النجاح
       setTimeout(function () {
         showSuccess(orderNumber);
         if (submitBtn) {
