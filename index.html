@@ -1274,8 +1274,8 @@ html,body{max-width:100%;overflow-x:hidden}
   var STORAGE_SEQ_KEY = "kh_order_seq";
   var BASE_COUNT = 128;
 
-  /* ============ رابط Make.com Webhook ============ */
-  var WEBHOOK_URL = "https://hook.eu1.make.com/vx8yhyw09w0ozqd2qfaj7cet4ntcche3";
+  /* ============ ✅ رابط Make.com Webhook الصحيح ============ */
+  var WEBHOOK_URL = "https://hook.eu1.make.com/er3o8i0ccemmnmntlpn4nakcslj79pqwgm";
 
   /* ============ HELPERS ============ */
   function $(sel) { return document.querySelector(sel); }
@@ -1507,54 +1507,74 @@ html,body{max-width:100%;overflow-x:hidden}
     return lines.join("\n");
   }
 
-  /* ============ SEND TO WEBHOOK (Excel via Make.com) ============ */
+  /* ============ ✅ SEND TO WEBHOOK — أسماء الحقول مطابقة لـ Make.com ============ */
   function buildWebhookPayload(orderNumber) {
     return {
       order_number: orderNumber,
-      full_name: getValue("fullName"),
+      name: getValue("fullName"),
       phone: getValue("phone"),
       address: getValue("address"),
       area: getValue("area"),
       floor: getValue("floor"),
-      size_m2: getValue("size"),
+      size: getValue("size"),
       rooms: getValue("rooms"),
       price: getValue("price"),
-      util_electric: yesNo("utilElectric"),
-      util_water: yesNo("utilWater"),
-      util_gas: yesNo("utilGas"),
+      electric: yesNo("utilElectric"),
+      water: yesNo("utilWater"),
+      gas: yesNo("utilGas"),
       meter_electric: yesNo("utilMeterElectric"),
       meter_water: yesNo("utilMeterWater"),
       meter_gas: yesNo("utilMeterGas"),
-      commission_percent: "1%",
-      consent: "نعم",
-      submitted_at: new Date().toISOString(),
-      submitted_at_local: formatDateTime(new Date()),
+      commission_pct: "1%",
+      commission_agreed: "نعم",
+      submitted_at: formatDateTime(new Date()),
+      submitted_at_iso: new Date().toISOString(),
       source: "website"
     };
   }
 
+  /* ============ ✅ إرسال متزامن مضمون قبل فتح واتساب ============ */
   function sendToWebhook(payload) {
     var body = JSON.stringify(payload);
+    var sent = false;
 
-    // نحاول أولاً باستخدام sendBeacon (الأكثر موثوقية عند مغادرة الصفحة)
-    if (navigator.sendBeacon) {
-      try {
-        var blob = new Blob([body], { type: "application/json" });
-        var ok = navigator.sendBeacon(WEBHOOK_URL, blob);
-        if (ok) { return; }
-      } catch (e) { /* المتابعة بـ fetch */ }
+    /* 1. XHR متزامن — يضمن الوصول قبل فتح واتساب */
+    try {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", WEBHOOK_URL, false);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.send(body);
+      sent = true;
+      console.log("✅ Webhook sent via XHR. Status:", xhr.status);
+    } catch (e) {
+      console.warn("⚠️ XHR failed:", e);
     }
 
-    // احتياطي: fetch مع keepalive
-    try {
-      fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: body,
-        keepalive: true,
-        mode: "no-cors"
-      }).catch(function () { /* تجاهل */ });
-    } catch (e) { /* تجاهل */ }
+    /* 2. إن فشل، جرب sendBeacon */
+    if (!sent && navigator.sendBeacon) {
+      try {
+        var blob = new Blob([body], { type: "application/json" });
+        sent = navigator.sendBeacon(WEBHOOK_URL, blob);
+        if (sent) console.log("✅ Webhook sent via sendBeacon");
+      } catch (e) {
+        console.warn("⚠️ sendBeacon failed:", e);
+      }
+    }
+
+    /* 3. إن فشل الكل، جرب fetch */
+    if (!sent) {
+      try {
+        fetch(WEBHOOK_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: body,
+          keepalive: true,
+          mode: "no-cors"
+        }).then(function () {
+          console.log("✅ Webhook sent via fetch");
+        }).catch(function () {});
+      } catch (e) {}
+    }
   }
 
   function openWhatsApp(text) {
@@ -1614,7 +1634,6 @@ html,body{max-width:100%;overflow-x:hidden}
         return;
       }
 
-      // Lock button while processing
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.dataset.originalText = submitBtn.textContent;
@@ -1624,7 +1643,7 @@ html,body{max-width:100%;overflow-x:hidden}
       var orderNumber = nextOrderNumber();
       var message = buildMessage(orderNumber);
 
-      // 1. إرسال البيانات إلى Excel عبر Make.com Webhook (أولاً لضمان التسجيل)
+      /* 1. إرسال إلى Excel عبر Make.com (متزامن لضمان الوصول) */
       try {
         var payload = buildWebhookPayload(orderNumber);
         sendToWebhook(payload);
@@ -1632,18 +1651,18 @@ html,body{max-width:100%;overflow-x:hidden}
         console.warn("Webhook error:", e);
       }
 
-      // 2. تحديث العداد
+      /* 2. تحديث العداد */
       currentCount = currentCount + 1;
       safeSet(STORAGE_COUNT_KEY, String(currentCount));
       animateCounterTo(currentCount);
 
-      // 3. فتح واتساب (بالتوازي)
+      /* 3. فتح واتساب */
       openWhatsApp(message);
 
-      // 4. إعادة ضبط النموذج
+      /* 4. إعادة ضبط النموذج */
       form.reset();
 
-      // 5. عرض رسالة النجاح
+      /* 5. عرض رسالة النجاح */
       setTimeout(function () {
         showSuccess(orderNumber);
         if (submitBtn) {
